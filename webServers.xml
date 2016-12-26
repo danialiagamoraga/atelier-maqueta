@@ -9,6 +9,9 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="47690edb-0e03-4e7c-ab8c-c7bd421708cd" name="sass" url="http://localhost:8888">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
