@@ -121,3 +121,10 @@ body {
   font-size: 13px;
   color: #6e6e6e;
 }
+
+/* line 14, ../sass/style.scss */
+.content {
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
