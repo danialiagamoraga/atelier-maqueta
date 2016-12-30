@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Iniciar sesión</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="sass/stylesheets/style.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 

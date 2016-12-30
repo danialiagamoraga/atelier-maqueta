@@ -1,0 +1,14 @@
+@import "partials/base";
+
+//Typography
+@include font-face(latoregular, fonts/latoregular, 400, normal);
+@include font-face(latolight, fonts/latolight, 300, normal);
+@include font-face(latobold, fonts/latobold, 700, normal);
+
+//General
+body{
+  font-family: latoregular;
+  font-size: 13px;
+  color: $default;
+}
+
