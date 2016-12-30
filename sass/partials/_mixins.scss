@@ -42,3 +42,7 @@
     src: $src;
   }
 }
+//-- Efecto Hover
+@mixin ifhover{
+  transition: all .5s ease-in-out;
+}

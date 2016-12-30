@@ -23,9 +23,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-@mixin ifhover{
-  transition: all .5s ease-in-out;
-}
 //-- Header
 header {
   box-sizing: border-box;
