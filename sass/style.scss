@@ -1,14 +1,78 @@
 @import "partials/base";
 
-//Typography
+//--Typography
 @include font-face(latoregular, fonts/latoregular, 400, normal);
 @include font-face(latolight, fonts/latolight, 300, normal);
 @include font-face(latobold, fonts/latobold, 700, normal);
 
-//General
-body{
+//--General
+body {
   font-family: latoregular;
   font-size: 13px;
   color: $default;
+  margin: 0;
 }
 
+.content {
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@mixin ifhover{
+  transition: all .5s ease-in-out;
+}
+//-- Header
+header {
+  box-sizing: border-box;
+  border-bottom: 0.1px solid $reserva;
+}
+
+.logo {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: normal;
+  span {
+    font-size: 0.5em;
+    text-transform: capitalize;
+  }
+}
+
+.list-ppal {
+  line-height: 55px;
+  list-style: none;
+  float: right;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+  li:first-child {
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    span {
+      color: $corporativo;
+    }
+  }
+  li:last-child {
+    a {
+      color: rgb(236, 107, 106);
+      font-size: 1em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 1px solid $corporativo;
+      padding: 10px 10px;
+      &:hover{
+        color: $white;
+        background-color: $corporativo;
+        @include ifhover;
+      }
+    }
+  }
+}
