@@ -7,20 +7,17 @@
 
 /* line 14, ../sass/partials/_config.scss */
 .row + .row {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 /* line 19, ../sass/partials/_config.scss */
 [class^="col-"] {
   float: left;
-  margin-right: 3%;
+  padding-right: 1%;
+  padding-left: 1%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-/* line 26, ../sass/partials/_config.scss */
-[class^="col-"]:last-child {
-  margin-right: 0%;
 }
 
 /*
@@ -37,62 +34,62 @@
 .col-11 { width:91.41666666666666%; }
 .col-12 { width:100%; }
 */
-/* line 48, ../sass/partials/_config.scss */
+/* line 45, ../sass/partials/_config.scss */
 .col-1 {
-  width: 5.58333%;
+  width: 8.33333%;
+}
+
+/* line 46, ../sass/partials/_config.scss */
+.col-2 {
+  width: 16.66667%;
+}
+
+/* line 47, ../sass/partials/_config.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 48, ../sass/partials/_config.scss */
+.col-4 {
+  width: 33.33333%;
 }
 
 /* line 49, ../sass/partials/_config.scss */
-.col-2 {
-  width: 14.16667%;
+.col-5 {
+  width: 41.66667%;
 }
 
 /* line 50, ../sass/partials/_config.scss */
-.col-3 {
-  width: 22.75%;
+.col-6 {
+  width: 50%;
 }
 
 /* line 51, ../sass/partials/_config.scss */
-.col-4 {
-  width: 31.33333%;
+.col-7 {
+  width: 58.33333%;
 }
 
 /* line 52, ../sass/partials/_config.scss */
-.col-5 {
-  width: 39.91667%;
+.col-8 {
+  width: 66.66667%;
 }
 
 /* line 53, ../sass/partials/_config.scss */
-.col-6 {
-  width: 48.5%;
+.col-9 {
+  width: 75%;
 }
 
 /* line 54, ../sass/partials/_config.scss */
-.col-7 {
-  width: 57.08333%;
+.col-10 {
+  width: 83.33333%;
 }
 
 /* line 55, ../sass/partials/_config.scss */
-.col-8 {
-  width: 65.66667%;
+.col-11 {
+  width: 91.66667%;
 }
 
 /* line 56, ../sass/partials/_config.scss */
-.col-9 {
-  width: 74.25%;
-}
-
-/* line 57, ../sass/partials/_config.scss */
-.col-10 {
-  width: 82.83333%;
-}
-
-/* line 58, ../sass/partials/_config.scss */
-.col-11 {
-  width: 91.41667%;
-}
-
-/* line 59, ../sass/partials/_config.scss */
 .col-12 {
   width: 100%;
 }
@@ -120,18 +117,32 @@ body {
   font-family: latoregular;
   font-size: 13px;
   color: #6e6e6e;
+  margin: 0;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .content {
   margin: auto;
   width: 90%;
   overflow: hidden;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 header {
   box-sizing: border-box;
-  background: white;
   border-bottom: 0.1px solid #dfdfdf;
+}
+
+/* line 24, ../sass/style.scss */
+.logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  line-height: 75px;
+}
+/* line 30, ../sass/style.scss */
+.logo span {
+  font-size: 0.5em;
+  text-transform: capitalize;
 }
