@@ -120,29 +120,72 @@ body {
   margin: 0;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .content {
   margin: auto;
   width: 90%;
   overflow: hidden;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 27, ../sass/style.scss */
 header {
   box-sizing: border-box;
   border-bottom: 0.1px solid #dfdfdf;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .logo {
   text-transform: uppercase;
-  font-size: 24px;
   box-sizing: border-box;
   letter-spacing: 0.1em;
-  line-height: 75px;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: normal;
 }
-/* line 30, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .logo span {
   font-size: 0.5em;
   text-transform: capitalize;
+}
+
+/* line 45, ../sass/style.scss */
+.list-ppal {
+  line-height: 55px;
+  list-style: none;
+  float: right;
+}
+/* line 49, ../sass/style.scss */
+.list-ppal li {
+  float: left;
+  margin-left: 10px;
+}
+/* line 53, ../sass/style.scss */
+.list-ppal li:first-child {
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+}
+/* line 56, ../sass/style.scss */
+.list-ppal li:first-child span {
+  color: #ec6c6b;
+}
+/* line 61, ../sass/style.scss */
+.list-ppal li:last-child a {
+  color: #ec6b6a;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #ec6c6b;
+  padding: 10px 10px;
+}
+/* line 68, ../sass/style.scss */
+.list-ppal li:last-child a:hover {
+  color: white;
+  background-color: #ec6c6b;
+  transition: all .5s ease-in-out;
 }
