@@ -32,12 +32,14 @@ p {
   line-height: 20px;
   color: rgb(110, 110, 110);
   letter-spacing: 1px;
+  margin: 0;
 }
 
 %title {
   padding-bottom: 5px;
   letter-spacing: 0.5px;
   color: $corporativo;
+  margin-bottom: 0;
 }
 
 %line-pink {
@@ -46,6 +48,10 @@ p {
   border: 0;
   width: 20px;
   margin: 0 auto 20px auto;
+}
+
+.content-title {
+  padding-bottom: 50px;
 }
 
 //-- Header
@@ -100,7 +106,7 @@ header {
 }
 
 //-- Menú principal
-.user {
+.title-user {
   @extend %title;
 }
 
@@ -121,5 +127,43 @@ header {
   hr {
     @extend %line-pink;
     margin: 50px 0;
+  }
+}
+
+//--breadcrumbs
+.title-section {
+  @extend %title;
+  &:before {
+    background-image: url(../img/icon-heart.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    width: 20px;
+    content: " ";
+    position: relative;
+    top: 4px;
+    height: 20px;
+    display: inline-block;
+  }
+}
+
+.breadcrumbs span {
+  color: $corporativo;
+  font-family: latobold;
+}
+
+//--footer
+footer {
+  background-color: $corporativo;
+  letter-spacing: 0.1em;
+  color: $white;
+  font-size: 0.9em;
+  line-height: 20px;
+  padding: 30px 0;
+  address {
+    font-style: normal;
+  }
+  small {
+    padding-top: 2em;
+    display: block
   }
 }
