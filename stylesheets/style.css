@@ -741,6 +741,11 @@ p {
 }
 
 /* line 38, ../sass/style.scss */
+li {
+  list-style: none;
+}
+
+/* line 42, ../sass/style.scss */
 .title-user, .title-section {
   padding-bottom: 5px;
   letter-spacing: 0.5px;
@@ -748,7 +753,7 @@ p {
   margin-bottom: 0;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #nav-ppal hr {
   height: 2px;
   background: #ec6c6b;
@@ -757,18 +762,18 @@ p {
   margin: 0 auto 20px auto;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .content-title {
   padding-bottom: 50px;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 header {
   box-sizing: border-box;
   border-bottom: 0.1px solid #dfdfdf;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .logo {
   text-transform: uppercase;
   box-sizing: border-box;
@@ -777,33 +782,33 @@ header {
   font-size: 24px;
   font-weight: normal;
 }
-/* line 70, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .logo span {
   font-size: 0.5em;
   text-transform: capitalize;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .list-ppal {
   line-height: 40px;
   list-style: none;
   float: right;
 }
-/* line 80, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .list-ppal li {
   float: left;
   margin-left: 10px;
 }
-/* line 84, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .list-ppal li:first-child {
   letter-spacing: 0.1em;
   font-size: 0.9em;
 }
-/* line 87, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .list-ppal li:first-child span {
   color: #ec6c6b;
 }
-/* line 92, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .list-ppal li:last-child a {
   color: #ec6b6a;
   font-size: 1em;
@@ -812,7 +817,7 @@ header {
   border: 1px solid #ec6c6b;
   padding: 10px 10px;
 }
-/* line 99, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .list-ppal li:last-child a:hover {
   color: white;
   background-color: #ec6c6b;
@@ -823,19 +828,19 @@ header {
   -o-transition: 0.5s ease-in-out;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 #nav-ppal nav ul {
   padding: 0px;
 }
-/* line 116, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #nav-ppal nav ul li {
   padding: 13px 0px;
 }
-/* line 118, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #nav-ppal nav ul li a {
   text-transform: capitalize;
 }
-/* line 120, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 #nav-ppal nav ul li a:hover {
   color: #ec6c6b;
   transition: 0.5s ease-in-out;
@@ -844,12 +849,12 @@ header {
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
 }
-/* line 127, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 #nav-ppal hr {
   margin: 50px 0;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .title-section:before {
   background-image: url(../img/icon-heart.png);
   background-repeat: no-repeat;
@@ -862,13 +867,13 @@ header {
   display: inline-block;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .breadcrumbs span {
   color: #ec6c6b;
   font-family: latobold;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 footer {
   background-color: #ec6c6b;
   letter-spacing: 0.1em;
@@ -877,12 +882,41 @@ footer {
   line-height: 20px;
   padding: 30px 0;
 }
-/* line 162, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 footer address {
   font-style: normal;
 }
-/* line 165, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 footer small {
   padding-top: 2em;
   display: block;
+}
+/* line 173, ../sass/style.scss */
+footer .col-6:last-child {
+  text-align: right;
+}
+/* line 175, ../sass/style.scss */
+footer .col-6:last-child p {
+  color: white;
+}
+/* line 178, ../sass/style.scss */
+footer .col-6:last-child ul {
+  float: right;
+}
+/* line 180, ../sass/style.scss */
+footer .col-6:last-child ul li {
+  float: left;
+  margin-left: 10px;
+}
+/* line 183, ../sass/style.scss */
+footer .col-6:last-child ul li i {
+  color: #ec6c6b;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  vertical-align: middle;
+  padding: 10px;
+  background: white;
 }
