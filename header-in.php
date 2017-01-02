@@ -15,7 +15,7 @@
     <!--/col-4-->
     <nav class="col-8">
       <ul class="list-ppal">
-        <li class="welcome">¡Bienvenida a <span>#SoyNovia</span>!</li>
+        <li>¡Bienvenida a <span>#SoyNovia</span>!</li>
         <li><a href="inicio-sesion.php" target="_self">cerrar sesión</a></li>
       </ul>
     </nav>
