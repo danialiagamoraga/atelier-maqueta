@@ -35,6 +35,10 @@ p {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 %title {
   padding-bottom: 5px;
   letter-spacing: 0.5px;
@@ -165,5 +169,29 @@ footer {
   small {
     padding-top: 2em;
     display: block
+  }
+  .col-6:last-child {
+    text-align: right;
+    p {
+      color: $white;
+    }
+    ul {
+      float: right;
+      li {
+        float: left;
+        margin-left: 10px;
+        i {
+          color: $corporativo;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 10px;
+          vertical-align: middle;
+          padding: 10px;
+          background: $white;
+        }
+      }
+    }
   }
 }
