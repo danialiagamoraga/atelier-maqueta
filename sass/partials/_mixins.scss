@@ -43,6 +43,13 @@
   }
 }
 //-- Efecto Hover
-@mixin ifhover{
-  transition: all .5s ease-in-out;
+@mixin prefixer($property, $value, $prefixes: webkit moz ms o) {
+  #{$property}: #{$value};
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: #{$value};
+  }
+}
+
+@mixin ifhover($value: .5s ease-in-out) {
+  @include prefixer(transition, $value);
 }
