@@ -22,7 +22,32 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  letter-spacing: 1px;
 }
+
+li {
+}
+
+p {
+  line-height: 20px;
+  color: rgb(110, 110, 110);
+  letter-spacing: 1px;
+}
+
+%title {
+  padding-bottom: 5px;
+  letter-spacing: 0.5px;
+  color: $corporativo;
+}
+
+%line-pink {
+  height: 2px;
+  background: $corporativo;
+  border: 0;
+  width: 20px;
+  margin: 0 auto 20px auto;
+}
+
 //-- Header
 header {
   box-sizing: border-box;
@@ -33,7 +58,7 @@ header {
   text-transform: uppercase;
   box-sizing: border-box;
   letter-spacing: 0.1em;
-  line-height: 45px;
+  line-height: 40px;
   font-size: 24px;
   font-weight: normal;
   span {
@@ -43,7 +68,7 @@ header {
 }
 
 .list-ppal {
-  line-height: 55px;
+  line-height: 40px;
   list-style: none;
   float: right;
   li {
@@ -65,11 +90,36 @@ header {
       text-transform: uppercase;
       border: 1px solid $corporativo;
       padding: 10px 10px;
-      &:hover{
+      &:hover {
         color: $white;
         background-color: $corporativo;
         @include ifhover;
       }
     }
+  }
+}
+
+//-- Menú principal
+.user {
+  @extend %title;
+}
+
+#nav-ppal {
+  nav ul {
+    padding: 0px;
+    li {
+      padding: 13px 0px;
+      a {
+        text-transform: capitalize;
+        &:hover {
+          color: $corporativo;
+          @include ifhover();
+        }
+      }
+    }
+  }
+  hr {
+    @extend %line-pink;
+    margin: 50px 0;
   }
 }
