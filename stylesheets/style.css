@@ -920,3 +920,63 @@ footer .col-6:last-child ul li i {
   padding: 10px;
   background: white;
 }
+
+/* line 200, ../sass/style.scss */
+#index-nav .col-4 {
+  width: 32.33333%;
+}
+
+/* line 204, ../sass/style.scss */
+.dress, .size, .process {
+  border: 1px solid #6e6e6e;
+  text-align: center;
+  padding: 110px 0 55px 0;
+  margin-left: 1%;
+}
+/* line 209, ../sass/style.scss */
+.dress:hover, .size:hover, .process:hover {
+  border-color: #ec6c6b;
+}
+/* line 212, ../sass/style.scss */
+.dress:hover h3, .size:hover h3, .process:hover h3, .dress:hover p, .size:hover p, .process:hover p {
+  color: #ec6c6b;
+}
+/* line 215, ../sass/style.scss */
+.dress .index-title, .size .index-title, .process .index-title {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* line 221, ../sass/style.scss */
+.dress {
+  background-image: url(../img/dress.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+}
+/* line 227, ../sass/style.scss */
+.dress:hover {
+  background-image: url(../img/dress-pink.png);
+}
+
+/* line 232, ../sass/style.scss */
+.size {
+  background-image: url(../img/size.png);
+  background-repeat: no-repeat;
+  background-position: center 58px;
+}
+/* line 237, ../sass/style.scss */
+.size:hover {
+  background-image: url(../img/size-pink.png);
+}
+
+/* line 242, ../sass/style.scss */
+.process {
+  background-image: url(../img/process.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+/* line 247, ../sass/style.scss */
+.process:hover {
+  background-image: url(../img/process-pink.png);
+}
