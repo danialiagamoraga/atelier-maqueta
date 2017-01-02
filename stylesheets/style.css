@@ -927,22 +927,22 @@ footer .col-6:last-child ul li i {
 }
 
 /* line 204, ../sass/style.scss */
-.dress, .size, .process {
+.dress, .size, .process, .sewing, .scissors {
   border: 1px solid #6e6e6e;
   text-align: center;
   padding: 110px 0 55px 0;
   margin-left: 1%;
 }
 /* line 209, ../sass/style.scss */
-.dress:hover, .size:hover, .process:hover {
+.dress:hover, .size:hover, .process:hover, .sewing:hover, .scissors:hover {
   border-color: #ec6c6b;
 }
 /* line 212, ../sass/style.scss */
-.dress:hover h3, .size:hover h3, .process:hover h3, .dress:hover p, .size:hover p, .process:hover p {
+.dress:hover h3, .size:hover h3, .process:hover h3, .sewing:hover h3, .scissors:hover h3, .dress:hover p, .size:hover p, .process:hover p, .sewing:hover p, .scissors:hover p {
   color: #ec6c6b;
 }
 /* line 215, ../sass/style.scss */
-.dress .index-title, .size .index-title, .process .index-title {
+.dress .index-title, .size .index-title, .process .index-title, .sewing .index-title, .scissors .index-title {
   text-transform: capitalize;
   margin: 0;
 }
@@ -979,4 +979,27 @@ footer .col-6:last-child ul li i {
 /* line 247, ../sass/style.scss */
 .process:hover {
   background-image: url(../img/process-pink.png);
+}
+
+/* line 252, ../sass/style.scss */
+.sewing {
+  background-image: url(../img/sewing.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  margin-left: 0;
+}
+/* line 258, ../sass/style.scss */
+.sewing:hover {
+  background-image: url(../img/sewing-pink.png);
+}
+
+/* line 263, ../sass/style.scss */
+.scissors {
+  background-image: url(../img/scissors.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+}
+/* line 268, ../sass/style.scss */
+.scissors:hover {
+  background-image: url(../img/scissors-pink.png);
 }
