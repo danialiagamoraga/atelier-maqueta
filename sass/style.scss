@@ -209,10 +209,10 @@ footer {
   &:hover {
     border-color: $corporativo;
   }
-  &:hover h3, &:hover p{
+  &:hover h3, &:hover p {
     color: $corporativo;
   }
-  .index-title{
+  .index-title {
     text-transform: capitalize;
     margin: 0;
   }
@@ -246,5 +246,26 @@ footer {
   background-position: center 45px;
   &:hover {
     background-image: url(../img/process-pink.png);
+  }
+}
+
+.sewing {
+  @extend %index;
+  background-image: url(../img/sewing.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/sewing-pink.png);
+  }
+}
+
+.scissors {
+  @extend %index;
+  background-image: url(../img/scissors.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/scissors-pink.png);
   }
 }
