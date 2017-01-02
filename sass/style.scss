@@ -195,3 +195,56 @@ footer {
     }
   }
 }
+
+//--Indice de contenidos
+#index-nav .col-4 {
+  width: 32.33333%;
+}
+
+%index {
+  border: 1px solid rgb(110, 110, 110);
+  text-align: center;
+  padding: 110px 0 55px 0;
+  margin-left: 1%;
+  &:hover {
+    border-color: $corporativo;
+  }
+  &:hover h3, &:hover p{
+    color: $corporativo;
+  }
+  .index-title{
+    text-transform: capitalize;
+    margin: 0;
+  }
+}
+
+.dress {
+  @extend %index;
+  background-image: url(../img/dress.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/dress-pink.png);
+  }
+}
+
+.size {
+  @extend %index;
+  background-image: url(../img/size.png);
+  background-repeat: no-repeat;
+  background-position: center 58px;
+  &:hover {
+    background-image: url(../img/size-pink.png);
+  }
+}
+
+.process {
+  @extend %index;
+  background-image: url(../img/process.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/process-pink.png);
+  }
+}
