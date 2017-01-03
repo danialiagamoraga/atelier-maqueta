@@ -754,12 +754,12 @@ li {
 }
 
 /* line 49, ../sass/style.scss */
-#nav-ppal hr, .info-novia hr {
+#nav-ppal hr, .info-novia hr, .modal hr {
   height: 2px;
   background: #ec6c6b;
   border: 0;
   width: 20px;
-  margin: 0 auto 20px auto;
+  margin: 0 0 20px 0;
 }
 
 /* line 57, ../sass/style.scss */
@@ -1139,7 +1139,7 @@ table tr.dato-table:hover {
   text-transform: capitalize;
   letter-spacing: 1px;
   color: #ec6c6b;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 /* line 386, ../sass/style.scss */
 .info-novia h1 span a {
@@ -1159,24 +1159,147 @@ table tr.dato-table:hover {
   background: #ec6c6b;
   color: white;
 }
-/* line 397, ../sass/style.scss */
-.info-novia hr {
-  margin: 0 0 20px 0;
-}
-/* line 401, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 .info-novia .col-6 {
   padding-left: 0;
 }
-/* line 403, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .info-novia .col-6 p {
   padding-bottom: 10px;
 }
-/* line 405, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .info-novia .col-6 p span {
   font-family: latobold;
 }
 
-/* line 413, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 table.pagos td {
   padding: 5px 0;
+}
+
+/* line 418, ../sass/style.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 430, ../sass/style.scss */
+.modal button.close {
+  color: white;
+  background-color: #ec6c6b;
+  float: right;
+  font-size: 21px;
+  display: block;
+  padding: 12px;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 446, ../sass/style.scss */
+.modal .modal-dialog {
+  width: 800px;
+  margin: 40px auto;
+}
+/* line 449, ../sass/style.scss */
+.modal .modal-dialog .modal-content {
+  position: relative;
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+}
+/* line 455, ../sass/style.scss */
+.modal .modal-dialog .modal-content .modal-body {
+  position: relative;
+  padding: 15px;
+}
+/* line 458, ../sass/style.scss */
+.modal .modal-dialog .modal-content .modal-body form {
+  width: 90%;
+  margin: auto;
+}
+/* line 461, ../sass/style.scss */
+.modal .modal-dialog .modal-content .modal-body form h1 {
+  color: #ec6c6b;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  padding: 1em 0 0 0;
+}
+/* line 468, ../sass/style.scss */
+.modal .modal-dialog .modal-content .modal-body form fieldset {
+  border: none;
+}
+
+/* line 477, ../sass/style.scss */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+/* line 484, ../sass/style.scss */
+.in {
+  opacity: 1;
+}
+
+/* line 488, ../sass/style.scss */
+.botonera {
+  width: 315px;
+  margin: auto;
+  font-size: 13px;
+}
+/* line 492, ../sass/style.scss */
+.botonera #cancel {
+  color: rgba(110, 110, 110, 0.9);
+  background: none;
+  padding: 1em 2em;
+  border: 1px solid #dfdfdf;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 9px;
+}
+/* line 500, ../sass/style.scss */
+.botonera #cancel:hover {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  background: #ec6c6b;
+  color: white;
+  border-color: #ec6c6b;
+}
+/* line 505, ../sass/style.scss */
+.botonera #save {
+  color: #ec6c6b;
+  background: none;
+  padding: 1.2em 2em;
+  display: inline-block;
+  border: 1px solid #ec6c6b;
+  text-transform: capitalize;
+  width: 150px;
+  margin: auto;
+  margin-right: 10px;
+}
+/* line 515, ../sass/style.scss */
+.botonera #save:hover {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  background: #ec6c6b;
+  color: white;
 }
