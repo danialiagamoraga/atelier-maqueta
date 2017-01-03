@@ -51,7 +51,7 @@ li {
   background: $corporativo;
   border: 0;
   width: 20px;
-  margin: 0 auto 20px auto;
+  margin: 0 0 20px 0;
 }
 
 .content-title {
@@ -382,7 +382,7 @@ table {
     text-transform: capitalize;
     letter-spacing: 1px;
     color: $corporativo;
-    font-size: 1.2em;
+    font-size: 1.1em;
     span a {
       font-family: 'latolight';
       padding: 10px;
@@ -396,7 +396,6 @@ table {
   }
   hr {
     @extend %line-pink;
-    margin: 0 0 20px 0;
   }
   .col-6 {
     padding-left: 0;
@@ -412,5 +411,109 @@ table {
 table.pagos {
   td {
     padding: 5px 0;
+  }
+}
+
+//--Modal
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  button.close {
+    color: $white;
+    background-color: $corporativo;
+    float: right;
+    font-size: 21px;
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  hr {
+    @extend %line-pink;
+  }
+  .modal-dialog {
+    width: 800px;
+    margin: 40px auto;
+    .modal-content {
+      position: relative;
+      background-color: $white;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      outline: 0;
+      .modal-body {
+        position: relative;
+        padding: 15px;
+        form {
+          width: 90%;
+          margin: auto;
+          h1 {
+            color: $corporativo;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            font-size: 1.2em;
+            padding: 1em 0 0 0;
+          }
+          fieldset {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+.in {
+  opacity: 1;
+}
+
+.botonera {
+  width: 315px;
+  margin: auto;
+  font-size: 13px;
+  #cancel {
+    color: fade_out($default, .1);
+    background: none;
+    padding: 1em 2em;
+    border: 1px solid $reserva;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 9px;
+    &:hover {
+      @include ifhover();
+      border-color: $corporativo;
+    }
+  }
+  #save {
+    color: $corporativo;
+    background: none;
+    padding: 1.2em 2em;
+    display: inline-block;
+    border: 1px solid $corporativo;
+    text-transform: capitalize;
+    width: 150px;
+    margin: auto;
+    margin-right: 10px;
+    &:hover {
+      @include ifhover();
+    }
   }
 }
