@@ -7,9 +7,9 @@
         </div>
         <form id="form" action="#" class="wizard" method="post">
           <h1>Detalle de compra</h1>
-          <hr class="line-pink">
+          <hr>
           <fieldset>
-            <div class="col-form">
+            <div class="col-6">
               <div class="form-group">
                 <label>Vendedora</label>
                 <select data-placeholder="-" class="chosen-select" multiple style="width:350px;" tabindex="4">
@@ -20,7 +20,7 @@
                   <option value="vfierro">Valentina</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-6">
                 <label>Modelo</label>
                 <select data-placeholder="Elige un vestido" class="chosen-select"  tabindex="2">
                   <option value="">Elige un vestido</option>
@@ -57,7 +57,7 @@
                   15%</label>
               </div>
             </div>
-            <div class="col-form">
+            <div class="col-6">
               <div class="form-group">
                 <label>Otros</label>
                 <textarea></textarea>
