@@ -30,7 +30,7 @@ li {
 
 p {
   line-height: 20px;
-  color: rgb(110, 110, 110);
+  color: $default;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -56,6 +56,10 @@ li {
 
 .content-title {
   padding-bottom: 50px;
+}
+
+#admin {
+  padding: 30px 0;
 }
 
 //-- Header
@@ -94,7 +98,7 @@ header {
   }
   li:last-child {
     a {
-      color: rgb(236, 107, 106);
+      color: $corporativo;
       font-size: 1em;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -123,7 +127,6 @@ header {
         text-transform: capitalize;
         &:hover {
           color: $corporativo;
-          @include ifhover();
         }
       }
     }
@@ -202,7 +205,7 @@ footer {
 }
 
 %index {
-  border: 1px solid rgb(110, 110, 110);
+  border: 1px solid $default;
   text-align: center;
   padding: 110px 0 55px 0;
   margin-left: 1%;
@@ -215,6 +218,7 @@ footer {
   .index-title {
     text-transform: capitalize;
     margin: 0;
+    font-size: 1.1em;
   }
 }
 
@@ -267,5 +271,75 @@ footer {
   background-position: center 45px;
   &:hover {
     background-image: url(../img/scissors-pink.png);
+  }
+}
+
+//--tabla de contenidos
+%encabezado {
+  color: $white;
+  font-family: 'latobold';
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  letter-spacing: 1px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  th, td {
+    width: 25%;
+    padding: 1em;
+  }
+  tr.encabezado {
+    @extend %encabezado;
+    background-color: $corporativo;
+  }
+  tr.filtro {
+    @extend %encabezado;
+    background-color: fade_out($corporativo, .28);
+  }
+  tr.dato-table {
+    background-color: fade_out($corporativo, .9);
+    &:hover {
+      color: $corporativo;
+      font-family: latobold;
+    }
+  }
+}
+
+.paginacion {
+  overflow: hidden;
+  padding: 3px 0 50px 0;
+  p {
+    line-height: 33px;
+    color: fade_out($default, .4);
+    display: inline-block;
+  }
+  ul {
+    float: right;
+    margin: 0;
+    li {
+      float: left;
+      list-style: none;
+      line-height: 33px;
+      padding: 0 0 0 6px;
+      letter-spacing: 1px;
+      color: fade_out($default, .3);
+      a {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        text-align: center;
+        color: fade_out($default, .5);
+        border: 1px solid fade_out($default, .5);
+        &:hover{
+        color: $corporativo;
+          border-color: $corporativo;
+        }
+        i {
+          line-height: 33px;
+        }
+      }
+    }
   }
 }
