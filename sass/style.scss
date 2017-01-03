@@ -332,12 +332,47 @@ table {
         text-align: center;
         color: fade_out($default, .5);
         border: 1px solid fade_out($default, .5);
-        &:hover{
-        color: $corporativo;
+        &:hover {
+          color: $corporativo;
           border-color: $corporativo;
         }
         i {
           line-height: 33px;
+        }
+      }
+    }
+  }
+}
+
+//-- Ficha novia
+.nav-print {
+  overflow: auto;
+  padding-bottom: 10px;
+  ul {
+    float: right;
+    li {
+      float: left;
+      margin-left: 10px;
+      list-style: none;
+      a {
+        padding: 10px;
+        border: 1px solid fade_out($default, .5);
+        display: block;
+        letter-spacing: 0;
+        &:hover {
+          color: $corporativo;
+          border-color: $corporativo;
+        }
+      }
+    }
+    li:nth-child(2) {
+      a {
+        color: $corporativo;
+        border-color: $corporativo;
+        &:hover {
+          background-color: $corporativo;
+          color: $white;
+          @include ifhover();
         }
       }
     }
