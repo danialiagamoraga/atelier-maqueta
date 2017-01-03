@@ -139,7 +139,7 @@
   	$('#info-novia').click(function() {
    	$.ajax({
         // la URL para la petición
-        url : 'http://localhost:8888/santoencanto/infobride-info.php',
+        url : 'http://localhost:8888/Atelier/infobride-info.php',
  
         // especifica si será una petición POST o GET
         type : 'POST',
@@ -164,7 +164,7 @@
   	$('#info-compra').click(function() {
    	$.ajax({
         // la URL para la petición
-        url : 'http://localhost:8888/santoencanto/infobride-compra.php',
+        url : 'http://localhost:8888/Atelier/infobride-compra.php',
  
         // especifica si será una petición POST o GET
         type : 'POST',
