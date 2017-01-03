@@ -12,10 +12,10 @@
     </div>
     <article class="info-novia">
       <h1>información novia <span class="edit"><a id="info-novia" href="#" data-target="#infonovia" data-toggle="modal">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <div class="col-6">
-        <p>Nombre: <span class="bold">Valentina Fierro</span></p>
-        <p>Matrimonio: <span class="bold">12 / 03 / 2016</span></p>
+        <p>Nombre: <span>Valentina Fierro</span></p>
+        <p>Matrimonio: <span>12 / 03 / 2016</span></p>
       </div>
       <!-- /col-6 -->
       <div class="col-6">
@@ -27,7 +27,7 @@
     <!-- /info-novia -->
     <article class="info-novia">
       <h1>detalle de compra <span class="edit"><a id="info-compra" href="#" data-target="#infocompra" data-toggle="modal">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <div class="col-6">
         <p>Vendedora: Silvia</p>
         <p>Modelo: Romané</p>
@@ -46,7 +46,7 @@
     <!-- /info-novia -->
     <article class="info-novia">
       <h1>detalle de pago <span class="edit"><a id="info-abono" href="#" data-target="#infoabono" data-toggle="modal">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <table class="pagos">
         <tr>
           <td>Fecha: 15 / 03 / 2016</td>
@@ -66,7 +66,7 @@
     <!-- /info-novia -->
     <article class="info-novia">
       <h1>Medidas <span class="edit"><a href="#">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <div class="col-6">
         <p class="size-title-print">Contornos</p>
         <p>Busto:  97 cm</p>
@@ -103,7 +103,7 @@
     <!-- /info-novia -->
     <article class="info-novia">
       <h1>Citas <span class="edit"><a href="#">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <div class="col-6">
         <p>1ra cita: 12 / 03 / 2018</p>
         <p>2da cita: -</p>
@@ -118,7 +118,7 @@
     <!-- /info-novia -->
     <article class="info-novia">
       <h1>entrega <span class="edit"><a href="#">editar</a></span></h1>
-      <hr class="line-pink">
+      <hr>
       <div class="col-6">
         <p>fecha entrega:-.</p>
       </div>
