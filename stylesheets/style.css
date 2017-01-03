@@ -1085,3 +1085,46 @@ table tr.dato-table:hover {
 .paginacion ul li a i {
   line-height: 33px;
 }
+
+/* line 348, ../sass/style.scss */
+.nav-print {
+  overflow: auto;
+  padding-bottom: 10px;
+}
+/* line 351, ../sass/style.scss */
+.nav-print ul {
+  float: right;
+}
+/* line 353, ../sass/style.scss */
+.nav-print ul li {
+  float: left;
+  margin-left: 10px;
+  list-style: none;
+}
+/* line 357, ../sass/style.scss */
+.nav-print ul li a {
+  padding: 10px;
+  border: 1px solid rgba(110, 110, 110, 0.5);
+  display: block;
+  letter-spacing: 0;
+}
+/* line 362, ../sass/style.scss */
+.nav-print ul li a:hover {
+  color: #ec6c6b;
+  border-color: #ec6c6b;
+}
+/* line 369, ../sass/style.scss */
+.nav-print ul li:nth-child(2) a {
+  color: #ec6c6b;
+  border-color: #ec6c6b;
+}
+/* line 372, ../sass/style.scss */
+.nav-print ul li:nth-child(2) a:hover {
+  background-color: #ec6c6b;
+  color: white;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
