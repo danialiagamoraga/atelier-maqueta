@@ -39,7 +39,7 @@
         <p>Otros: <br>
           - Zapatos: $65.000<br>
           - Corset: $30.000</p>
-        <p class="bold">Total: $890.000</p>
+          <p><span>Total: $890.000</span></p>
       </div>
       <!-- /col-6 --> 
     </article>
