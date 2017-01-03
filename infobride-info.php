@@ -7,9 +7,9 @@
         </div>
         <form id="form" action="#" class="wizard" method="post">
           <h1>Información novia</h1>
-          <hr class="line-pink">
+          <hr>
           <fieldset>
-            <div class="col-form">
+            <div class="col-6">
               <div class="form-group">
                 <label>Nombre *</label>
                 <input id="userName" name="userName" type="text" class="form-control required">
@@ -27,7 +27,7 @@
                 <label>¿Eres una novia de región?</label>
               </div>
             </div>
-            <div class="col-form">
+            <div class="col-6">
               <div class="form-group phone-info">
                 <label>Telefono primario*</label>
                 <input id="tel" name="phone" type="tel" class="form-control required">
