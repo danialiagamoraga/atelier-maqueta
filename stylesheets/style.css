@@ -754,7 +754,7 @@ li {
 }
 
 /* line 49, ../sass/style.scss */
-#nav-ppal hr {
+#nav-ppal hr, .info-novia hr {
   height: 2px;
   background: #ec6c6b;
   border: 0;
@@ -824,37 +824,37 @@ header {
 }
 /* line 107, ../sass/style.scss */
 .list-ppal li:last-child a:hover {
-  color: white;
-  background-color: #ec6c6b;
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+  background: #ec6c6b;
+  color: white;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 #nav-ppal nav ul {
   padding: 0px;
 }
-/* line 124, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #nav-ppal nav ul li {
   padding: 13px 0px;
 }
-/* line 126, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 #nav-ppal nav ul li a {
   text-transform: capitalize;
 }
-/* line 128, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 #nav-ppal nav ul li a:hover {
   color: #ec6c6b;
 }
-/* line 134, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 #nav-ppal hr {
   margin: 50px 0;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .title-section:before {
   background-image: url(../img/icon-heart.png);
   background-repeat: no-repeat;
@@ -867,13 +867,13 @@ header {
   display: inline-block;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .breadcrumbs span {
   color: #ec6c6b;
   font-family: latobold;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 footer {
   background-color: #ec6c6b;
   letter-spacing: 0.1em;
@@ -882,33 +882,33 @@ footer {
   line-height: 20px;
   padding: 30px 0;
 }
-/* line 169, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 footer address {
   font-style: normal;
 }
-/* line 172, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 footer small {
   padding-top: 2em;
   display: block;
 }
-/* line 176, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 footer .col-6:last-child {
   text-align: right;
 }
-/* line 178, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 footer .col-6:last-child p {
   color: white;
 }
-/* line 181, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 footer .col-6:last-child ul {
   float: right;
 }
-/* line 183, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 footer .col-6:last-child ul li {
   float: left;
   margin-left: 10px;
 }
-/* line 186, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 footer .col-6:last-child ul li i {
   color: #ec6c6b;
   width: 10px;
@@ -921,97 +921,97 @@ footer .col-6:last-child ul li i {
   background: white;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 #index-nav .col-4 {
   width: 32.33333%;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .dress, .size, .process, .sewing, .scissors {
   border: 1px solid #6e6e6e;
   text-align: center;
   padding: 110px 0 55px 0;
   margin-left: 1%;
 }
-/* line 212, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .dress:hover, .size:hover, .process:hover, .sewing:hover, .scissors:hover {
   border-color: #ec6c6b;
 }
-/* line 215, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .dress:hover h3, .size:hover h3, .process:hover h3, .sewing:hover h3, .scissors:hover h3, .dress:hover p, .size:hover p, .process:hover p, .sewing:hover p, .scissors:hover p {
   color: #ec6c6b;
 }
-/* line 218, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .dress .index-title, .size .index-title, .process .index-title, .sewing .index-title, .scissors .index-title {
   text-transform: capitalize;
   margin: 0;
   font-size: 1.1em;
 }
 
-/* line 225, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .dress {
   background-image: url(../img/dress.png);
   background-repeat: no-repeat;
   background-position: center 35px;
   margin-left: 0;
 }
-/* line 231, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .dress:hover {
   background-image: url(../img/dress-pink.png);
 }
 
-/* line 236, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .size {
   background-image: url(../img/size.png);
   background-repeat: no-repeat;
   background-position: center 58px;
 }
-/* line 241, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .size:hover {
   background-image: url(../img/size-pink.png);
 }
 
-/* line 246, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .process {
   background-image: url(../img/process.png);
   background-repeat: no-repeat;
   background-position: center 45px;
 }
-/* line 251, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .process:hover {
   background-image: url(../img/process-pink.png);
 }
 
-/* line 256, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .sewing {
   background-image: url(../img/sewing.png);
   background-repeat: no-repeat;
   background-position: center 45px;
   margin-left: 0;
 }
-/* line 262, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .sewing:hover {
   background-image: url(../img/sewing-pink.png);
 }
 
-/* line 267, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .scissors {
   background-image: url(../img/scissors.png);
   background-repeat: no-repeat;
   background-position: center 45px;
 }
-/* line 272, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .scissors:hover {
   background-image: url(../img/scissors-pink.png);
 }
 
-/* line 278, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 table tr.encabezado, table tr.filtro {
   color: white;
   font-family: 'latobold';
 }
 
-/* line 283, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 table {
   width: 100%;
   text-align: left;
@@ -1019,46 +1019,46 @@ table {
   border-collapse: separate;
   border-spacing: 0 5px;
 }
-/* line 289, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 table th, table td {
   width: 25%;
   padding: 1em;
 }
-/* line 293, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 table tr.encabezado {
   background-color: #ec6c6b;
 }
-/* line 297, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 table tr.filtro {
   background-color: rgba(236, 108, 107, 0.72);
 }
-/* line 301, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 table tr.dato-table {
   background-color: rgba(236, 108, 107, 0.1);
 }
-/* line 303, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 table tr.dato-table:hover {
   color: #ec6c6b;
   font-family: latobold;
 }
 
-/* line 310, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .paginacion {
   overflow: hidden;
   padding: 3px 0 50px 0;
 }
-/* line 313, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .paginacion p {
   line-height: 33px;
   color: rgba(110, 110, 110, 0.6);
   display: inline-block;
 }
-/* line 318, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .paginacion ul {
   float: right;
   margin: 0;
 }
-/* line 321, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .paginacion ul li {
   float: left;
   list-style: none;
@@ -1067,7 +1067,7 @@ table tr.dato-table:hover {
   letter-spacing: 1px;
   color: rgba(110, 110, 110, 0.7);
 }
-/* line 328, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .paginacion ul li a {
   width: 35px;
   height: 35px;
@@ -1076,55 +1076,107 @@ table tr.dato-table:hover {
   color: rgba(110, 110, 110, 0.5);
   border: 1px solid rgba(110, 110, 110, 0.5);
 }
-/* line 335, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .paginacion ul li a:hover {
   color: #ec6c6b;
   border-color: #ec6c6b;
 }
-/* line 339, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .paginacion ul li a i {
   line-height: 33px;
 }
 
-/* line 348, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .nav-print {
   overflow: auto;
   padding-bottom: 10px;
 }
-/* line 351, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .nav-print ul {
   float: right;
 }
-/* line 353, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .nav-print ul li {
   float: left;
   margin-left: 10px;
   list-style: none;
 }
-/* line 357, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 .nav-print ul li a {
   padding: 10px;
   border: 1px solid rgba(110, 110, 110, 0.5);
   display: block;
   letter-spacing: 0;
 }
-/* line 362, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .nav-print ul li a:hover {
   color: #ec6c6b;
   border-color: #ec6c6b;
 }
-/* line 369, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .nav-print ul li:nth-child(2) a {
   color: #ec6c6b;
   border-color: #ec6c6b;
 }
-/* line 372, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .nav-print ul li:nth-child(2) a:hover {
-  background-color: #ec6c6b;
-  color: white;
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+  background: #ec6c6b;
+  color: white;
+}
+
+/* line 378, ../sass/style.scss */
+.info-novia {
+  overflow: auto;
+  padding: 15px 0px 40px 0;
+}
+/* line 381, ../sass/style.scss */
+.info-novia h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #ec6c6b;
+  font-size: 1.2em;
+}
+/* line 386, ../sass/style.scss */
+.info-novia h1 span a {
+  font-family: 'latolight';
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid;
+  font-size: .8em;
+}
+/* line 392, ../sass/style.scss */
+.info-novia h1 span a:hover {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  background: #ec6c6b;
+  color: white;
+}
+/* line 397, ../sass/style.scss */
+.info-novia hr {
+  margin: 0 0 20px 0;
+}
+/* line 401, ../sass/style.scss */
+.info-novia .col-6 {
+  padding-left: 0;
+}
+/* line 403, ../sass/style.scss */
+.info-novia .col-6 p {
+  padding-bottom: 10px;
+}
+/* line 405, ../sass/style.scss */
+.info-novia .col-6 p span {
+  font-family: latobold;
+}
+
+/* line 413, ../sass/style.scss */
+table.pagos td {
+  padding: 5px 0;
 }
