@@ -742,7 +742,7 @@ th {
   display: block;
   overflow: hidden;
   padding: 0.75em;
-  border: 1px solid #aaaaaa;
+  border: 1px solid rgba(110, 110, 110, 0.4);
   color: #6e6e6e;
   text-decoration: none;
   white-space: nowrap;
@@ -923,12 +923,12 @@ th {
 /* line 203, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices {
   -moz-box-sizing: border-box;
-  background-color: #FFFFFF;
-  border: 1px solid #aaaaaa;
+  background-color: white;
+  border: 1px solid rgba(110, 110, 110, 0.4);
   cursor: text;
   margin: 0;
   overflow: hidden;
-  padding: 0.2em;
+  padding: 0.4em;
   position: relative;
 }
 
@@ -971,10 +971,10 @@ th {
   position: relative;
   margin: 3px 0 3px 5px;
   padding: 3px 20px 3px 5px;
-  border: 1px solid #ededed;
+  border: 1px solid rgba(110, 110, 110, 0.1);
   border-radius: 3px;
-  background-color: #f1f1f1;
-  color: #737373;
+  background-color: rgba(223, 223, 223, 0.4);
+  color: #6e6e6e;
   line-height: 13px;
   cursor: default;
   letter-spacing: 1px;
@@ -1805,7 +1805,7 @@ table.pagos td {
 
 /* line 525, ../sass/style.scss */
 #form div.form-group input, #form div.form-group textarea {
-  border: 1px solid #aaaaaa;
+  border: 1px solid rgba(110, 110, 110, 0.4);
   padding: 0.75em;
   color: #6e6e6e;
   width: 100%;
@@ -1839,28 +1839,56 @@ table.pagos td {
 }
 /* line 554, ../sass/style.scss */
 #form div.form-group label {
-  display: inline-block;
+  display: block;
   margin-bottom: 1em;
   letter-spacing: 1px;
   color: #6e6e6e;
   font-size: 13px;
   text-align: left;
-  float: left;
   padding-right: 20px;
   box-sizing: border-box;
+  width: 100%;
 }
-/* line 567, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
+#form div.form-group label.label-radio {
+  width: auto;
+  display: inline-block;
+}
+/* line 571, ../sass/style.scss */
 #form div.form-group input[type="checkbox"], #form div.form-group input[type="radio"] {
   display: inline-block;
   width: auto;
   margin-right: 10px;
   float: left;
 }
-/* line 577, ../sass/style.scss */
+/* line 581, ../sass/style.scss */
 #form div.form-group input#other {
   display: none;
 }
-/* line 580, ../sass/style.scss */
+/* line 584, ../sass/style.scss */
 #form div.form-group textarea {
   height: 143px;
+}
+/* line 592, ../sass/style.scss */
+#form div.add-symbol {
+  display: table;
+  position: relative;
+}
+/* line 595, ../sass/style.scss */
+#form div.add-symbol label {
+  display: table-caption;
+}
+/* line 598, ../sass/style.scss */
+#form div.add-symbol span {
+  display: table-cell;
+  border: 1px solid rgba(110, 110, 110, 0.4);
+  border-radius: 1px;
+  padding: 6px 12px;
+  text-align: center;
+  border-right: 0;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #6e6e6e;
 }
