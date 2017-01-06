@@ -692,6 +692,502 @@ th {
   padding: 0;
 }
 
+/* line 2, ../sass/partials/_chosen.scss */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  zoom: 1;
+  *display: inline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 14, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  border-top: 0;
+  background: white;
+}
+
+/* line 26, ../sass/partials/_chosen.scss */
+.block {
+  display: block !important;
+  width: 100%;
+}
+
+/* line 31, ../sass/partials/_chosen.scss */
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+
+/* line 35, ../sass/partials/_chosen.scss */
+.chosen-container a {
+  cursor: pointer;
+}
+
+/* @end */
+/* @group Single Chosen */
+/* line 41, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0.75em;
+  border: 1px solid #aaaaaa;
+  color: #6e6e6e;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* line 55, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-default {
+  color: #6e6e6e;
+}
+
+/* line 59, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 67, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px;
+}
+
+/* line 71, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("chosen-sprite.png") -42px 1px no-repeat;
+  font-size: 1px;
+}
+
+/* line 82, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+
+/* line 86, ../sass/partials/_chosen.scss */
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+
+/* line 90, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+
+/* line 99, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("chosen-sprite.png") no-repeat 0px 6px;
+}
+
+/* line 106, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 12px;
+  white-space: nowrap;
+}
+
+/* line 114, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-search input[type="text"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1px 0;
+  padding: 0.6em;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+  background: white url("chosen-sprite.png") no-repeat 100% -20px;
+  background: url("chosen-sprite.png") no-repeat 100% -20px;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+
+/* line 132, ../sass/partials/_chosen.scss */
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box;
+}
+
+/* line 138, ../sass/partials/_chosen.scss */
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px;
+}
+
+/* @end */
+/* @group Results */
+/* line 145, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 155, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 0.6em;
+  line-height: 15px;
+  -webkit-touch-callout: none;
+  color: #6e6e6e;
+  letter-spacing: 0.5px;
+}
+
+/* line 165, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 170, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.disabled-result {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+/* line 176, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.highlighted {
+  color: #ec6b6a;
+  font-weight: 700;
+}
+
+/* line 181, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.no-results {
+  display: list-item;
+  background: #f4f4f4;
+}
+
+/* line 186, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* line 192, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px;
+}
+
+/* line 196, ../sass/partials/_chosen.scss */
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* @end */
+/* @group Multi Chosen */
+/* line 203, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices {
+  -moz-box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #aaaaaa;
+  cursor: text;
+  margin: 0;
+  overflow: hidden;
+  padding: 0.2em;
+  position: relative;
+}
+
+/* line 214, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li {
+  float: left;
+  list-style: none;
+}
+
+/* line 219, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* line 225, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin: 1px 0;
+  padding: 5px;
+  height: 25px;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: #6e6e6e;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+
+/* line 240, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field .default {
+  color: #999;
+}
+
+/* line 244, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice {
+  position: relative;
+  margin: 3px 0 3px 5px;
+  padding: 3px 20px 3px 5px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  color: #737373;
+  line-height: 13px;
+  cursor: default;
+  letter-spacing: 1px;
+}
+
+/* line 257, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+  font-family: FontAwesome;
+  content: "\f00d";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  position: relative;
+  right: -15px;
+}
+
+/* line 267, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  color: #ec6b6a;
+}
+
+/* line 271, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  color: #666;
+}
+
+/* line 283, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  background: #d4d4d4;
+}
+
+/* line 287, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+  background-position: -42px -10px;
+}
+
+/* line 291, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-results {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 296, ../sass/partials/_chosen.scss */
+.chosen-container-multi .chosen-drop .result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+/* @end */
+/* @group Active  */
+/* line 304, ../sass/partials/_chosen.scss */
+.chosen-container-active .chosen-single {
+  border: 1px solid #ec6b6a;
+  color: #ec6b6a;
+  font-weight: 700;
+}
+
+/* line 310, ../sass/partials/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #aaa;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 318, ../sass/partials/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent;
+}
+
+/* line 323, ../sass/partials/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -16px 9px;
+}
+
+/* line 327, ../sass/partials/_chosen.scss */
+.chosen-container-active .chosen-choices {
+  border: 1px solid #ec6b6a;
+}
+
+/* line 331, ../sass/partials/_chosen.scss */
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #ec6b6a !important;
+}
+
+/* @end */
+/* @group Disabled Support */
+/* line 337, ../sass/partials/_chosen.scss */
+.chosen-disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+/* line 342, ../sass/partials/_chosen.scss */
+.chosen-disabled .chosen-single {
+  cursor: default;
+}
+
+/* line 346, ../sass/partials/_chosen.scss */
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: default;
+}
+
+/* @end */
+/* @group Right to Left */
+/* line 352, ../sass/partials/_chosen.scss */
+.chosen-rtl {
+  text-align: right;
+}
+
+/* line 356, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-single {
+  overflow: visible;
+  padding: 0 8px 0 0;
+}
+
+/* line 361, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+  direction: rtl;
+}
+
+/* line 367, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-single-with-deselect span {
+  margin-left: 38px;
+}
+
+/* line 371, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-single div {
+  right: auto;
+  left: 3px;
+}
+
+/* line 376, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-single abbr {
+  right: auto;
+  left: 26px;
+}
+
+/* line 381, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-choices li {
+  float: right;
+}
+
+/* line 385, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+  direction: rtl;
+}
+
+/* line 389, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 5px 3px 19px;
+}
+
+/* line 394, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  right: auto;
+  left: 4px;
+}
+
+/* line 399, ../sass/partials/_chosen.scss */
+.chosen-rtl.chosen-container-single-nosearch .chosen-search, .chosen-rtl .chosen-drop {
+  left: 9999px;
+}
+
+/* line 403, ../sass/partials/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-results {
+  margin: 0 0 4px 4px;
+  padding: 0 4px 0 0;
+}
+
+/* line 408, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-results li.group-option {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+/* line 413, ../sass/partials/_chosen.scss */
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none;
+}
+
+/* line 417, ../sass/partials/_chosen.scss */
+.chosen-rtl .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+  background: white url("chosen-sprite.png") no-repeat -30px -20px;
+  background: url("chosen-sprite.png") no-repeat -30px -20px;
+  direction: rtl;
+}
+
+/* line 424, ../sass/partials/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-single div b {
+  background-position: 6px 2px;
+}
+
+/* line 428, ../sass/partials/_chosen.scss */
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+  background-position: -12px 2px;
+}
+
 @font-face {
   font-family: "latoregular";
   font-style: normal;
@@ -1239,9 +1735,11 @@ table.pagos td {
 /* line 468, ../sass/style.scss */
 .modal .modal-dialog .modal-content .modal-body form fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 477, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
@@ -1249,18 +1747,19 @@ table.pagos td {
   transition: opacity .15s linear;
 }
 
-/* line 484, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 .in {
   opacity: 1;
 }
 
-/* line 488, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .botonera {
   width: 315px;
   margin: auto;
   font-size: 13px;
+  padding-top: 1em;
 }
-/* line 492, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .botonera #cancel {
   color: rgba(110, 110, 110, 0.9);
   background: none;
@@ -1270,7 +1769,7 @@ table.pagos td {
   margin: auto;
   margin-bottom: 9px;
 }
-/* line 500, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .botonera #cancel:hover {
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
@@ -1281,7 +1780,7 @@ table.pagos td {
   color: white;
   border-color: #ec6c6b;
 }
-/* line 505, ../sass/style.scss */
+/* line 508, ../sass/style.scss */
 .botonera #save {
   color: #ec6c6b;
   background: none;
@@ -1293,7 +1792,7 @@ table.pagos td {
   margin: auto;
   margin-right: 10px;
 }
-/* line 515, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 .botonera #save:hover {
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
@@ -1302,4 +1801,66 @@ table.pagos td {
   -o-transition: 0.5s ease-in-out;
   background: #ec6c6b;
   color: white;
+}
+
+/* line 525, ../sass/style.scss */
+#form div.form-group input, #form div.form-group textarea {
+  border: 1px solid #aaaaaa;
+  padding: 0.75em;
+  color: #6e6e6e;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* line 535, ../sass/style.scss */
+#form div.form-group input:focus, #form div.form-group textarea:focus {
+  border-color: #ec6c6b;
+  color: #ec6c6b;
+  outline: 0;
+  font-weight: 700;
+}
+
+/* line 543, ../sass/style.scss */
+#form .col-6:first-child {
+  padding-right: 2%;
+  padding-left: 0;
+}
+/* line 547, ../sass/style.scss */
+#form .col-6:last-child {
+  padding-left: 2%;
+  padding-right: 0;
+}
+/* line 551, ../sass/style.scss */
+#form div.form-group {
+  margin-bottom: 3em;
+  box-sizing: border-box;
+}
+/* line 554, ../sass/style.scss */
+#form div.form-group label {
+  display: inline-block;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  color: #6e6e6e;
+  font-size: 13px;
+  text-align: left;
+  float: left;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+/* line 567, ../sass/style.scss */
+#form div.form-group input[type="checkbox"], #form div.form-group input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  float: left;
+}
+/* line 577, ../sass/style.scss */
+#form div.form-group input#other {
+  display: none;
+}
+/* line 580, ../sass/style.scss */
+#form div.form-group textarea {
+  height: 143px;
 }
