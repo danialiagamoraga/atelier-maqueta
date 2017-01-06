@@ -523,9 +523,9 @@ table.pagos {
 
 //--Formularios
 %input-style {
-  border: 1px solid rgb(170, 170, 170);
+  border: 1px solid fade_out($default, .6);
   padding: 0.75em;
-  color: rgb(110, 110, 110);
+  color: $default;
   width: 100%;
   box-sizing: border-box;
   font-size: 13px;
@@ -552,15 +552,19 @@ table.pagos {
     margin-bottom: 3em;
     box-sizing: border-box;
     label {
-      display: inline-block;
+      display: block;
       margin-bottom: 1em;
       letter-spacing: 1px;
       color: $default;
       font-size: 13px;
       text-align: left;
-      float: left;
       padding-right: 20px;
       box-sizing: border-box;
+      width: 100%;
+      &.label-radio {
+        width: auto;
+        display: inline-block;
+      }
     }
     input {
       @extend %input-style;
@@ -574,7 +578,7 @@ table.pagos {
         @extend %input-focus;
       }
     }
-    input#other{
+    input#other {
       display: none;
     }
     textarea {
@@ -583,6 +587,26 @@ table.pagos {
       &:focus {
         @extend %input-focus;
       }
+    }
+  }
+  div.add-symbol {
+    display: table;
+    position: relative;
+    label {
+      display: table-caption;
+    }
+    span {
+      display: table-cell;
+      border: 1px solid fade_out($default, .6);
+      border-radius: 1px;
+      padding: 6px 12px;
+      text-align: center;
+      border-right: 0;
+      width: 1%;
+      white-space: nowrap;
+      vertical-align: middle;
+      box-sizing: border-box;
+      color: $default;
     }
   }
 }
