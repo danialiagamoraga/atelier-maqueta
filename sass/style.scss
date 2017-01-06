@@ -467,6 +467,8 @@ table.pagos {
           }
           fieldset {
             border: none;
+            margin: 0;
+            padding: 0;
           }
         }
       }
@@ -489,6 +491,7 @@ table.pagos {
   width: 315px;
   margin: auto;
   font-size: 13px;
+  padding-top: 1em;
   #cancel {
     color: fade_out($default, .1);
     background: none;
@@ -514,6 +517,72 @@ table.pagos {
     margin-right: 10px;
     &:hover {
       @include ifhover();
+    }
+  }
+}
+
+//--Formularios
+%input-style {
+  border: 1px solid rgb(170, 170, 170);
+  padding: 0.75em;
+  color: rgb(110, 110, 110);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+%input-focus {
+  border-color: $corporativo;
+  color: $corporativo;
+  outline: 0;
+  font-weight: 700;
+}
+
+#form {
+  .col-6:first-child {
+    padding-right: 2%;
+    padding-left: 0;
+  }
+  .col-6:last-child {
+    padding-left: 2%;
+    padding-right: 0;
+  }
+  div.form-group {
+    margin-bottom: 3em;
+    box-sizing: border-box;
+    label {
+      display: inline-block;
+      margin-bottom: 1em;
+      letter-spacing: 1px;
+      color: $default;
+      font-size: 13px;
+      text-align: left;
+      float: left;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    input {
+      @extend %input-style;
+      &[type="checkbox"], &[type="radio"] {
+        display: inline-block;
+        width: auto;
+        margin-right: 10px;
+        float: left;
+      }
+      &:focus {
+        @extend %input-focus;
+      }
+    }
+    input#other{
+      display: none;
+    }
+    textarea {
+      @extend %input-style;
+      height: 143px;
+      &:focus {
+        @extend %input-focus;
+      }
     }
   }
 }
