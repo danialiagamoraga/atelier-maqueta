@@ -48,7 +48,7 @@
                                 <label class="label-radio">
                                     <input id="radio-3" name="optionsRadios" type="radio" value="" class="form-control">
                                     Otro</label>
-                                <input id="other" name="color" type="text" class="form-control required">
+                                <input id="other" name="color" type="text" class="form-control required" placeholder="Escribe el color">
                             </div>
                             <div class="form-group">
                                 <label class="block">Descuento</label>
@@ -92,4 +92,5 @@
         } else {
             $('#other').hide();
         }
-    });</script>
+    });
+</script>
