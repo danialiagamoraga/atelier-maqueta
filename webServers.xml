@@ -12,6 +12,22 @@
       <webServer id="47690edb-0e03-4e7c-ab8c-c7bd421708cd" name="sass" url="http://localhost:8888">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="78d9bce5-ee5a-46ce-9da1-1af433216f98" name="santoencanto" url="https://www.santoencanto.cl">
+        <fileTransfer host="www.santoencanto.cl" port="21" rootFolder="/public_html/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="fe45b5d1-a262-4a02-b6ac-e1e67857144c" name="santoencanto" url="https://www.santoencanto.cl">
+        <fileTransfer host="www.santoencanto.cl" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
