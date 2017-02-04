@@ -1,3 +1,12 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/print.scss */
+header, #nav-ppal, .content-title, .nav-print, footer {
+  display: none;
+}
+
+/* line 8, ../sass/print.scss */
+#index-nav .col-8 {
+  width: 100%;
+}
