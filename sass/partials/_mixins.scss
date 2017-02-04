@@ -52,4 +52,6 @@
 
 @mixin ifhover($value: .5s ease-in-out) {
   @include prefixer(transition, $value);
+  background: $corporativo;
+  color: $white;
 }
