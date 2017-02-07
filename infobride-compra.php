@@ -70,7 +70,7 @@
                             </div>
                             <div class="form-group add-symbol">
                                 <label>Total*</label>
-                                <span class="symbol">$</span>
+                                <span>$</span>
                                 <input id="total" name="total" type="text" class="form-control required">
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-<div class="modal fade in" id="compra" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade in" id="medidas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
@@ -7,72 +7,116 @@
                                 aria-hidden="true">×</span></button>
                 </div>
                 <form id="form" action="#" class="wizard" method="post">
-                    <h1>Detalle de compra</h1>
+                    <h1>Medidas</h1>
                     <hr>
                     <fieldset>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label>Vendedora</label>
-                                <select data-placeholder="-" class="chosen-select" multiple style="width:350px;"
-                                        tabindex="4">
-                                    <option value="">-</option>
-                                    <option value="jcampos">Jeannette</option>
-                                    <option value="mcuevas">Mónica</option>
-                                    <option value="smena">Silvia</option>
-                                    <option value="vfierro">Valentina</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-6">
-                                    <label>Modelo</label>
-                                    <select data-placeholder="Elige un vestido" class="chosen-select" tabindex="2">
-                                        <option value="">Elige un vestido</option>
-                                        <option value="Afrodita">Modelo Afrodita</option>
-                                        <option value="Alice">Modelo Alice</option>
-                                        <option value="Alondra">Modelo Alondra</option>
-                                        <option value="Amalia">Modelo Amalia</option>
-                                        <option value="Amatista">Modelo Amatista</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="block">Color</label>
-                                <label class="label-radio">
-                                    <input id="radio-1" name="optionsRadios" type="radio" value="blanco"
-                                           class="form-control">
-                                    Blanco</label>
-                                <label class="label-radio">
-                                    <input id="radio-2" name="optionsRadios" type="radio" value="marfil"
-                                           class="form-control">
-                                    Marfil</label>
-                                <label class="label-radio">
-                                    <input id="radio-3" name="optionsRadios" type="radio" value="" class="form-control">
-                                    Otro</label>
-                                <input id="other" name="color" type="text" class="form-control required" placeholder="Escribe el color">
-                            </div>
-                            <div class="form-group">
-                                <label class="block">Descuento</label>
-                                <label class="label-radio">
-                                    <input id="radio-4" name="discount" type="radio" value="5" class="form-control">
-                                    5%</label>
-                                <label class="label-radio">
-                                    <input id="radio-5" name="discount" type="radio" value="10" class="form-control">
-                                    10%</label>
-                                <label class="label-radio">
-                                    <input id="radio-5" name="discount" type="radio" value="15" class="form-control">
-                                    15%</label>
-                            </div>
+                        <h2>- Contornos:</h2>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Busto</label>
+                            <input id="busto" name="m-busto" type="number" class="form-control">
+                            <span class="symbol">cm</span>
                         </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label>Otros</label>
-                                <textarea></textarea>
-                            </div>
-                            <div class="form-group add-symbol">
-                                <label>Total*</label>
-                                <span class="symbol">$</span>
-                                <input id="total" name="total" type="text" class="form-control required">
-                            </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Sobre busto</label>
+                            <input id="sobre-busto" name="m-sobrebusto" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Bajo busto</label>
+                            <input id="bajo-busto" name="m-bajobusto" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Separación busto</label>
+                            <input id="separacion-busto" name="m-sepbusto" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Cintura</label>
+                            <input id="cintura" name="m-cintura" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Cadera alta</label>
+                            <input id="cadera-alta" name="m-cadealta" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+
+                        <div class="col-4 form-group add-symbol">
+                            <label>Alto cadera alta</label>
+                            <input id="a-cadera-alta" name="m-acadealta" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Cadera baja</label>
+                            <input id="cadera-baja" name="m-cadebaja" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Alto cadera baja</label>
+                            <input id="a-cadera-baja" name="m-acadebaja" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Contorno brazo</label>
+                            <input id="contorno-brazo" name="m-contobrazo" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Ancho puño</label>
+                            <input id="ancho-puño" name="m-anchopuno" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Contorno cuello</label>
+                            <input id="contorno-cuello" name="m-contocuello" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <h2>- Altos:</h2>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Alto busto</label>
+                            <input id="alto-busto" name="a-busto" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Talle delantero</label>
+                            <input id="talle-delantero" name="t-delantero" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Largo total</label>
+                            <input id="largo-total" name="l-total" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Talle espalda</label>
+                            <input id="talle-espalda" name="t-espalda" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Largo manga</label>
+                            <input id="largo-manga" name="l-manga" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Alto costado</label>
+                            <input id="alto-costado" name="a-costado" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Ancho espalda</label>
+                            <input id="ancho-espalda" name="a-espalda" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Diag. escote delantero</label>
+                            <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
+                            <span class="symbol">cm</span>
+                        </div>
+                        <div class="col-4 form-group add-symbol">
+                            <label>Diag. escote espalda</label>
+                            <input id="diag-espalda" name="d-espalda" type="number" class="form-control">
+                            <span class="symbol">cm</span>
                         </div>
                     </fieldset>
                     <div class="botonera">

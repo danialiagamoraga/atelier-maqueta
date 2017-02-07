@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Iniciar sesión</title>
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>

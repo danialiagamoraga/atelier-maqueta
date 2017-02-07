@@ -8,7 +8,7 @@
 //--General
 body {
   font-family: latoregular;
-  font-size: 13px;
+  font-size: 14px;
   color: $default;
   margin: 0;
 }
@@ -67,7 +67,7 @@ li {
   color: $white;
   background-color: $corporativo;
   border: 1px solid $corporativo;
-  padding: 17px;
+  padding: 15px;
   margin: auto;
   display: block;
   text-transform: uppercase;
@@ -77,9 +77,9 @@ li {
   font-size: 11px;
   &:hover {
     transition: all .5s ease-in-out;
-    background: $default;
+    background: $ligth;
     color: $white;
-    border: 1px solid $default;
+    border: 1px solid $ligth;
   }
 }
 
@@ -95,8 +95,27 @@ li {
   text-transform: capitalize;
   &:hover {
     transition: all .5s ease-in-out;
-    background: $default;
+    background: $ligth;
     color: $white;
+    border: 1px solid $ligth;
+  }
+}
+
+%btn-terciario {
+  letter-spacing: 0.1em;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  color: $ligth;
+  border: 1px solid $ligth;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  text-transform: capitalize;
+  &:hover {
+    transition: all .5s ease-in-out;
+    background: $ligth;
+    color: $white;
+    border: 1px solid $ligth;
   }
 }
 
@@ -209,7 +228,7 @@ footer {
     padding-top: 2em;
     display: block
   }
-  .col-6:last-child {
+  .redes {
     text-align: right;
     p {
       color: $white;
@@ -241,7 +260,7 @@ footer {
 }
 
 %index {
-  border: 1px solid $default;
+  border: 1px solid $ligth;
   text-align: center;
   padding: 110px 0 55px 0;
   margin-left: 1%;
@@ -342,6 +361,10 @@ table {
     }
   }
 }
+#pendiente{
+  position: relative;
+  top: -5px;
+}
 
 .paginacion {
   overflow: hidden;
@@ -357,24 +380,17 @@ table {
     li {
       float: left;
       list-style: none;
-      line-height: 33px;
+      line-height: 45px;
       padding: 0 0 0 6px;
       letter-spacing: 1px;
-      color: fade_out($default, .3);
+      color: fade_out($ligth, .3);
       a {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         display: inline-block;
         text-align: center;
-        color: fade_out($default, .5);
-        border: 1px solid fade_out($default, .5);
-        &:hover {
-          color: $corporativo;
-          border-color: $corporativo;
-        }
-        i {
-          line-height: 33px;
-        }
+        line-height: 20px;
+        @extend %btn-terciario;
       }
     }
   }
@@ -391,24 +407,13 @@ table {
       margin-left: 10px;
       list-style: none;
       a {
-        padding: 10px;
-        border: 1px solid fade_out($default, .5);
-        display: block;
-        letter-spacing: 0;
-        &:hover {
-          color: $corporativo;
-          border-color: $corporativo;
-        }
+        @extend %btn-terciario;
       }
     }
-    li:nth-child(2) {
-      a {
-        color: $corporativo;
-        border-color: $corporativo;
-        &:hover {
-          @include ifhover();
-        }
-      }
+  }
+  li:nth-child(2) {
+    a {
+      @extend %btn-secundario;
     }
   }
 }
@@ -421,15 +426,11 @@ table {
     letter-spacing: 1px;
     color: $corporativo;
     font-size: 1.1em;
-    span a {
-      font-family: 'latolight';
-      padding: 10px;
+    .edit {
+      @extend %btn-secundario;
+      display: inline-block;
+      font-size: 13px;
       margin-left: 10px;
-      border: 1px solid;
-      font-size: .8em;
-      &:hover {
-        @include ifhover();
-      }
     }
   }
   hr {
@@ -448,7 +449,7 @@ table {
 
 table.pagos {
   td {
-    padding: 5px 0;
+    padding: 3px 0;
   }
 }
 
@@ -484,6 +485,8 @@ table.pagos {
   .modal-dialog {
     width: 800px;
     margin: 40px auto;
+    max-height: 650px;
+    overflow: scroll;
     .modal-content {
       position: relative;
       background-color: $white;
@@ -501,12 +504,17 @@ table.pagos {
             text-transform: capitalize;
             letter-spacing: 1px;
             font-size: 1.2em;
-            padding: 1em 0 0 0;
+            padding: 1em 0 5px 0;
           }
           fieldset {
             border: none;
             margin: 0;
             padding: 0;
+            h2 {
+              font-size: 14px;
+              margin-bottom: 10px;
+              color: $default;
+            }
           }
         }
       }
@@ -523,6 +531,11 @@ table.pagos {
 
 .in {
   opacity: 1;
+}
+
+#medidas div.add-symbol span {
+  border: 1px solid rgba(110, 110, 110, 0.4) !important;
+  border-left: 1px !important;
 }
 
 .botonera {
@@ -562,7 +575,7 @@ table.pagos {
 //--Formularios
 %input-style {
   border: 1px solid fade_out($default, .6);
-  padding: 0.75em;
+  padding: 0.9em;
   color: $default;
   width: 100%;
   box-sizing: border-box;
@@ -590,15 +603,14 @@ table.pagos {
     margin-bottom: 3em;
     box-sizing: border-box;
     label {
-      display: block;
+      display: inline-block;
       margin-bottom: 1em;
       letter-spacing: 1px;
       color: $default;
-      font-size: 13px;
       text-align: left;
       padding-right: 20px;
       box-sizing: border-box;
-      width: 100%;
+      font-size: 14px;
       &.label-radio {
         width: auto;
         display: inline-block;
@@ -647,6 +659,10 @@ table.pagos {
       color: $default;
     }
   }
+}
+
+#why {
+  display: none;
 }
 
 // Iniciar sesión
@@ -769,3 +785,140 @@ table.pagos {
     padding: 30px 0 80px 0;
   }
 }
+
+//Wizard add novias
+.wizard {
+  .content {
+    width: 100%;
+  }
+  .title {
+    display: none;
+  }
+  fieldset {
+    border: none;
+    padding: 5em 0 2em 0;
+    #add-phone, #add-pay {
+      width: 50px;
+      height: 50px;
+      margin-left: 1em;
+      border: 1px solid $ligth;
+      background: none;
+      color: $ligth;
+      display: inline-block;
+      &:hover {
+        color: $corporativo;
+        border-color: $corporativo;
+      }
+    }
+    label.error {
+      color: $corporativo !important;
+      font-family: "latobold";
+    }
+    input.error {
+      border-color: $corporativo !important;
+    }
+    .size-title {
+      font-size: 14px;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+    .symbol {
+      border-right: 1px solid rgba(110, 110, 110, 0.4) !important;
+      border-left: 0 !important;
+    }
+  }
+  .steps {
+    li {
+      float: left;
+      list-style: none;
+      width: 20%;
+      text-align: center;
+      position: relative;
+      .bg-wizard {
+        height: 4px;
+        border: none;
+        z-index: -1;
+        position: absolute;
+        top: 29px;
+        width: 100%;
+        background-color: $corporativo;
+      }
+      a {
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        background-color: $corporativo;
+        border-radius: 50%;
+        text-align: center;
+        color: $white;
+        display: inline-block;
+        outline: 0;
+        .title-step {
+          display: none;
+        }
+      }
+      .title-step {
+        padding-top: 1em;
+        font-weight: 700;
+        color: $corporativo;
+        letter-spacing: 1.3px;
+        .number {
+          display: none;
+        }
+      }
+      &:nth-child(1) > .bg-wizard, &:nth-child(5) > .bg-wizard {
+        width: 50%;
+      }
+      &:nth-child(1) > .bg-wizard {
+        right: 0;
+      }
+      &:nth-child(5) > .bg-wizard {
+        left: 0;
+      }
+    }
+    .disabled {
+      a {
+        background-color: $ligth;
+        cursor: default;
+      }
+      .title-step {
+        color: $ligth;
+        font-weight: 300;
+      }
+      .bg-wizard {
+        background-color: $ligth;
+      }
+    }
+    .done {
+      a, .bg-wizard {
+        background-color: lighten($corporativo, 20%) !important;
+      }
+      .title-step {
+        color: lighten($corporativo, 20%) !important;
+      }
+    }
+  }
+  .actions {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3em;
+    ul {
+      display: inline-block;
+      text-align: right;
+      li {
+        float: left;
+        margin-left: 0.5em;
+        list-style: none;
+        a {
+          @extend %btn-secundario;
+        }
+      }
+      .disabled a, .disabled a:hover {
+        background: $dirt-white;
+        color: $ligth;
+        border-color: $ligth;
+      }
+    }
+  }
+}
+
