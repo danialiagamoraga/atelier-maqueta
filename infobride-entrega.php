@@ -15,14 +15,26 @@
                                 <label>Entrega</label>
                                 <input id="date" name="abono" type="date" class="form-control">
                             </div>
+                            <div class="form-group" id="who">
+                                <label>Vendedora</label>
+                                <select data-placeholder="Choose a Country..." class="chosen-select">
+                                        tabindex="2">
+                                    <option value="">-</option>
+                                    <option value="jcampos">Jeannette</option>
+                                    <option value="mcuevas">Mónica</option>
+                                    <option value="smena">Silvia</option>
+                                    <option value="vfierro">Valentina</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
                                 <label>Estado</label>
-                                <select data-placeholder="Choose a Country..." class="chosen-select" id="proceso" tabindex="2">
+                                <select data-placeholder="Choose a Country..." class="chosen-select" id="proceso"
+                                        tabindex="2">
                                     <option value="">-</option>
                                     <option value="play">En confección</option>
-                                    <option value="end">Proceso finalizado</option>
+                                    <option value="end" id="end">Proceso finalizado</option>
                                     <option value="cancel" id="cancel">Cancelo servicio</option>
                                     <option value="pause">Postergó boda</option>
                                 </select>

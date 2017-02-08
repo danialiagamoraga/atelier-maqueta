@@ -3,102 +3,140 @@
     <?php require_once('nav-ppal.php'); ?>
     <section id="index-nav" class="col-8">
         <?php require_once('breadcrumbs.php'); ?>
-       <form id="form" action="#" class="wizard">
-           <h1>Información novia</h1>
-           <fieldset>
-               <div class="col-6">
-                   <div class="form-group">
-                       <label>Nombre *</label>
-                       <input id="userName" name="userName" type="text" class="form-control required">
-                   </div>
-                   <div class="form-group">
-                       <label>Email*</label>
-                       <input id="email" name="password" type="email" class="form-control required">
-                   </div>
-                   <div class="form-group">
-                       <label>Matrimonio*</label>
-                       <input id="date" name="marriage" type="date" class="form-control required">
-                   </div>
-                   <div class="form-group">
-                       <input id="region" name="region" type="checkbox" class="form-control">
-                       <label>¿Eres una novia de región?</label>
-                   </div>
-               </div>
-               <div class="col-6">
-                   <div class="form-group phone-info">
-                       <label>Telefono*</label>
-                       <input id="tel" name="phone" type="tel" class="form-control required">
-                   </div>
-                   <div class="form-group add-here"></div>
-                   <div class="form-group phone-botton">
-                       <label>Añadir teléfono</label>
-                       <button id="add-phone">+</button>
-                   </div>
-               </div>
+        <form id="form" action="#" class="wizard">
+            <h1>Información novia</h1>
+            <fieldset>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Nombre *</label>
+                        <input id="userName" name="userName" type="text" class="form-control required">
+                    </div>
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input id="email" name="password" type="email" class="form-control required">
+                    </div>
+                    <div class="form-group">
+                        <label>Matrimonio*</label>
+                        <input id="date" name="marriage" type="date" class="form-control required">
+                    </div>
+                    <div class="form-group">
+                        <input id="region" name="region" type="checkbox" class="form-control">
+                        <label>¿Eres una novia de región?</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group phone-info">
+                        <label>Telefono*</label>
+                        <input id="tel" name="phone" type="tel" class="form-control required">
+                    </div>
+                    <div class="form-group add-here"></div>
+                    <div class="form-group phone-botton">
+                        <label>Añadir teléfono</label>
+                        <button id="add-phone">+</button>
+                    </div>
+                </div>
 
-           </fieldset>
-           <h1>Detalle compra</h1>
-           <fieldset>
-               <div class="col-6">
-                   <div class="form-group">
-                       <label>Vendedora</label>
-                       <select data-placeholder="-" class="chosen-select" multiple style="width:350px;" tabindex="4">
-                           <option value="">-</option>
-                           <option value="jcampos">Jeannette</option>
-                           <option value="mcuevas">Mónica</option>
-                           <option value="smena">Silvia</option>
-                           <option value="vfierro">Valentina</option>
-                       </select>
-                   </div>
-                   <div class="form-group">
-                       <label>Modelo</label>
-                       <select data-placeholder="Elige un vestido" class="chosen-select" tabindex="2">
-                           <option value="">Elige un vestido</option>
-                           <option value="Afrodita">Modelo Afrodita</option>
-                           <option value="Alice">Modelo Alice</option>
-                           <option value="Alondra">Modelo Alondra</option>
-                           <option value="Amalia">Modelo Amalia</option>
-                           <option value="Amatista">Modelo Amatista</option>
-                       </select>
-                   </div>
-                   <div class="form-group">
-                       <label class="block">Color</label>
-                       <label class="label-radio">
-                           <input id="radio-1" name="optionsRadios" type="radio" value="blanco" class="form-control">
-                           Blanco</label>
-                       <label class="label-radio">
-                           <input id="radio-2" name="optionsRadios" type="radio" value="marfil" class="form-control">
-                           Marfil</label>
-                       <label class="label-radio">
-                           <input id="radio-3" name="optionsRadios" type="radio" value="" class="form-control">
-                           Otro</label>
-                       <input id="other" name="color" type="text" class="form-control required">
-                   </div>
-                   <div class="form-group">
-                       <label class="block">Descuento</label>
-                       <label class="label-radio">
-                           <input id="radio-4" name="discount" type="radio" value="5" class="form-control">
-                           5%</label>
-                       <label class="label-radio">
-                           <input id="radio-5" name="discount" type="radio" value="10" class="form-control">
-                           10%</label>
-                       <label class="label-radio">
-                           <input id="radio-5" name="discount" type="radio" value="15" class="form-control">
-                           15%</label>
-                   </div>
-               </div>
-               <div class="col-6">
-                   <div class="form-group">
-                       <label>Otros</label>
-                       <textarea></textarea>
-                   </div>
-                   <div class="form-group add-symbol">
-                       <label>Total*</label>
-                       <span class="symbol">$</span>
-                       <input id="total" name="total" type="text" class="form-control required">
-                   </div>
-               </div>
-           </fieldset>
+            </fieldset>
+            <h1>Detalle compra</h1>
+            <fieldset>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Vendedora</label>
+                        <select data-placeholder="-" class="chosen-select" multiple style="width:350px;" tabindex="4">
+                            <option value="">-</option>
+                            <option value="jcampos">Jeannette</option>
+                            <option value="mcuevas">Mónica</option>
+                            <option value="smena">Silvia</option>
+                            <option value="vfierro">Valentina</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Modelo</label>
+                        <select data-placeholder="Elige un vestido" class="chosen-select" tabindex="2">
+                            <option value="">Elige un vestido</option>
+                            <option value="Afrodita">Modelo Afrodita</option>
+                            <option value="Alice">Modelo Alice</option>
+                            <option value="Alondra">Modelo Alondra</option>
+                            <option value="Amalia">Modelo Amalia</option>
+                            <option value="Amatista">Modelo Amatista</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="block">Color</label>
+                        <label class="label-radio">
+                            <input id="radio-1" name="optionsRadios" type="radio" value="blanco" class="form-control">
+                            Blanco</label>
+                        <label class="label-radio">
+                            <input id="radio-2" name="optionsRadios" type="radio" value="marfil" class="form-control">
+                            Marfil</label>
+                        <label class="label-radio">
+                            <input id="radio-3" name="optionsRadios" type="radio" value="" class="form-control">
+                            Otro</label>
+                        <input id="other" name="color" type="text" class="form-control required">
+                    </div>
+                    <div class="form-group">
+                        <label class="block">Descuento</label>
+                        <label class="label-radio">
+                            <input id="radio-4" name="discount" type="radio" value="5" class="form-control">
+                            5%</label>
+                        <label class="label-radio">
+                            <input id="radio-5" name="discount" type="radio" value="10" class="form-control">
+                            10%</label>
+                        <label class="label-radio">
+                            <input id="radio-5" name="discount" type="radio" value="15" class="form-control">
+                            15%</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Otros</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-group add-symbol">
+                        <label>Total*</label>
+                        <span>$</span>
+                        <input id="total" name="total" type="text" class="form-control required">
+                    </div>
+                </div>
+            </fieldset>
+            <h1>Detalle pago</h1>
+            <fieldset>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Fecha*</label>
+                        <input id="date" name="abono" type="date" class="form-control required">
+                    </div>
+                    <div class="form-group add-symbol">
+                        <label>Total abono</label>
+                        <span>$</span>
+                        <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input id="pendiente" name="pago-pendiente" type="checkbox" class="form-control">
+                        <label style="display:inline-block;">Pago pendiente</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group"><label>Medio de pago</label>
+                        <select data-placeholder="Elige un vestido" class="chosen-select" tabindex="2">
+                            <option value="">Elige un medio de pago</option>
+                            <option value="transbank">Transbank</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="cheque">Cheque</option>
+                            <option value="transferencia">Transferencia</option>
+                        </select>
+                    </div>
+                    <div class="form-group add-symbol">
+                        <label>Nº de boleta</label>
+                        <span>Nº</span>
+                        <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
+                    </div>
+                    <!--<div class="form-group phone-botton">
+                      <label>Añadir pago</label>
+                      <button id="add-pay">+</button>
+                    </div>-->
+                </div>
+            </fieldset>
             <h1>Medidas</h1>
             <fieldset class="m-size">
                 <h2 class="size-title">- Contornos:</h2>
@@ -209,45 +247,6 @@
                     <input id="diag-espalda" name="d-espalda" type="number" class="form-control">
                     <span class="symbol">cm</span>
                 </div>
-            </fieldset>
-            <h1>Detalle pago</h1>
-            <fieldset>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label>Fecha*</label>
-                        <input id="date" name="abono" type="date" class="form-control required">
-                    </div>
-                    <div class="form-group add-symbol">
-                        <label>Total abono</label>
-                        <span>$</span>
-                        <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input id="pendiente" name="pago-pendiente" type="checkbox" class="form-control">
-                        <label style="display:inline-block;">Pago pendiente</label>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group"><label>Medio de pago</label>
-                        <select data-placeholder="Elige un vestido" class="chosen-select" tabindex="2">
-                            <option value="">Elige un medio de pago</option>
-                            <option value="transbank">Transbank</option>
-                            <option value="efectivo">Efectivo</option>
-                            <option value="cheque">Cheque</option>
-                            <option value="transferencia">Transferencia</option>
-                        </select>
-                    </div>
-                    <div class="form-group add-symbol">
-                        <label>Nº de boleta</label>
-                        <span>Nº</span>
-                        <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
-                    </div>
-                    <!--<div class="form-group phone-botton">
-                      <label>Añadir pago</label>
-                      <button id="add-pay">+</button>
-                    </div>-->
-                </div>
-                <div class="form-group add-here"></div>
             </fieldset>
             <h1>Citas</h1>
             <fieldset>

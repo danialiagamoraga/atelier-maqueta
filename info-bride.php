@@ -18,11 +18,12 @@
             <div class="col-6">
                 <p>Nombre: <span>Valentina Fierro</span></p>
                 <p>Matrimonio: <span>12 / 03 / 2016</span></p>
+                <p>Región: Sí.</span></p>
             </div>
             <!-- /col-6 -->
             <div class="col-6">
                 <p>Email: valentina.fierro@gmail.com</p>
-                <p>Teléfono: +569 50488001</p>
+                <p>Teléfono: +569 50488001 / +569 1234567</p>
             </div>
             <!-- /col-6 -->
         </article>
@@ -100,8 +101,6 @@
                 <p>Diagonal escote delantero: 13 cm.</p>
                 <p>Diagonal escote espalda: 15 cm.</p>
                 <p>&nbsp;</p>
-                <p>Entrega telas: -.</p>
-                <p>Recepción vestido: -.</p>
             </div>
             <!-- /col-6 -->
         </article>
@@ -111,11 +110,15 @@
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
+                <p>Modista: Lizbeth</p>
+                <p></p>
                 <p>1ra cita: 12 / 03 / 2018</p>
                 <p>2da cita: -</p>
             </div>
             <!-- /col-6 -->
             <div class="col-6">
+                <p>Entrega telas: -.</p>
+                <p></p>
                 <p>3ra cita: -</p>
                 <p>4ta cita: -</p>
             </div>

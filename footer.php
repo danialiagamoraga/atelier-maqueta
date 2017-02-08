@@ -118,11 +118,18 @@
             }
         });
 
-        $(document).on('change',".chosen-select", function (event,element) {
+        $(document).on('change', ".chosen-select", function (event, element) {
             if (element.selected == "cancel") {
                 $('#why').show();
             } else {
                 $('#why').hide();
+            }
+        });
+        $(document).on('change', ".chosen-select", function (event, element) {
+            if (element.selected == "end") {
+                $('#who').show();
+            } else {
+                $('#who').hide();
             }
         });
 
