@@ -33,6 +33,7 @@
 <script src="js/jquery.steps.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/chosen.jquery.js"></script>
+
 <script>
     $(document).ready(function () {
         $("#wizard").steps();
@@ -125,11 +126,24 @@
                 $('#why').hide();
             }
         });
-        $(document).on('change', ".chosen-select", function (event, element) {
-            if (element.selected == "end") {
-                $('#who').show();
-            } else {
-                $('#who').hide();
+
+
+        $('#perfil').bind('change', function (e) {
+            if ($('#perfil').val() == 'design') {
+                $('#info-design').show();
+                $('#info-admin, #info-seller, #info-add').hide();
+            }
+            else if ($('#perfil').val() == 'admin') {
+                $('#info-admin').show();
+                $('#info-add, #info-seller, #info-design').hide();
+            }
+            else if ($('#perfil').val() == 'seller') {
+                $('#info-seller').show();
+                $('#info-admin, #info-add, #info-design').hide();
+            }
+            else {
+                $('#info-add').show();
+                $('#info-admin, #info-seller, #info-design').hide();
             }
         });
 

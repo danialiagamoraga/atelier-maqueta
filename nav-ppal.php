@@ -10,7 +10,7 @@
             <li><a href="archivador.php">archivador</a></li>
             <li><a href="#">balances</a></li>
             <li><a href="#">descuentos</a></li>
-            <li><a href="#">usuarios</a></li>
+            <li><a href="users.php">usuarios</a></li>
             <li><a href="#">Contactos</a></li>
             <li><a href="#">cerrar sesión</a></li>
         </ul>

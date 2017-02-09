@@ -308,6 +308,26 @@ footer {
   }
 }
 
+.user-list {
+  @extend %index;
+  background-image: url(../img/list.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/list-pink.png);
+  }
+}
+
+.add {
+  @extend %index;
+  background-image: url(../img/add.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/add-pink.png);
+  }
+}
+
 .sewing {
   @extend %index;
   background-image: url(../img/sewing.png);
@@ -597,9 +617,8 @@ table.pagos {
 }
 
 #form {
-  fieldset{
+  fieldset {
     border: none;
-    padding: 0;
   }
   .col-6:first-child {
     padding-right: 2%;
@@ -626,7 +645,7 @@ table.pagos {
         display: inline-block;
       }
     }
-    input {
+    input, select {
       @extend %input-style;
       &[type="checkbox"], &[type="radio"] {
         display: inline-block;
@@ -637,6 +656,14 @@ table.pagos {
       &:focus {
         @extend %input-focus;
       }
+    }
+    select {
+      border-radius: 0px;
+      background: none;
+      -webkit-appearance: none;
+      background: url(../img/arrow.png) no-repeat scroll 7px 7px;
+      background-position: 95% 50%;
+      background-size: 6%;
     }
     input#other {
       display: none;
@@ -671,7 +698,7 @@ table.pagos {
   }
 }
 
-#why, #who {
+#why, #who, #info-admin, #info-seller, #info-design {
   display: none;
 }
 
@@ -836,6 +863,10 @@ table.pagos {
       border-right: 1px solid rgba(110, 110, 110, 0.4) !important;
       border-left: 0 !important;
     }
+    .title-description {
+      padding: 0;
+      margin: 0 0 13px 0;
+    }
   }
   .steps {
     li {
@@ -931,4 +962,5 @@ table.pagos {
     }
   }
 }
+
 

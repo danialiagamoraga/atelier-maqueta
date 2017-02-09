@@ -6,15 +6,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">×</span></button>
                 </div>
-                <form id="form" action="#" class="wizard" method="post">
+                <form id="form" action="#" method="post">
                     <h1>Citas</h1>
                     <hr>
                     <fieldset>
                         <div class="col-6">
                             <div class="form-group">
                                 <label>Modista asignada</label>
-                                <select data-placeholder="Elige una modista" class="chosen-select" tabindex="2">
-                                    <option value="">Elige una modita</option>
+                                <select data-placeholder="" class="chosen-select" tabindex="2">
+                                    <option value="">Elige una modista</option>
                                     <option value="Li">Li</option>
                                     <option value="Andrea">Andrea</option>
                                     <option value="Teresa">Teresa</option>

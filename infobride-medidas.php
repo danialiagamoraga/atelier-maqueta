@@ -6,7 +6,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">×</span></button>
                 </div>
-                <form id="form" action="#" class="wizard" method="post">
+                <form id="form" action="#" method="post">
                     <h1>Medidas</h1>
                     <hr>
                     <fieldset>

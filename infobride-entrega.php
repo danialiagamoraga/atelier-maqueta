@@ -6,7 +6,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">×</span></button>
                 </div>
-                <form id="form" action="#" class="wizard" method="post">
+                <form id="form" action="#" method="post">
                     <h1>Entrega</h1>
                     <hr>
                     <fieldset>
@@ -17,9 +17,9 @@
                             </div>
                             <div class="form-group" id="who">
                                 <label>Vendedora</label>
-                                <select data-placeholder="Choose a Country..." class="chosen-select">
+                                <select data-placeholder="-" class="chosen-select">
                                         tabindex="2">
-                                    <option value="">-</option>
+                                    <option value="null" selected="selected">-</option>
                                     <option value="jcampos">Jeannette</option>
                                     <option value="mcuevas">Mónica</option>
                                     <option value="smena">Silvia</option>
@@ -30,14 +30,14 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label>Estado</label>
-                                <select data-placeholder="Choose a Country..." class="chosen-select" id="proceso"
-                                        tabindex="2">
-                                    <option value="">-</option>
+                                <select id="estado">
+                                    <option value="null">-</option>
                                     <option value="play">En confección</option>
                                     <option value="end" id="end">Proceso finalizado</option>
                                     <option value="cancel" id="cancel">Cancelo servicio</option>
                                     <option value="pause">Postergó boda</option>
                                 </select>
+
                             </div>
                         </div>
                         <div class="col-12" id="why">

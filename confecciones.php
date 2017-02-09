@@ -9,11 +9,6 @@
       <p>+</p>
       </a> 
       <!-- /col-4 index dress-->
-      <a href="add-modista.php" class="col-4 scissors">
-      <h3 class="index-title">añadir modista</h3>
-      <p>+</p>
-      </a> 
-      <!-- /col-4 index size-->
   </section>
   <!--/#index .col-8 --> 
 </section>
