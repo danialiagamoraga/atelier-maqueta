@@ -147,6 +147,20 @@
             }
         });
 
+        $('#estado').bind('change', function (e) {
+            if ($('#estado').val() == 'end') {
+                $('#who').show();
+                $('#why').hide();
+            }
+            else if ($('#estado').val() == 'cancel') {
+                $('#why').show();
+                $('#who').hide();
+            }
+            else {
+                $('#who, #why').hide();
+            }
+        });
+
         $('.label-radio').click(function () {
             if ($('#radio-3').is(':checked')) {
                 $('#other').show();

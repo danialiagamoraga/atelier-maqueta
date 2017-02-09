@@ -33,8 +33,8 @@
                                 <select id="estado">
                                     <option value="null">-</option>
                                     <option value="play">En confección</option>
-                                    <option value="end" id="end">Proceso finalizado</option>
-                                    <option value="cancel" id="cancel">Cancelo servicio</option>
+                                    <option value="end">Proceso finalizado</option>
+                                    <option value="cancel">Cancelo servicio</option>
                                     <option value="pause">Postergó boda</option>
                                 </select>
 
