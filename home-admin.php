@@ -14,10 +14,10 @@
       <p>fichas sin asignar</p>
       </a> 
       <!-- /col-4 index size-->
-       <a href="#" class="col-4 process ">
+      <!--<a href="#" class="col-4 process ">
       <h3 class="index-title">buscar</h3>
       <p>realizar busqueda</p>
-      </a> 
+      </a> -->
       <!-- /col-4 index process-->
   </section>
   <!--/#index .col-8 --> 

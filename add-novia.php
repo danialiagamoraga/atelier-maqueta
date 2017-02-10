@@ -21,7 +21,7 @@
                     </div>
                     <div class="form-group">
                         <input id="region" name="region" type="checkbox" class="form-control">
-                        <label>¿Eres una novia de región?</label>
+                        <label>¿Novia de región?</label>
                     </div>
                 </div>
                 <div class="col-6">

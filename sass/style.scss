@@ -144,15 +144,20 @@ header {
   float: right;
   li {
     float: left;
-    margin-left: 10px;
   }
   li:first-child {
     letter-spacing: 0.1em;
-    font-size: 0.9em;
-    span {
-      color: $corporativo;
+    font-size: 17px;
+    margin-right: 20px;
+    color: $ligth;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    &:hover {
+      transition: all .5s ease-in-out;
+      color: $corporativo !important;
     }
   }
+
   li:last-child {
     a {
       color: $corporativo;
@@ -160,7 +165,7 @@ header {
       letter-spacing: 1px;
       text-transform: uppercase;
       border: 1px solid $corporativo;
-      padding: 10px 10px;
+      padding: 15px;
       &:hover {
         @include ifhover;
       }
@@ -595,6 +600,85 @@ table.pagos {
     &:hover {
       @include ifhover();
     }
+  }
+}
+
+.m-search {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($ligth, 0.5);
+  z-index: 99999;
+  display: none;
+  .bg-search {
+    margin: 0;
+    float: right;
+    background-color: $white;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    h1 {
+      font-family: "latolight";
+      text-transform: uppercase;
+      font-size: 25px;
+      color: $corporativo;
+      padding-top: 5em;
+      span {
+        font-family: "latobold";
+        display: block;
+        font-size: 30px;
+      }
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 25px 15px;
+      box-sizing: border-box;
+      margin-top: 30px;
+      font-size: 15px;
+      border: none;
+      border-bottom: 1px solid $ligth;
+      outline: none;
+      color: $default;
+      text-transform: uppercase;
+      &:focus {
+        border-color: $corporativo;
+        font-family: "latobold";
+        color: $corporativo;
+      }
+    }
+    input[type="submit"] {
+      @extend %btn-secundario;
+      background: none;
+      outline: none;
+      width: 100%;
+      margin-top: 40px;
+      font-size: 15px;
+    }
+    .cerrar {
+      float: right;
+      font-size: 25px;
+      color: lighten($corporativo, 10%);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      background: none;
+      border: none;
+      &:hover {
+        color: $default;
+        transition: all .5s ease-in-out;
+      }
+    }
+  }
+}
+
+.no-result {
+  font-weight: 100;
+  span {
+    font-family: "latobold";
+    color: $corporativo;
   }
 }
 

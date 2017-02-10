@@ -127,7 +127,6 @@
             }
         });
 
-
         $('#perfil').bind('change', function (e) {
             if ($('#perfil').val() == 'design') {
                 $('#info-design').show();
@@ -147,7 +146,7 @@
             }
         });
 
-        $('#estado').bind('change', function (e) {
+        $('#estado').bind('change', function (d) {
             if ($('#estado').val() == 'end') {
                 $('#who').show();
                 $('#why').hide();
@@ -170,6 +169,31 @@
         });
 
         $('.chosen-select').chosen({width: "100%"});
+
+        $('.search').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/search-modal.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $(".m-search").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
 
         // Asociar un evento al botón que muestra la ventana modal
         $('#info-novia').click(function () {
