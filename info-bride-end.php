@@ -1,12 +1,12 @@
 <?php require_once('header-in.php'); ?>
 <section id="admin" class="content">
     <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav" class="col-8">
+    <section id="index-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <div class="nav-print">
             <ul>
                 <li class=""><a href="#">volver atrás</a></li>
-                <li class=""><a href="#" class=""><i class="fa fa-print" aria-hidden="true"></i></a></li>
+                <li class=""><a href="#" class="" onClick="window.print()"><i class="fa fa-print" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <article class="info-novia">

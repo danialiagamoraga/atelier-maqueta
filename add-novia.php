@@ -1,7 +1,7 @@
 <?php require_once('header-in.php'); ?>
 <section id="admin" class="content">
     <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav" class="col-8">
+    <section id="index-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
             <h1>Información novia</h1>

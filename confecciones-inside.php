@@ -2,7 +2,7 @@
 <section id="admin" class="content">
 
     <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav" class="col-8">
+    <section id="index-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <table>
             <tr class="encabezado">

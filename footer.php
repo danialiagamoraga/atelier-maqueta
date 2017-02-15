@@ -1,6 +1,6 @@
 <footer>
     <div class="content">
-        <div class="col-6 ">
+        <div>
             <address>
                 <a href="mailto:soynovia@santoencanto.cl">soynovia@santoencanto.cl</a><br>
                 <a href="tel:+56226388378">+562 2638 8378</a><br>
@@ -11,7 +11,7 @@
             <small>Desarrollado por <a href="http://www.somosbrutos.cl" target="_blank">Brutos</a>.</small>
         </div>
         <!-- /col-6 -->
-        <div class="col-6 redes">
+        <div class="redes">
             <p>Like &amp; Síguenos</p>
             <ul>
                 <li><a href="https://www.facebook.com/santoencanto/" target="_blank"><i class="fa fa-facebook"
@@ -130,28 +130,32 @@
         $('#perfil').bind('change', function (e) {
             if ($('#perfil').val() == 'design') {
                 $('#info-design').show();
-                $('#info-admin, #info-seller, #info-add').hide();
+                $('#info-admin, #info-seller, #info-add, #info-taller').hide();
             }
             else if ($('#perfil').val() == 'admin') {
                 $('#info-admin').show();
-                $('#info-add, #info-seller, #info-design').hide();
+                $('#info-add, #info-seller, #info-design, #info-taller').hide();
             }
             else if ($('#perfil').val() == 'seller') {
                 $('#info-seller').show();
-                $('#info-admin, #info-add, #info-design').hide();
+                $('#info-admin, #info-add, #info-design, #info-taller').hide();
+            }
+            else if ($('#perfil').val() == 'atelier') {
+                $('#info-taller').show();
+                $('#info-add, #info-seller, #info-design, #info-admin').hide();
             }
             else {
                 $('#info-add').show();
-                $('#info-admin, #info-seller, #info-design').hide();
+                $('#info-admin, #info-seller, #info-design, #info-taller').hide();
             }
         });
 
-        $('#estado').bind('change', function (d) {
-            if ($('#estado').val() == 'end') {
+        $(document).on('change','#estado', function (d) {
+            if ($(this).val() == 'end') {
                 $('#who').show();
                 $('#why').hide();
             }
-            else if ($('#estado').val() == 'cancel') {
+            else if ($(this).val() == 'cancel') {
                 $('#why').show();
                 $('#who').hide();
             }

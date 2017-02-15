@@ -14,8 +14,7 @@ body {
 }
 
 .content {
-  margin: auto;
-  width: 90%;
+  @include container(90%);
   overflow: hidden;
 }
 
@@ -179,6 +178,7 @@ header {
 }
 
 #nav-ppal {
+  @include span(3);
   nav ul {
     padding: 0px;
     li {
@@ -233,7 +233,14 @@ footer {
     padding-top: 2em;
     display: block
   }
+  .content {
+    div:first-child {
+      @include span(6);
+    }
+  }
+
   .redes {
+    @include span(6 at 7);
     text-align: right;
     p {
       color: $white;
@@ -260,15 +267,10 @@ footer {
 }
 
 //--Indice de contenidos
-#index-nav .col-4 {
-  width: 32.33333%;
-}
-
 %index {
   border: 1px solid $ligth;
   text-align: center;
   padding: 110px 0 55px 0;
-  margin-left: 1%;
   &:hover {
     border-color: $corporativo;
   }
@@ -612,15 +614,12 @@ table.pagos {
   z-index: 99999;
   display: none;
   .bg-search {
-    margin: 0;
-    float: right;
     background-color: $white;
     position: absolute;
     bottom: 0;
     top: 0;
     right: 0;
     padding: 30px;
-    box-sizing: border-box;
     h1 {
       font-family: "latolight";
       text-transform: uppercase;
@@ -782,7 +781,7 @@ table.pagos {
   }
 }
 
-#why, #who, #info-admin, #info-seller, #info-design {
+#why, #who, #info-admin, #info-seller, #info-design, #info-taller {
   display: none;
 }
 
@@ -1047,4 +1046,8 @@ table.pagos {
   }
 }
 
-
+@include breakpoint($mobile-small) {
+  .col-8 {
+    @include span(12);
+  }
+}

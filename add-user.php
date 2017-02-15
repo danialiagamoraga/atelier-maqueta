@@ -2,7 +2,7 @@
 <section id="admin" class="content">
 
     <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav" class="col-8">
+    <section id="index-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
             <h1>Información Usuario</h1>
@@ -54,8 +54,9 @@
                         <select id="perfil">
                             <option value="null">-</option>
                             <option value="admin">Administrador</option>
-                            <option value="seller" id="end">Vendedor</option>
-                            <option value="design" id="cancel">Modista</option>
+                            <option value="atelier">Taller</option>
+                            <option value="seller">Vendedor</option>
+                            <option value="design">Modista</option>
                         </select>
                     </div>
                 </div>
@@ -65,30 +66,16 @@
                         <p>Selecciona el perfil de usuario que corresponda.</p>
                     </div>
                     <div id="info-admin">
-                        <p>Si asignas este perfil, el usuario tendrá acceso total al panel de administración Atelier.</p>
+                        <p>El usuario tendrá acceso total al panel de administración Atelier.</p>
+                    </div>
+                    <div id="info-taller">
+                        <p>El usuario podrá añadir, modificar y eliminar el contenido, además tendrá acceso al inventario.</p>
                     </div>
                     <div id="info-seller">
-                        <p>Si asignas este perfil, el usuario podrá añadir, modificar y eliminar información de las novias.</p>
+                        <p>El usuario podrá añadir, modificar y eliminar el contenido.</p>
                     </div>
                     <div id="info-design">
-                        <p>Si asignas este perfil, el usuario podrá visualizar su calendario de citas y libreta de contactos. </p>
-                    </div>
-                    <div id="info-design">
-                        <p>Si asignas este perfil, el usuario podrá visualizar su calendario de citas y libreta de contactos. </p>
-                    </div>
-                </div>
-            </fieldset>
-            <h1>Añadir a contactos</h1>
-            <fieldset>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label>¿Desea añadir a este contacto a tu libreta?</label>
-                        <label class="label-radio">
-                            <input id="radio-4" name="contacto" type="radio" value="yes" class="form-control">
-                            Sí, deseo añadirlo a mis contactos</label>
-                        <label class="label-radio">
-                            <input id="radio-5" name="contacto" type="radio" value="no" class="form-control">
-                            No, lo añadiré más tarde.</label>
+                        <p>El usuario tendrá acceso a su propio calendario de citas.Si asignas este perfil.</p>
                     </div>
                 </div>
             </fieldset>

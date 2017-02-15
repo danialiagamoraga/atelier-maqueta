@@ -1,100 +1,136 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 2, ../sass/partials/_config.scss */
-.row:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
 /* line 14, ../sass/partials/_config.scss */
-.row + .row {
-  margin-top: 1%;
-}
-
-/* line 19, ../sass/partials/_config.scss */
-[class^="col-"] {
-  float: left;
-  padding-right: 1%;
-  padding-left: 1%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/*
-.col-1  { width:5.583333333333333%; }
-.col-2  { width:14.16666666666667%; }
-.col-3  { width:22.75%; }
-.col-4  { width:31.33333333333333%; }
-.col-5  { width:39.91666666666667%; }
-.col-6  { width:48.5%; }
-.col-7  { width:57.08333333333333%; }
-.col-8  { width:65.66666666666666%; }
-.col-9  { width:74.25%; }
-.col-10 { width:82.83333333333333%; }
-.col-11 { width:91.41666666666666%; }
-.col-12 { width:100%; }
-*/
-/* line 45, ../sass/partials/_config.scss */
 .col-1 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 8.33333%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 18, ../sass/partials/_config.scss */
+.col-2 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 22, ../sass/partials/_config.scss */
+.col-3 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 26, ../sass/partials/_config.scss */
+.col-4 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 30, ../sass/partials/_config.scss */
+.col-5 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 34, ../sass/partials/_config.scss */
+.col-6 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 38, ../sass/partials/_config.scss */
+.col-7 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
+}
+
+/* line 42, ../sass/partials/_config.scss */
+.col-8 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
 }
 
 /* line 46, ../sass/partials/_config.scss */
-.col-2 {
-  width: 16.66667%;
-}
-
-/* line 47, ../sass/partials/_config.scss */
-.col-3 {
-  width: 25%;
-}
-
-/* line 48, ../sass/partials/_config.scss */
-.col-4 {
-  width: 33.33333%;
-}
-
-/* line 49, ../sass/partials/_config.scss */
-.col-5 {
-  width: 41.66667%;
+.col-9 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
 }
 
 /* line 50, ../sass/partials/_config.scss */
-.col-6 {
-  width: 50%;
-}
-
-/* line 51, ../sass/partials/_config.scss */
-.col-7 {
-  width: 58.33333%;
-}
-
-/* line 52, ../sass/partials/_config.scss */
-.col-8 {
-  width: 66.66667%;
-}
-
-/* line 53, ../sass/partials/_config.scss */
-.col-9 {
-  width: 75%;
+.col-10 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
 }
 
 /* line 54, ../sass/partials/_config.scss */
-.col-10 {
-  width: 83.33333%;
-}
-
-/* line 55, ../sass/partials/_config.scss */
 .col-11 {
-  width: 91.66667%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
 }
 
-/* line 56, ../sass/partials/_config.scss */
+/* line 58, ../sass/partials/_config.scss */
 .col-12 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
+  float: left;
+  padding-left: 0.26042%;
+  padding-right: 0.26042%;
 }
 
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -103,7 +139,7 @@
  * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
  * body `font-size` is set using `em` units.
  */
-/* line 106, ../../../../.rvm/gems/ruby-2.2.6/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 106, ../../../../.rvm/gems/ruby-2.2.6/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
   line-height: 1.5em;

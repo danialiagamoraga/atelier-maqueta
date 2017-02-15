@@ -1,4 +1,4 @@
-<section class="col-3" id="nav-ppal">
+<section id="nav-ppal">
     <h2 class="title-user">¡Hola Jeannette!</h2>
     <p>Añade y edita la información <br>
         de nuestras #novias.</p>

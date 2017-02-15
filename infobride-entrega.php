@@ -17,14 +17,14 @@
                             </div>
                             <div class="form-group" id="who">
                                 <label>Vendedora</label>
-                                <select data-placeholder="-" class="chosen-select">
-                                        tabindex="2">
+                                <select id="entrega">
                                     <option value="null" selected="selected">-</option>
                                     <option value="jcampos">Jeannette</option>
                                     <option value="mcuevas">Mónica</option>
                                     <option value="smena">Silvia</option>
                                     <option value="vfierro">Valentina</option>
                                 </select>
+
                             </div>
                         </div>
                         <div class="col-6">
@@ -41,8 +41,10 @@
                             </div>
                         </div>
                         <div class="col-12" id="why">
-                            <label>Motivo</label>
-                            <textarea placeholder="Escribe el motivo de la cancelación"></textarea>
+                            <div class="form-group">
+                                <label>Motivo</label>
+                                <textarea placeholder="Escribe el motivo de la cancelación"></textarea>
+                            </div>
                         </div>
                     </fieldset>
                     <div class="botonera">

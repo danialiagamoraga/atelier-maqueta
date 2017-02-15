@@ -1,56 +1,60 @@
-//----- Extends
-%clearfix:after {
-  display:block;
-  clear:both;
-  content:'';
+$susy: (
+        columns: 12,
+        gutters: 1/15,
+        gutter-position: inside,
+);
+
+$mobile-small: 1px 240px;
+$mobile-large: 320px;
+$tablet-small: 480px;
+$tablet-large: 769px;
+$screen-small: 1024px;
+$screen-large: 1280px;
+
+.col-1 {
+  @include span(1);
 }
 
-//----- Grid System
-$grid-spacing:1%;
-
-.row {
-  @extend %clearfix;
-
-  & + & {
-    margin-top:$grid-spacing;
-  }
+.col-2 {
+  @include span(2);
 }
 
-[class^="col-"] {
-  float:left;
-  padding-right:$grid-spacing;
-  padding-left: $grid-spacing;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+.col-3 {
+  @include span(3);
 }
 
-//----- Columns (Manual)
-/*
-.col-1  { width:5.583333333333333%; }
-.col-2  { width:14.16666666666667%; }
-.col-3  { width:22.75%; }
-.col-4  { width:31.33333333333333%; }
-.col-5  { width:39.91666666666667%; }
-.col-6  { width:48.5%; }
-.col-7  { width:57.08333333333333%; }
-.col-8  { width:65.66666666666666%; }
-.col-9  { width:74.25%; }
-.col-10 { width:82.83333333333333%; }
-.col-11 { width:91.41666666666666%; }
-.col-12 { width:100%; }
-*/
+.col-4 {
+  @include span (4);
+}
 
-//----- Columns (Automatic)
-.col-1   { width:(100% / 12);}
-.col-2   { width:(100% / 6)}
-.col-3   { width:(100% / 4)}
-.col-4   { width:(100% / 3)}
-.col-5   { width:(100% / 2.4)}
-.col-6   { width:(100% / 2)}
-.col-7   { width:(100% / 1.714285714285714)}
-.col-8   { width:(100% / 1.5)}
-.col-9   { width:(100% / 1.333333333333333)}
-.col-10  { width:(100% / 1.2)}
-.col-11  { width:(100% / 1.090909090909091)}
-.col-12  { width:100%; }
+.col-5 {
+  @include span (5);
+}
+
+.col-6 {
+  @include span (6);
+}
+
+.col-7 {
+  @include span (7);
+}
+
+.col-8 {
+  @include span (8);
+}
+
+.col-9 {
+  @include span (9);
+}
+
+.col-10 {
+  @include span (10);
+}
+
+.col-11 {
+  @include span (12);
+}
+
+.col-12 {
+  @include span (12);
+}
