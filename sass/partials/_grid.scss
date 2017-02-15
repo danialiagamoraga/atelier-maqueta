@@ -13,6 +13,7 @@ $screen-large: 1280px;
 
 .col-1 {
   @include span(1);
+  position: relative;
 }
 
 .col-2 {
@@ -58,3 +59,7 @@ $screen-large: 1280px;
 .col-12 {
   @include span (12);
 }
+
+/*[class^="col-"] {
+  position: relative;
+}*/
