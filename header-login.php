@@ -9,7 +9,7 @@
 
 <body>
 <header>
-    <div class="content">
+    <div class="contenedor">
         <div class="col-4">
             <h1 class="logo"><a href="#">santo encanto <span>#IniciarSesión</span></a></h1>
         </div>

@@ -1,4 +1,4 @@
-<section id="follow" class="content">
+<section id="follow" class="contenedor">
   <h2 class="title-follow">like <span class="y">&amp;</span> <span class="word-follow">Síguenos</span></h2>
   <ul class="col-5">
     <li class="col-4"><a href="https://www.facebook.com/santoencanto/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> santoencanto</a></li>

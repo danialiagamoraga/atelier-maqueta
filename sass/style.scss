@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 
-.content {
+.contenedor {
   @include container(90%);
   overflow: hidden;
 }
@@ -128,12 +128,14 @@ header {
   text-transform: uppercase;
   box-sizing: border-box;
   letter-spacing: 0.1em;
-  line-height: 40px;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: normal;
   span {
     font-size: 0.5em;
     text-transform: capitalize;
+  }
+  .user {
+    display: none;
   }
 }
 
@@ -143,11 +145,8 @@ header {
   float: right;
   li {
     float: left;
-  }
-  li:first-child {
     letter-spacing: 0.1em;
-    font-size: 17px;
-    margin-right: 20px;
+    font-size: 13px;
     color: $ligth;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -156,15 +155,19 @@ header {
       color: $corporativo !important;
     }
   }
+  .search {
+    margin-right: 20px;
+    font-size: 17px;
+  }
 
   li:last-child {
     a {
       color: $corporativo;
-      font-size: 1em;
       letter-spacing: 1px;
       text-transform: uppercase;
       border: 1px solid $corporativo;
       padding: 15px;
+      margin-right: 0;
       &:hover {
         @include ifhover;
       }
@@ -233,14 +236,8 @@ footer {
     padding-top: 2em;
     display: block
   }
-  .content {
-    div:first-child {
-      @include span(6);
-    }
-  }
 
   .redes {
-    @include span(6 at 7);
     text-align: right;
     p {
       color: $white;
@@ -271,6 +268,7 @@ footer {
   border: 1px solid $ligth;
   text-align: center;
   padding: 110px 0 55px 0;
+  display: block;
   &:hover {
     border-color: $corporativo;
   }
@@ -281,6 +279,12 @@ footer {
     text-transform: capitalize;
     margin: 0;
     font-size: 1.1em;
+  }
+}
+
+.sub-nav {
+  .col-4:nth-child(n+5) {
+    padding-top: 1.38888%;
   }
 }
 
@@ -362,29 +366,36 @@ footer {
   font-family: 'latobold';
 }
 
-table {
+.table-container {
   width: 100%;
-  text-align: left;
-  letter-spacing: 1px;
-  border-collapse: separate;
-  border-spacing: 0 5px;
-  th, td {
-    width: 25%;
-    padding: 1em;
-  }
-  tr.encabezado {
-    @extend %encabezado;
-    background-color: $corporativo;
-  }
-  tr.filtro {
-    @extend %encabezado;
-    background-color: fade_out($corporativo, .28);
-  }
-  tr.dato-table {
-    background-color: fade_out($corporativo, .9);
-    &:hover {
-      color: $corporativo;
-      font-family: latobold;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+  table {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    min-width: 700px;
+    th, td {
+      width: 25%;
+      padding: 1em;
+    }
+    tr.encabezado {
+      @extend %encabezado;
+      background-color: $corporativo;
+    }
+    tr.filtro {
+      @extend %encabezado;
+      background-color: fade_out($corporativo, .28);
+    }
+    tr.dato-table {
+      background-color: fade_out($corporativo, .9);
+      &:hover {
+        color: $corporativo;
+        font-family: latobold;
+      }
     }
   }
 }
@@ -619,7 +630,7 @@ table.pagos {
     bottom: 0;
     top: 0;
     right: 0;
-    padding: 30px;
+    padding: 30px !important;
     h1 {
       font-family: "latolight";
       text-transform: uppercase;
@@ -952,52 +963,57 @@ table.pagos {
     }
   }
   .steps {
-    li {
-      float: left;
-      list-style: none;
-      width: 20%;
-      text-align: center;
-      position: relative;
-      .bg-wizard {
-        height: 4px;
-        border: none;
-        z-index: -1;
-        position: absolute;
-        top: 29px;
-        width: 100%;
-        background-color: $corporativo;
-      }
-      a {
-        line-height: 60px;
-        width: 60px;
-        height: 60px;
-        background-color: $corporativo;
-        border-radius: 50%;
+    ul {
+      overflow: auto;
+      padding: 0;
+      margin: 20px 0 0 0;
+      li {
+        float: left;
+        list-style: none;
+        width: 20%;
         text-align: center;
-        color: $white;
-        display: inline-block;
-        outline: 0;
+        position: relative;
+        .bg-wizard {
+          height: 4px;
+          border: none;
+          z-index: -1;
+          position: absolute;
+          top: 29px;
+          width: 100%;
+          background-color: $corporativo;
+        }
+        a {
+          line-height: 60px;
+          width: 60px;
+          height: 60px;
+          background-color: $corporativo;
+          border-radius: 50%;
+          text-align: center;
+          color: $white;
+          display: inline-block;
+          outline: 0;
+          .title-step {
+            display: none;
+          }
+        }
         .title-step {
-          display: none;
+          padding-top: 1em;
+          font-weight: 700;
+          color: $corporativo;
+          letter-spacing: 1.3px;
+          .number {
+            display: none;
+          }
         }
-      }
-      .title-step {
-        padding-top: 1em;
-        font-weight: 700;
-        color: $corporativo;
-        letter-spacing: 1.3px;
-        .number {
-          display: none;
+        &:nth-child(1) > .bg-wizard, &:last-child > .bg-wizard {
+          width: 50%;
         }
-      }
-      &:nth-child(1) > .bg-wizard, &:last-child > .bg-wizard {
-        width: 50%;
-      }
-      &:nth-child(1) > .bg-wizard {
-        right: 0;
-      }
-      &:nth-child(5) > .bg-wizard {
-        left: 0;
+        &:nth-child(1) > .bg-wizard {
+          right: 0;
+        }
+        &:nth-child(5) > .bg-wizard {
+          left: 0;
+        }
       }
     }
     .disabled {
@@ -1046,8 +1062,184 @@ table.pagos {
   }
 }
 
-@include breakpoint($mobile-small) {
-  .col-8 {
+// Hamburger menu
+.top-animate {
+  background: rgb(93, 91, 91) !important;
+  top: 13px !important;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.mid-animate {
+  opacity: 0
+}
+
+.bottom-animate {
+  background: rgb(93, 91, 91) !important;
+  top: 13px !important;
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg)
+}
+
+.top-menu {
+  top: 4px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: $ligth;
+}
+
+.mid-menu {
+  top: 13px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: $ligth;
+}
+
+.bottom-menu {
+  top: 22px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: $ligth;
+}
+
+.menui {
+  background: $ligth;
+  transition: 0.6s ease;
+  transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+  margin-top: 10px;
+  position: absolute;
+}
+
+.icon {
+  z-index: 999;
+  position: absolute;
+  display: none;
+  padding: 9px;
+  height: 32px;
+  width: 32px;
+  margin: 0px;
+  top: 2.3%;
+  right: 4%;
+  color: $ligth;
+}
+
+.mobilenav {
+  font-family: inherit;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  li {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    &:first-child {
+      margin-top: 60px
+    }
+    a {
+      font-size: 150%;
+      color: $default;
+      text-decoration: none;
+      font-weight: 300;
+      width: 100%;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@include breakpoint ($small) {
+  .col-4 {
+    @include span (12);
+  }
+  .col-6 {
     @include span(12);
+  }
+  .col-9 {
+    @include span (12);
+  }
+  //Header
+  header {
+    .col-4 {
+      @include span (9);
+      .logo {
+        .company {
+          display: none;
+        }
+        .user {
+          display: inline-block;
+        }
+      }
+    }
+    .col-8 {
+      @include span (3);
+    }
+    .list-ppal {
+      li:last-child {
+        display: none;
+      }
+      .search {
+        margin-right: 60px;
+      }
+    }
+  }
+  .icon {
+    display: block;
+  }
+  //nav-ppal
+  #nav-ppal {
+    display: none;
+  }
+  //Index-nav
+  .paginacion {
+    p {
+      display: none;
+    }
+    ul {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .sub-nav{
+    .col-4{
+      margin-bottom: 10px;
+    }
+  }
+  //Formularios
+  #form {
+    fieldset {
+      .col-6 {
+        padding: 0 !important;
+      }
+      .col-4 {
+        @include span (6);
+      }
+    }
+  }
+  .wizard {
+    .actions {
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  //Ficha Novia
+  .nav-print {
+    li:last-child {
+      display: none;
+    }
+  }
+  .info-novia {
+    padding-bottom: 20px;
+    .edit {
+      display: none !important;
+    }
   }
 }

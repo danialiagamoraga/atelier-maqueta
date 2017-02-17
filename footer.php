@@ -1,6 +1,6 @@
 <footer>
-    <div class="content">
-        <div>
+    <div class="contenedor">
+        <div class="col-6">
             <address>
                 <a href="mailto:soynovia@santoencanto.cl">soynovia@santoencanto.cl</a><br>
                 <a href="tel:+56226388378">+562 2638 8378</a><br>
@@ -11,7 +11,7 @@
             <small>Desarrollado por <a href="http://www.somosbrutos.cl" target="_blank">Brutos</a>.</small>
         </div>
         <!-- /col-6 -->
-        <div class="redes">
+        <div class="redes col-6">
             <p>Like &amp; Síguenos</p>
             <ul>
                 <li><a href="https://www.facebook.com/santoencanto/" target="_blank"><i class="fa fa-facebook"
@@ -150,7 +150,7 @@
             }
         });
 
-        $(document).on('change','#estado', function (d) {
+        $(document).on('change', '#estado', function (d) {
             if ($(this).val() == 'end') {
                 $('#who').show();
                 $('#why').hide();
@@ -344,8 +344,30 @@
                 },
             });
         });
-
-
+        //Hamburger script
+        togglescroll()
+        $(".icon").click(function () {
+            $(".mobilenav").fadeToggle(500);
+            $(".top-menu").toggleClass("top-animate");
+            $("body").toggleClass("noscroll");
+            $(".mid-menu").toggleClass("mid-animate");
+            $(".bottom-menu").toggleClass("bottom-animate");
+        });
+        function togglescroll() {
+            $('body').on('click', function (e) {
+                if (!$(e.target).hasClass('icon') && $('body').hasClass('noscroll')) {
+                }
+            });
+        }
     }); //Final
+    $(document).keydown(function (e) {
+        if (e.keyCode == 27) {
+            $(".mobilenav").fadeOut(500);
+            $(".top-menu").removeClass("top-animate");
+            $("body").removeClass("noscroll");
+            $(".mid-menu").removeClass("mid-animate");
+            $(".bottom-menu").removeClass("bottom-animate");
+        }
+    });
 </script>
 </body></html>

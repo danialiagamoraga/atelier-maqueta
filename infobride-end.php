@@ -1,12 +1,13 @@
 <?php require_once('header-in.php'); ?>
-<section id="admin" class="content">
-    <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav">
+<section id="admin" class="contenedor">
+    <?php require_once('nav.php'); ?>
+    <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <div class="nav-print">
             <ul>
                 <li class=""><a href="#">volver atrás</a></li>
-                <li class=""><a href="#" class="" onClick="window.print()"><i class="fa fa-print" aria-hidden="true"></i></a></li>
+                <li class=""><a href="#" class="" onClick="window.print()"><i class="fa fa-print"
+                                                                              aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <article class="info-novia">
@@ -46,20 +47,22 @@
         <article class="info-novia">
             <h1>detalle de pago </h1>
             <hr class="line-pink">
-            <table class="pagos">
-                <tr>
-                    <td>Fecha: 15 / 03 / 2016</td>
-                    <td>Abono: $300.000</td>
-                    <td>Boleta: 1546</td>
-                    <td>Medio de pago: Transbank</td>
-                </tr>
-                <tr>
-                    <td>Fecha: 30 / 06 / 2016</td>
-                    <td>Abono: $320.000</td>
-                    <td>Boleta: 1568</td>
-                    <td>Medio de pago: Efectivo</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table class="pagos">
+                    <tr>
+                        <td>Fecha: 15 / 03 / 2016</td>
+                        <td>Abono: $300.000</td>
+                        <td>Boleta: 1546</td>
+                        <td>Medio de pago: Transbank</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha: 30 / 06 / 2016</td>
+                        <td>Abono: $320.000</td>
+                        <td>Boleta: 1568</td>
+                        <td>Medio de pago: Efectivo</td>
+                    </tr>
+                </table>
+            </div>
             <!-- /col-6 -->
         </article>
         <!-- /info-novia -->

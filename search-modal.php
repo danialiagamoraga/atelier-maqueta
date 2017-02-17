@@ -1,5 +1,5 @@
 <div class="m-search">
-    <div class="bg-search col-4">
+    <div class="col-4 bg-search">
         <button type="button" class="cerrar" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true"><i class="fa fa-times cerrar" aria-hidden="true"></i></span></button>
         <h1>búsqueda <span>personalizada</span></h1>

@@ -5,9 +5,9 @@
     <hr class="line-pink">
     <nav>
         <ul>
-            <li><a href="home-admin.php">novias</a></li>
-            <li><a href="confecciones.php">confecciones</a></li>
-            <li><a href="archivador.php">archivador</a></li>
+            <li><a href="bride.php">novias</a></li>
+            <li><a href="workshop.php.php">confecciones</a></li>
+            <li><a href="file.php">archivador</a></li>
             <li><a href="#">balances</a></li>
             <!--<li><a href="#">descuentos</a></li>-->
             <li><a href="users.php">usuarios</a></li>

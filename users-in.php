@@ -1,8 +1,8 @@
 <?php require_once('header-in.php'); ?>
-<section id="admin" class="content">
+<section id="admin" class="contenedor">
 
-    <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav">
+    <?php require_once('nav.php'); ?>
+    <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <div class="nav-print">
             <ul>

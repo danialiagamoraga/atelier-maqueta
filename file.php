@@ -4,46 +4,53 @@
     <?php require_once('nav.php'); ?>
     <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
-        <!-- Resultado de búsqueda éxitoso -->
         <div class="table-container">
             <table>
                 <tr class="encabezado">
                     <th>Nombre</th>
                     <th>Matrimonio</th>
                     <th>Modelo</th>
-                    <th>Próxima cita</th>
+                    <th>Estado</th>
                 </tr>
-                <tr class="dato-table" onClick="location.href='info-bride.php'">
+                <tr class="dato-table" onClick="location.href='infobride-end.php'">
                     <td>Josefina Fierro</td>
                     <td> 11 / 03 / 2017</td>
                     <td>Romané</td>
-                    <td> 15 / 12 / 2016</td>
+                    <td> Entregado</td>
                 </tr>
                 <tr class="dato-table">
                     <td>Valentina Fierro</td>
                     <td>11 / 03 / 2017</td>
                     <td>Florecer</td>
-                    <td>11 / 03 / 2017</td>
+                    <td>Entregado</td>
                 </tr>
                 <tr class="dato-table">
                     <td>Jeannette Campos</td>
                     <td> 22 / 12 / 2017</td>
                     <td>Clarisa</td>
-                    <td>10 / 09 / 2017</td>
+                    <td>Entregado</td>
                 </tr>
                 <tr class="dato-table">
                     <td>Silvia Mena</td>
                     <td>25 / 01 / 2020</td>
                     <td>Candelaria</td>
-                    <td>Por coordinar</td>
+                    <td>Cancelado</td>
                 </tr>
             </table>
         </div>
-        <!-- Sino: -->
-        <h3 class="no-result">No hay resultados asociados a: <span>Floripondia Gutiérrez</span>. Intenta nuevamente.
-        </h3>
+        <div class="paginacion">
+            <p>Mostrando 10 de 25</p>
+            <ul>
+                <li><a href="#"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                <li>10 de 15</li>
+                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <!--/paginacion -->
     </section>
-    <!--/#index .col-8 -->
+    <!--/#index-nav .col-8 -->
 </section>
 <!-- /admin -->
 <?php require_once('footer.php'); ?>

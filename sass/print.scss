@@ -2,7 +2,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 //-- Header
-@import "partials/base";
+@import "partials/variables";
 
 header, #nav-ppal, .content-title, .nav-print, footer, .info-novia h1 .edit, .info-novia hr {
   display: none;

@@ -1,15 +1,11 @@
 $susy: (
         columns: 12,
-        gutters: 1/15,
+        gutters: 1/5,
         gutter-position: inside,
 );
 
-$mobile-small: 1px 240px;
-$mobile-large: 320px;
-$tablet-small: 480px;
-$tablet-large: 769px;
-$screen-small: 1024px;
-$screen-large: 1280px;
+$small: max-width 650px;
+$medium: max-width 1024px;
 
 .col-1 {
   @include span(1);

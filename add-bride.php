@@ -1,10 +1,10 @@
 <?php require_once('header-in.php'); ?>
-<section id="admin" class="content">
-    <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav">
+<section id="admin" class="contenedor">
+    <?php require_once('nav.php'); ?>
+    <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
-            <h1>Información novia</h1>
+            <h1>Info Novia</h1>
             <fieldset>
                 <div class="col-6">
                     <div class="form-group">
@@ -12,8 +12,8 @@
                         <input id="userName" name="userName" type="text" class="form-control required">
                     </div>
                     <div class="form-group">
-                        <label>Email*</label>
-                        <input id="email" name="password" type="email" class="form-control required">
+                        <label>Apelido*</label>
+                        <input id="surname" name="surname" type="text" class="form-control required">
                     </div>
                     <div class="form-group">
                         <label>Matrimonio*</label>
@@ -25,6 +25,10 @@
                     </div>
                 </div>
                 <div class="col-6">
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input id="email" name="password" type="email" class="form-control required">
+                    </div>
                     <div class="form-group phone-info">
                         <label>Telefono*</label>
                         <input id="tel" name="phone" type="tel" class="form-control required">
@@ -134,7 +138,7 @@
                     <!--<div class="form-group phone-botton">
                       <label>Añadir pago</label>
                       <button id="add-pay">+</button>
-                    </div>-->
+                    </div> -->
                 </div>
             </fieldset>
             <h1>Medidas</h1>
@@ -253,8 +257,8 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label>Modista asignada</label>
-                        <select data-placeholder="Elige una modita" class="chosen-select" tabindex="2">
-                            <option value="">Elige una modita</option>
+                        <select data-placeholder="Elige una modista" class="chosen-select" tabindex="2">
+                            <option value="">Elige una modista</option>
                             <option value="Li">Li</option>
                             <option value="Andrea">Andrea</option>
                             <option value="Teresa">Teresa</option>

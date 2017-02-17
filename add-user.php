@@ -1,11 +1,11 @@
 <?php require_once('header-in.php'); ?>
-<section id="admin" class="content">
+<section id="admin" class="contenedor">
 
-    <?php require_once('nav-ppal.php'); ?>
-    <section id="index-nav">
+    <?php require_once('nav.php'); ?>
+    <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
-            <h1>Información Usuario</h1>
+            <h1>Info Usuario</h1>
             <fieldset>
                 <div class="col-6">
                     <div class="form-group">
@@ -25,7 +25,7 @@
                 </div>
 
             </fieldset>
-            <h1>Información de contacto</h1>
+            <h1>Contacto</h1>
             <fieldset>
                 <div class="col-6">
                     <div class="form-group phone-info">
@@ -75,7 +75,7 @@
                         <p>El usuario podrá añadir, modificar y eliminar el contenido.</p>
                     </div>
                     <div id="info-design">
-                        <p>El usuario tendrá acceso a su propio calendario de citas.Si asignas este perfil.</p>
+                        <p>El usuario tendrá acceso a su propio calendario de citas.</p>
                     </div>
                 </div>
             </fieldset>
