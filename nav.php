@@ -6,7 +6,7 @@
     <nav>
         <ul>
             <li><a href="bride.php">novias</a></li>
-            <li><a href="workshop.php.php">confecciones</a></li>
+            <li><a href="workshop.php">confecciones</a></li>
             <li><a href="file.php">archivador</a></li>
             <li><a href="#">balances</a></li>
             <!--<li><a href="#">descuentos</a></li>-->

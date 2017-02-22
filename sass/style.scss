@@ -377,7 +377,7 @@ footer {
     letter-spacing: 1px;
     border-collapse: separate;
     border-spacing: 0 5px;
-    min-width: 700px;
+    min-width: 750px;
     th, td {
       width: 25%;
       padding: 1em;
@@ -1136,21 +1136,47 @@ table.pagos {
   width: 100%;
   height: 100%;
   background: $white;
-  li {
-    list-style-type: none;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      text-align: center;
+      padding: 10px;
+      &:first-child {
+        margin-top: 60px
+      }
+      a {
+        font-size: 120%;
+        color: $default;
+        text-decoration: none;
+        font-weight: 100;
+        width: 100%;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+//404
+.nofound{
+  h1{
+    font-size: 200px;
+    margin-top: 0.3em;
+    margin-bottom: 0;
     text-align: center;
-    padding: 10px;
-    &:first-child {
-      margin-top: 60px
-    }
-    a {
-      font-size: 150%;
-      color: $default;
-      text-decoration: none;
-      font-weight: 300;
-      width: 100%;
-      text-transform: capitalize;
-    }
+    line-height: 160px;
+    color: $corporativo;
+  }
+  h2{
+    text-align: center;
+    color: $corporativo;
+  }
+  a{
+    @extend %btn-secundario;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -1206,8 +1232,8 @@ table.pagos {
       padding: 0;
     }
   }
-  .sub-nav{
-    .col-4{
+  .sub-nav {
+    .col-4 {
       margin-bottom: 10px;
     }
   }
@@ -1240,6 +1266,62 @@ table.pagos {
     padding-bottom: 20px;
     .edit {
       display: none !important;
+    }
+  }
+}
+
+@include breakpoint ($medium) {
+  .col-9 {
+    @include span(12);
+  }
+  //Header
+  header {
+    .col-4 {
+      @include span (9);
+      .logo {
+        .company {
+          display: none;
+        }
+        .user {
+          display: inline-block;
+        }
+      }
+    }
+    .col-8 {
+      @include span (3);
+    }
+    .list-ppal {
+      li:last-child {
+        display: none;
+      }
+      .search {
+        margin-right: 60px;
+      }
+    }
+  }
+  .icon {
+    display: block;
+  }
+  // Nav ppal
+  #nav-ppal {
+    display: none;
+  }
+  //Modal Search
+  .m-search {
+    .col-4 {
+      @include span(12);
+    }
+  }
+  //Infonovia
+
+  .info-novia {
+    .edit {
+      display: none !important;
+    }
+  }
+  .nav-print {
+    li:last-child {
+      display: none;
     }
   }
 }

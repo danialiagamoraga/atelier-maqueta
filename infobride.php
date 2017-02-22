@@ -6,7 +6,7 @@
         <?php require_once('breadcrumbs.php'); ?>
         <div class="nav-print">
             <ul>
-                <li class=""><a href="workshop-inside.php">volver atrás</a></li>
+                <li class=""><a href="workshop-in.php">volver atrás</a></li>
                 <li class=""><a href="#" class="" onClick="window.print()"><i class="fa fa-print"
                                                                               aria-hidden="true"></i></a></li>
             </ul>
