@@ -8,7 +8,7 @@
             <li><a href="bride.php">novias</a></li>
             <li><a href="workshop.php">confecciones</a></li>
             <li><a href="file.php">archivador</a></li>
-            <li><a href="#">balances</a></li>
+            <li><a href="balance.php">balances</a></li>
             <!--<li><a href="#">descuentos</a></li>-->
             <li><a href="users.php">usuarios</a></li>
             <!--<li><a href="#">Contactos</a></li>-->

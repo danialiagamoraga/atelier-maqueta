@@ -861,7 +861,55 @@ table.pagos {
   }
 }
 
-#why, #who, #info-admin, #info-seller, #info-design, #info-taller {
+#balance {
+  h3 {
+    padding: 0;
+    margin: 0 0 13px 0;
+  }
+  .col-6 {
+    &:first-child {
+      padding-right: 2%;
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-left: 2%;
+      padding-right: 0;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 1em;
+      letter-spacing: 1px;
+      color: $default;
+      text-align: left;
+      padding-right: 20px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    input, select {
+      border: 1px solid $ligth;
+      padding: 0.9em;
+      color: $default;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    select {
+      border-radius: 0px;
+      background: none;
+      -webkit-appearance: none;
+      background: url(../img/arrow.png) no-repeat scroll 7px 7px;
+      background-position: 95% 50%;
+      background-size: 6%;
+    }
+  }
+  input[type="submit"] {
+    @extend %btn-destacado;
+  }
+}
+
+#why, #who, #info-admin, #info-seller, #info-design, #info-taller, #rango, #total, #month, #annual, #others {
   display: none;
 }
 
@@ -929,14 +977,14 @@ table.pagos {
   text-transform: capitalize;
   letter-spacing: 0.1em;
   font-family: 'latoregular';
-  color: rgb(110, 110, 110);
+  color: $default;
   text-align: center;
   font-size: 0.9em;
 }
 
 .title-follow {
   text-align: center;
-  color: rgb(110, 110, 110);
+  color: $default;
   text-transform: capitalize;
   font-family: 'latolight';
   letter-spacing: 2px;
@@ -1023,7 +1071,7 @@ table.pagos {
       letter-spacing: 1px;
     }
     .symbol {
-      border-right: 1px solid rgba(110, 110, 110, 0.4) !important;
+      border-right: 1px solid $default !important;
       border-left: 0 !important;
     }
     .title-description {
@@ -1251,7 +1299,7 @@ table.pagos {
 }
 
 @include breakpoint ($small) {
-  .col-3{
+  .col-3 {
     @include span (6);
   }
   .col-4, .col-6, .col-9 {
@@ -1323,6 +1371,17 @@ table.pagos {
       }
     }
   }
+
+  #balance {
+    h3 {
+      padding-top: 25px;
+    }
+    .col-6{
+      div{
+        padding-bottom: 20px;
+      }
+    }
+  }
   //Ficha Novia
   .nav-print {
     li:last-child {
@@ -1338,7 +1397,7 @@ table.pagos {
 }
 
 @include breakpoint ($medium) {
-  .col-3{
+  .col-3 {
     @include span (6);
   }
 

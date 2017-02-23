@@ -150,6 +150,29 @@
             }
         });
 
+        $('#excel').bind('change', function (e) {
+            if ($('#excel').val() == 'total') {
+                $('#total').show();
+                $('#default, #annual ,#month, #others, #rango').hide();
+            }
+            else if ($('#excel').val() == 'annual') {
+                $('#annual').show();
+                $('#default, #total ,#month, #others, #rango').hide();
+            }
+            else if ($('#excel').val() == 'month') {
+                $('#month').show();
+                $('#default, #annual ,#total, #others, #rango').hide();
+            }
+            else if ($('#excel').val() == 'others') {
+                $('#others, #rango').show();
+                $('#default, #annual ,#total, #month').hide();
+            }
+            else {
+                $('#default').show();
+                $('#annual ,#total, #others, #month, #rango').hide();
+            }
+        });
+
         $(document).on('change', '#estado', function (d) {
             if ($(this).val() == 'end') {
                 $('#who').show();
