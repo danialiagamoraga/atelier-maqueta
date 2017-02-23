@@ -1,7 +1,7 @@
 <section id="nav-ppal">
     <h2 class="title-user">¡Hola Jeannette!</h2>
-    <p>Añade y edita la información <br>
-        de nuestras #novias.</p>
+    <p>Bienvenida al Panel de gestión<br>
+        y administración Atelier.</p>
     <hr class="line-pink">
     <nav>
         <ul>

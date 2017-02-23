@@ -263,9 +263,51 @@ footer {
   }
 }
 
+// Index
+%progress {
+  border: 1px solid $reserva;
+}
+
+.box {
+  @extend %progress;
+  .title-metrics {
+    h3 {
+      padding: 20px;
+      margin: 0;
+      font-size: 14px;
+      position: relative;
+      letter-spacing: 1px;
+      border-bottom: 1px solid $reserva;
+      span {
+        font-size: 10px;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid rgb(236, 108, 107);
+        color: rgb(236, 108, 107);
+        font-weight: 900;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .metrics {
+    padding: 10px 20px;
+    font-family: latolight;
+    overflow: auto;
+    span {
+      display: block;
+      font-size: 15px;
+      line-height: 10px;
+    }
+  }
+}
+
 //--Indice de contenidos
 %index {
-  border: 1px solid $ligth;
+  border: 1px solid $reserva;
   text-align: center;
   padding: 110px 0 55px 0;
   display: block;
@@ -285,6 +327,9 @@ footer {
 .sub-nav {
   .col-4:nth-child(n+5) {
     padding-top: 1.38888%;
+  }
+  .col-3, .col-6 {
+    padding-bottom: 1.38888%
   }
 }
 
@@ -396,6 +441,30 @@ footer {
         color: $corporativo;
         font-family: latobold;
       }
+    }
+  }
+}
+
+.table-user {
+  width: 100%;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+  min-width: 450px;
+  table {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    thead {
+      th {
+        border-bottom: 1px solid $reserva;
+      }
+    }
+    th, td {
+      @include span(3);
+      padding: 1em;
     }
   }
 }
@@ -1157,9 +1226,10 @@ table.pagos {
     }
   }
 }
+
 //404
-.nofound{
-  h1{
+.nofound {
+  h1 {
     font-size: 200px;
     margin-top: 0.3em;
     margin-bottom: 0;
@@ -1167,11 +1237,11 @@ table.pagos {
     line-height: 160px;
     color: $corporativo;
   }
-  h2{
+  h2 {
     text-align: center;
     color: $corporativo;
   }
-  a{
+  a {
     @extend %btn-secundario;
     display: block;
     width: 200px;
@@ -1181,13 +1251,10 @@ table.pagos {
 }
 
 @include breakpoint ($small) {
-  .col-4 {
-    @include span (12);
+  .col-3{
+    @include span (6);
   }
-  .col-6 {
-    @include span(12);
-  }
-  .col-9 {
+  .col-4, .col-6, .col-9 {
     @include span (12);
   }
   //Header
@@ -1271,7 +1338,11 @@ table.pagos {
 }
 
 @include breakpoint ($medium) {
-  .col-9 {
+  .col-3{
+    @include span (6);
+  }
+
+  .col-6, .col-9 {
     @include span(12);
   }
   //Header
