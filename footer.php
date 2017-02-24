@@ -110,11 +110,13 @@
             $(".phone-botton").remove();
         });
         $("#add-cloth").click(function () {
-            $(".cloth-info").clone().appendTo(".add-cloth");
-            $(".add-cloth .cloth-info .col-6:first-child label").addClass('change');
-            $('.change .num').html(function (i, val) {
-                return val * 1 + 1
-            });
+            var suma = parseInt($('.num').last().html()) + 1;
+            var obj = $(".cloth-info").clone().removeClass('cloth-info');
+            $(obj).find('.num').html(suma);
+            $(obj).find('.chosen-select').show();
+            $(obj).find('.chosen-container').remove();
+            $(".add-cloth").append(obj);
+            $('.chosen-select').chosen();
         });
 
         $("#radio-3").click(function () {
@@ -158,7 +160,7 @@
 
         $('#excel').bind('change', function (e) {
             if ($('#excel').val() == 'total') {
-                $('#total').show();
+                $('#all').show();
                 $('#default, #annual ,#month, #others, #rango').hide();
             }
             else if ($('#excel').val() == 'annual') {
@@ -365,6 +367,29 @@
                 success: function (respuesta) {
                     $('#modal-novias').html(respuesta);
                     $("#entrega").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+        $('#info-dress').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/dress-info.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $("#dress").modal('show');
                 },
 
                 // código a ejecutar si la petición falla;

@@ -14,7 +14,7 @@
                     <th>Email</th>
                 </tr>
                 </thead>
-                <tr class="dato-table" onClick="location.href='users-inside.php'">
+                <tr class="dato-table" onClick="location.href='users-in.php'">
                     <td>Josefina Fierro</td>
                     <td> Administrador</td>
                     <td>jfierro</td>

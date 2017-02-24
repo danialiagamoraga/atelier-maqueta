@@ -26,7 +26,7 @@
                 <div id="default">
                     <p>Selecciona el tipo de archivo que necesitas.</p>
                 </div>
-                <div id="total">
+                <div id="all">
                     <p>Genera un archivo xlsx con la información histórica.</p>
                 </div>
                 <div id="annual">

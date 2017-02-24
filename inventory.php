@@ -5,7 +5,7 @@
     <section id="index-nav" class="col-9 sub-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <div class="col-4">
-            <a href="#" class="dress">
+            <a href="dress-stock.php" class="dress">
                 <h3 class="index-title">Vestidos de novia</h3>
                 <p>Stock de vestidos</p>
             </a>

@@ -102,7 +102,6 @@
                 <p>Ancho espalda: 37 cm.</p>
                 <p>Diagonal escote delantero: 13 cm.</p>
                 <p>Diagonal escote espalda: 15 cm.</p>
-                <p>&nbsp;</p>
             </div>
             <!-- /col-6 -->
         </article>
@@ -122,6 +121,24 @@
                 <p></p>
                 <p>3ra cita: -</p>
                 <p>4ta cita: -</p>
+            </div>
+            <!-- /col-6 -->
+        </article>
+        <!-- /info-novia -->
+        <article class="info-novia">
+            <h1>Telas <a id="info-citas" href="#" data-target="#citas" data-toggle="modal"><span
+                            class="edit">editar</span></a></h1>
+            <hr>
+            <div class="col-6">
+                <p>Entrega Telas: 12/03/2017</p>
+                <p></p>
+                <p>Gasa: 30 mt</p>
+                <p>Tul Bordado (1412): 30mt</p>
+            </div>
+            <!-- /col-6 -->
+            <div class="col-6">
+                <p>Tul Bordado (1233): 27mt</p>
+                <p>Forro (Marfil): 31mt </p>
             </div>
             <!-- /col-6 -->
         </article>
