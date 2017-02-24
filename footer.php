@@ -109,7 +109,13 @@
             $(".add-here input").removeClass('required');
             $(".phone-botton").remove();
         });
-
+        $("#add-cloth").click(function () {
+            $(".cloth-info").clone().appendTo(".add-cloth");
+            $(".add-cloth .cloth-info .col-6:first-child label").addClass('change');
+            $('.change .num').html(function (i, val) {
+                return val * 1 + 1
+            });
+        });
 
         $("#radio-3").click(function () {
             if ($('input[name=optionsRadios]:checked')) {

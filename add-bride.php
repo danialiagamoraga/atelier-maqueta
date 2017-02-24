@@ -4,7 +4,7 @@
     <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
-            <h1>Info Novia</h1>
+           <!-- <h1>Info Novia</h1>
             <fieldset>
                 <div class="col-6">
                     <div class="form-group">
@@ -99,7 +99,7 @@
                     <div class="form-group add-symbol">
                         <label>Total*</label>
                         <span>$</span>
-                        <input id="total" name="total" type="text" class="form-control required">
+                        <input id="price" name="total" type="text" class="form-control required">
                     </div>
                 </div>
             </fieldset>
@@ -135,10 +135,7 @@
                         <span>Nº</span>
                         <input id="diag-delantero" name="d-delantero" type="number" class="form-control">
                     </div>
-                    <!--<div class="form-group phone-botton">
-                      <label>Añadir pago</label>
-                      <button id="add-pay">+</button>
-                    </div> -->
+
                 </div>
             </fieldset>
             <h1>Medidas</h1>
@@ -267,20 +264,60 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Primera cita</label>
-                        <input id="date" name="abono" type="date" class="form-control">
-                    </div>
-                    <div class="form-group">
                         <input id="cita-pendiente" name="por-coordinar" type="checkbox" class="form-control" value="">
                         <label style="display:inline-block;">Por coordinar</label>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
-                        <label>Entrega de telas</label>
-                        <input id="date" name="telas" type="date" class="form-control">
+                        <label>Primera cita</label>
+                        <input id="date" name="abono" type="date" class="form-control">
+                    </div>
+                </div>
+            </fieldset> -->
+            <h1>Telas</h1>
+            <fieldset>
+                <div class="col-12">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Entrega de telas</label>
+                            <input id="date" name="telas" type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Añadir Tela</label>
+                            <button id="add-cloth" onclick="return false">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 cloth-info">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Tela <span class="num">1</span></label>
+                            <select data-placeholder="Selecciona una tela" class="chosen-select" tabindex="2">
+                                <option value="">Selecciona una tela</option>
+                                <option value="Li">Tela 1</option>
+                                <option value="Andrea">Tela 2</option>
+                                <option value="Teresa">Tela 3</option>
+                                <option value="Leo">Tela 4</option>
+                                <option value="Gloria">Tela 5</option>
+                            </select>
+                        </div>
                     </div>
 
+                    <div class="col-6">
+                        <div class="form-group add-symbol">
+                            <label>Cantidad</label>
+                            <input id="bajo-busto" name="m-bajobusto" type="number" class="form-control">
+                            <span class="symbol">mt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-cloth"></div>
+                <div class="form-group">
+                    <input id="pendiente" name="telas-pendiente" type="checkbox" class="form-control">
+                    <label style="display:inline-block;">En espera</label>
                 </div>
             </fieldset>
         </form>

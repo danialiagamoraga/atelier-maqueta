@@ -405,6 +405,26 @@ footer {
   }
 }
 
+.cloth {
+  @extend %index;
+  background-image: url(../img/cloth.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/cloth-pink.png);
+  }
+}
+
+.add-item {
+  @extend %index;
+  background-image: url(../img/item.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  &:hover {
+    background-image: url(../img/item-pink.png);
+  }
+}
+
 //--tabla de contenidos
 %encabezado {
   color: $white;
@@ -770,6 +790,7 @@ table.pagos {
   box-sizing: border-box;
   font-size: 13px;
   letter-spacing: 1px;
+  height: 46px;
 }
 
 %input-focus {
@@ -901,8 +922,8 @@ table.pagos {
       background: none;
       -webkit-appearance: none;
       background: url(../img/arrow.png) no-repeat scroll 7px 7px;
-      background-position: 95% 50%;
-      background-size: 6%;
+      background-position: 97% 50%;
+      background-size: 5%;
     }
   }
   input[type="submit"] {
@@ -1046,7 +1067,7 @@ table.pagos {
   fieldset {
     border: none;
     padding: 5em 0 2em 0 !important;
-    #add-phone, #add-pay {
+    #add-phone, #add-pay, #add-cloth{
       width: 50px;
       height: 50px;
       margin-left: 1em;
@@ -1072,7 +1093,7 @@ table.pagos {
       letter-spacing: 1px;
     }
     .symbol {
-      border-right: 1px solid $default !important;
+      border-right: 1px solid rgba(110, 110, 110, 0.4) !important;
       border-left: 0 !important;
     }
     .title-description {
@@ -1088,7 +1109,7 @@ table.pagos {
       li {
         float: left;
         list-style: none;
-        width: 20%;
+        width: 16.66667%;
         text-align: center;
         position: relative;
         .bg-wizard {
@@ -1455,6 +1476,7 @@ table.pagos {
       display: none;
     }
   }
+
   select {
     background-size: 4% !important;
   }

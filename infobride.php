@@ -119,7 +119,6 @@
             </div>
             <!-- /col-6 -->
             <div class="col-6">
-                <p>Entrega telas: -.</p>
                 <p></p>
                 <p>3ra cita: -</p>
                 <p>4ta cita: -</p>
