@@ -1011,7 +1011,7 @@ th {
 /* line 246, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
-  margin: 3px 0 3px 5px;
+  margin: 10px 0 3px 5px;
   padding: 3px 20px 3px 5px;
   border: 1px solid rgba(110, 110, 110, 0.1);
   border-radius: 3px;
@@ -1983,7 +1983,7 @@ table.pagos td {
 }
 
 /* line 669, ../sass/style.scss */
-#medidas div.add-symbol span {
+#medidas div.add-symbol span, .cloth-info div.add-symbol span {
   border: 1px solid rgba(110, 110, 110, 0.4) !important;
   border-left: 1px !important;
 }
@@ -2410,20 +2410,36 @@ table.pagos td {
   padding: 30px 0 80px 0;
 }
 
-/* line 1061, ../sass/style.scss */
+/* line 1060, ../sass/style.scss */
+#add-cloth {
+  width: 50px;
+  height: 50px;
+  margin-left: 1em;
+  border: 1px solid #b7b7b7;
+  background: none;
+  color: #b7b7b7;
+  display: inline-block;
+}
+/* line 1068, ../sass/style.scss */
+#add-cloth:hover {
+  color: #ec6c6b;
+  border-color: #ec6c6b;
+}
+
+/* line 1075, ../sass/style.scss */
 .wizard .content {
   width: 100%;
 }
-/* line 1064, ../sass/style.scss */
+/* line 1078, ../sass/style.scss */
 .wizard .title {
   display: none;
 }
-/* line 1067, ../sass/style.scss */
+/* line 1081, ../sass/style.scss */
 .wizard fieldset {
   border: none;
   padding: 5em 0 2em 0 !important;
 }
-/* line 1070, ../sass/style.scss */
+/* line 1084, ../sass/style.scss */
 .wizard fieldset #add-phone, .wizard fieldset #add-pay, .wizard fieldset #add-cloth {
   width: 50px;
   height: 50px;
@@ -2433,43 +2449,43 @@ table.pagos td {
   color: #b7b7b7;
   display: inline-block;
 }
-/* line 1078, ../sass/style.scss */
+/* line 1092, ../sass/style.scss */
 .wizard fieldset #add-phone:hover, .wizard fieldset #add-pay:hover, .wizard fieldset #add-cloth:hover {
   color: #ec6c6b;
   border-color: #ec6c6b;
 }
-/* line 1083, ../sass/style.scss */
+/* line 1097, ../sass/style.scss */
 .wizard fieldset label.error {
   color: #ec6c6b !important;
   font-family: "latobold";
 }
-/* line 1087, ../sass/style.scss */
+/* line 1101, ../sass/style.scss */
 .wizard fieldset input.error {
   border-color: #ec6c6b !important;
 }
-/* line 1090, ../sass/style.scss */
+/* line 1104, ../sass/style.scss */
 .wizard fieldset .size-title {
   font-size: 14px;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-/* line 1095, ../sass/style.scss */
+/* line 1109, ../sass/style.scss */
 .wizard fieldset .symbol {
   border-right: 1px solid rgba(110, 110, 110, 0.4) !important;
   border-left: 0 !important;
 }
-/* line 1099, ../sass/style.scss */
+/* line 1113, ../sass/style.scss */
 .wizard fieldset .title-description {
   padding: 0;
   margin: 0 0 13px 0;
 }
-/* line 1105, ../sass/style.scss */
+/* line 1119, ../sass/style.scss */
 .wizard .steps ul {
   overflow: auto;
   padding: 0;
   margin: 20px 0 0 0;
 }
-/* line 1109, ../sass/style.scss */
+/* line 1123, ../sass/style.scss */
 .wizard .steps ul li {
   float: left;
   list-style: none;
@@ -2477,7 +2493,7 @@ table.pagos td {
   text-align: center;
   position: relative;
 }
-/* line 1115, ../sass/style.scss */
+/* line 1129, ../sass/style.scss */
 .wizard .steps ul li .bg-wizard {
   height: 4px;
   border: none;
@@ -2487,7 +2503,7 @@ table.pagos td {
   width: 100%;
   background-color: #ec6c6b;
 }
-/* line 1124, ../sass/style.scss */
+/* line 1138, ../sass/style.scss */
 .wizard .steps ul li a {
   line-height: 60px;
   width: 60px;
@@ -2499,80 +2515,80 @@ table.pagos td {
   display: inline-block;
   outline: 0;
 }
-/* line 1134, ../sass/style.scss */
+/* line 1148, ../sass/style.scss */
 .wizard .steps ul li a .title-step {
   display: none;
 }
-/* line 1138, ../sass/style.scss */
+/* line 1152, ../sass/style.scss */
 .wizard .steps ul li .title-step {
   padding-top: 1em;
   font-weight: 700;
   color: #ec6c6b;
   letter-spacing: 1.3px;
 }
-/* line 1143, ../sass/style.scss */
+/* line 1157, ../sass/style.scss */
 .wizard .steps ul li .title-step .number {
   display: none;
 }
-/* line 1147, ../sass/style.scss */
+/* line 1161, ../sass/style.scss */
 .wizard .steps ul li:nth-child(1) > .bg-wizard, .wizard .steps ul li:last-child > .bg-wizard {
   width: 50%;
 }
-/* line 1150, ../sass/style.scss */
+/* line 1164, ../sass/style.scss */
 .wizard .steps ul li:nth-child(1) > .bg-wizard {
   right: 0;
 }
-/* line 1153, ../sass/style.scss */
+/* line 1167, ../sass/style.scss */
 .wizard .steps ul li:nth-child(5) > .bg-wizard {
   left: 0;
 }
-/* line 1159, ../sass/style.scss */
+/* line 1173, ../sass/style.scss */
 .wizard .steps .disabled a {
   background-color: #b7b7b7;
   cursor: default;
 }
-/* line 1163, ../sass/style.scss */
+/* line 1177, ../sass/style.scss */
 .wizard .steps .disabled .title-step {
   color: #b7b7b7;
   font-weight: 300;
 }
-/* line 1167, ../sass/style.scss */
+/* line 1181, ../sass/style.scss */
 .wizard .steps .disabled .bg-wizard {
   background-color: #b7b7b7;
 }
-/* line 1172, ../sass/style.scss */
+/* line 1186, ../sass/style.scss */
 .wizard .steps .done a, .wizard .steps .done .bg-wizard {
   background-color: #f8c6c5 !important;
 }
-/* line 1175, ../sass/style.scss */
+/* line 1189, ../sass/style.scss */
 .wizard .steps .done .title-step {
   color: #f8c6c5 !important;
 }
-/* line 1180, ../sass/style.scss */
+/* line 1194, ../sass/style.scss */
 .wizard .actions {
   text-align: center;
   width: 100%;
   padding-bottom: 3em;
 }
-/* line 1184, ../sass/style.scss */
+/* line 1198, ../sass/style.scss */
 .wizard .actions ul {
   display: inline-block;
   text-align: right;
 }
-/* line 1187, ../sass/style.scss */
+/* line 1201, ../sass/style.scss */
 .wizard .actions ul li {
   float: left;
   margin-left: 0.5em;
   list-style: none;
 }
-/* line 1195, ../sass/style.scss */
+/* line 1209, ../sass/style.scss */
 .wizard .actions ul .disabled a, .wizard .actions ul .disabled a:hover {
   background: #fbfaf8;
   color: #b7b7b7;
   border-color: #b7b7b7;
 }
 
-/* line 1205, ../sass/style.scss */
+/* line 1219, ../sass/style.scss */
 .top-animate {
   background: #5d5b5b !important;
   top: 13px !important;
@@ -2580,12 +2596,12 @@ table.pagos td {
   transform: rotate(45deg);
 }
 
-/* line 1212, ../sass/style.scss */
+/* line 1226, ../sass/style.scss */
 .mid-animate {
   opacity: 0;
 }
 
-/* line 1216, ../sass/style.scss */
+/* line 1230, ../sass/style.scss */
 .bottom-animate {
   background: #5d5b5b !important;
   top: 13px !important;
@@ -2593,7 +2609,7 @@ table.pagos td {
   transform: rotate(-225deg);
 }
 
-/* line 1223, ../sass/style.scss */
+/* line 1237, ../sass/style.scss */
 .top-menu {
   top: 4px;
   width: 25px;
@@ -2602,7 +2618,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1231, ../sass/style.scss */
+/* line 1245, ../sass/style.scss */
 .mid-menu {
   top: 13px;
   width: 25px;
@@ -2611,7 +2627,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1239, ../sass/style.scss */
+/* line 1253, ../sass/style.scss */
 .bottom-menu {
   top: 22px;
   width: 25px;
@@ -2620,7 +2636,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1247, ../sass/style.scss */
+/* line 1261, ../sass/style.scss */
 .menui {
   background: #b7b7b7;
   transition: 0.6s ease;
@@ -2629,7 +2645,7 @@ table.pagos td {
   position: absolute;
 }
 
-/* line 1255, ../sass/style.scss */
+/* line 1269, ../sass/style.scss */
 .icon {
   z-index: 999;
   position: absolute;
@@ -2643,7 +2659,7 @@ table.pagos td {
   color: #b7b7b7;
 }
 
-/* line 1268, ../sass/style.scss */
+/* line 1282, ../sass/style.scss */
 .mobilenav {
   font-family: inherit;
   top: 0;
@@ -2655,22 +2671,22 @@ table.pagos td {
   height: 100%;
   background: white;
 }
-/* line 1278, ../sass/style.scss */
+/* line 1292, ../sass/style.scss */
 .mobilenav ul {
   margin: 0;
   padding: 0;
 }
-/* line 1281, ../sass/style.scss */
+/* line 1295, ../sass/style.scss */
 .mobilenav ul li {
   list-style-type: none;
   text-align: center;
   padding: 10px;
 }
-/* line 1285, ../sass/style.scss */
+/* line 1299, ../sass/style.scss */
 .mobilenav ul li:first-child {
   margin-top: 60px;
 }
-/* line 1288, ../sass/style.scss */
+/* line 1302, ../sass/style.scss */
 .mobilenav ul li a {
   font-size: 120%;
   color: #6e6e6e;
@@ -2680,7 +2696,7 @@ table.pagos td {
   text-transform: capitalize;
 }
 
-/* line 1302, ../sass/style.scss */
+/* line 1316, ../sass/style.scss */
 .nofound h1 {
   font-size: 200px;
   margin-top: 0.3em;
@@ -2689,12 +2705,12 @@ table.pagos td {
   line-height: 160px;
   color: #ec6c6b;
 }
-/* line 1310, ../sass/style.scss */
+/* line 1324, ../sass/style.scss */
 .nofound h2 {
   text-align: center;
   color: #ec6c6b;
 }
-/* line 1314, ../sass/style.scss */
+/* line 1328, ../sass/style.scss */
 .nofound a {
   display: block;
   width: 200px;
@@ -2703,7 +2719,7 @@ table.pagos td {
 }
 
 @media (max-width: 767px) {
-  /* line 1324, ../sass/style.scss */
+  /* line 1338, ../sass/style.scss */
   .col-3 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2714,7 +2730,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1327, ../sass/style.scss */
+  /* line 1341, ../sass/style.scss */
   .col-4, .col-6, .col-9 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2725,7 +2741,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1332, ../sass/style.scss */
+  /* line 1346, ../sass/style.scss */
   header .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2735,15 +2751,15 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1335, ../sass/style.scss */
+  /* line 1349, ../sass/style.scss */
   header .col-4 .logo .company {
     display: none;
   }
-  /* line 1338, ../sass/style.scss */
+  /* line 1352, ../sass/style.scss */
   header .col-4 .logo .user {
     display: inline-block;
   }
-  /* line 1343, ../sass/style.scss */
+  /* line 1357, ../sass/style.scss */
   header .col-8 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2753,45 +2769,45 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1347, ../sass/style.scss */
+  /* line 1361, ../sass/style.scss */
   header .list-ppal li:last-child {
     display: none;
   }
-  /* line 1350, ../sass/style.scss */
+  /* line 1364, ../sass/style.scss */
   header .list-ppal .search {
     margin-right: 60px;
   }
 
-  /* line 1355, ../sass/style.scss */
+  /* line 1369, ../sass/style.scss */
   .icon {
     display: block;
   }
 
-  /* line 1359, ../sass/style.scss */
+  /* line 1373, ../sass/style.scss */
   #nav-ppal {
     display: none;
   }
 
-  /* line 1364, ../sass/style.scss */
+  /* line 1378, ../sass/style.scss */
   .paginacion p {
     display: none;
   }
-  /* line 1367, ../sass/style.scss */
+  /* line 1381, ../sass/style.scss */
   .paginacion ul {
     width: 100%;
     padding: 0;
   }
 
-  /* line 1373, ../sass/style.scss */
+  /* line 1387, ../sass/style.scss */
   .sub-nav .col-4 {
     margin-bottom: 10px;
   }
 
-  /* line 1380, ../sass/style.scss */
+  /* line 1394, ../sass/style.scss */
   #form fieldset .col-6 {
     padding: 0 !important;
   }
-  /* line 1383, ../sass/style.scss */
+  /* line 1397, ../sass/style.scss */
   #form fieldset .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2802,37 +2818,37 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1390, ../sass/style.scss */
+  /* line 1404, ../sass/style.scss */
   .wizard .actions ul {
     padding: 0;
     margin: 0;
   }
 
-  /* line 1398, ../sass/style.scss */
+  /* line 1412, ../sass/style.scss */
   #balance h3 {
     padding-top: 25px;
   }
-  /* line 1402, ../sass/style.scss */
+  /* line 1416, ../sass/style.scss */
   #balance .col-6 div {
     padding-bottom: 20px;
   }
 
-  /* line 1409, ../sass/style.scss */
+  /* line 1423, ../sass/style.scss */
   .nav-print li:last-child {
     display: none;
   }
 
-  /* line 1413, ../sass/style.scss */
+  /* line 1427, ../sass/style.scss */
   .info-novia {
     padding-bottom: 20px;
   }
-  /* line 1415, ../sass/style.scss */
+  /* line 1429, ../sass/style.scss */
   .info-novia .edit {
     display: none !important;
   }
 }
 @media (max-width: 1024px) {
-  /* line 1422, ../sass/style.scss */
+  /* line 1436, ../sass/style.scss */
   .col-3 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2843,7 +2859,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1426, ../sass/style.scss */
+  /* line 1440, ../sass/style.scss */
   .col-6, .col-9 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2854,7 +2870,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1431, ../sass/style.scss */
+  /* line 1445, ../sass/style.scss */
   header .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2864,15 +2880,15 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1434, ../sass/style.scss */
+  /* line 1448, ../sass/style.scss */
   header .col-4 .logo .company {
     display: none;
   }
-  /* line 1437, ../sass/style.scss */
+  /* line 1451, ../sass/style.scss */
   header .col-4 .logo .user {
     display: inline-block;
   }
-  /* line 1442, ../sass/style.scss */
+  /* line 1456, ../sass/style.scss */
   header .col-8 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2882,26 +2898,26 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1446, ../sass/style.scss */
+  /* line 1460, ../sass/style.scss */
   header .list-ppal li:last-child {
     display: none;
   }
-  /* line 1449, ../sass/style.scss */
+  /* line 1463, ../sass/style.scss */
   header .list-ppal .search {
     margin-right: 60px;
   }
 
-  /* line 1454, ../sass/style.scss */
+  /* line 1468, ../sass/style.scss */
   .icon {
     display: block;
   }
 
-  /* line 1458, ../sass/style.scss */
+  /* line 1472, ../sass/style.scss */
   #nav-ppal {
     display: none;
   }
 
-  /* line 1463, ../sass/style.scss */
+  /* line 1477, ../sass/style.scss */
   .m-search .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2912,17 +2928,17 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1470, ../sass/style.scss */
+  /* line 1484, ../sass/style.scss */
   .info-novia .edit {
     display: none !important;
   }
 
-  /* line 1475, ../sass/style.scss */
+  /* line 1489, ../sass/style.scss */
   .nav-print li:last-child {
     display: none;
   }
 
-  /* line 1480, ../sass/style.scss */
+  /* line 1494, ../sass/style.scss */
   select {
     background-size: 4% !important;
   }

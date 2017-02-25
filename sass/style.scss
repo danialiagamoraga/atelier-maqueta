@@ -666,7 +666,7 @@ table.pagos {
   opacity: 1;
 }
 
-#medidas div.add-symbol span {
+#medidas div.add-symbol span, .cloth-info div.add-symbol span {
   border: 1px solid rgba(110, 110, 110, 0.4) !important;
   border-left: 1px !important;
 }
@@ -1057,6 +1057,20 @@ table.pagos {
 }
 
 //Wizard add novias
+#add-cloth {
+  width: 50px;
+  height: 50px;
+  margin-left: 1em;
+  border: 1px solid $ligth;
+  background: none;
+  color: $ligth;
+  display: inline-block;
+  &:hover {
+    color: $corporativo;
+    border-color: $corporativo;
+  }
+}
+
 .wizard {
   .content {
     width: 100%;

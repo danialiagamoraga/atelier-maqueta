@@ -40,7 +40,7 @@
           </fieldset>
           <div class="botonera">
             <input type="submit" name="guardar" id="save" value="guardar">
-            <button type="button" name="cancelar" id="cancel" value="">Cancelar</button>
+            <button type="button" name="cancelar" id="cancel" value="" data-dismiss="modal" aria-label="Close">Cancelar</button>
           </div>
         </form>
       </div>

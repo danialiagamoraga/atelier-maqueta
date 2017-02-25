@@ -109,14 +109,14 @@
             $(".add-here input").removeClass('required');
             $(".phone-botton").remove();
         });
-        $("#add-cloth").click(function () {
+        $(document).on("click","#add-cloth",function () {
             var suma = parseInt($('.num').last().html()) + 1;
-            var obj = $(".cloth-info").clone().removeClass('cloth-info');
+            var obj = $(this).parent('div').parent('div').parent('div').parent('fieldset').find(".cloth-info").clone().removeClass('cloth-info');
             $(obj).find('.num').html(suma);
             $(obj).find('.chosen-select').show();
             $(obj).find('.chosen-container').remove();
             $(".add-cloth").append(obj);
-            $('.chosen-select').chosen();
+            $('.add-cloth .chosen-select').chosen();
         });
 
         $("#radio-3").click(function () {
@@ -390,6 +390,31 @@
                 success: function (respuesta) {
                     $('#modal-novias').html(respuesta);
                     $("#dress").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
+        $('#cloth-info').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'cloth-info.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $('.chosen-select').chosen({width: "100%"});
+                    $("#cloth").modal('show');
                 },
 
                 // código a ejecutar si la petición falla;

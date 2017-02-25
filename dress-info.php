@@ -15,16 +15,7 @@
                                 <label>Modelo *</label>
                                 <input id="nameDress" name="nameDress" type="text" class="form-control required">
                             </div>
-                            <div class="form-group">
-                                <label>Ingresado por:</label>
-                                <input id="nameDress" name="nameDress" type="text" class="form-control required " value="daliaga" disabled>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label>Valor*</label>
-                                <input id="price" name="price" type="number" class="form-control required">
-                            </div>
+
                             <div class="form-group">
                                 <label>Origen</label>
                                 <select id="perfil">
@@ -34,10 +25,21 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label>Valor*</label>
+                                <input id="price" name="price" type="number" class="form-control required">
+                            </div>
+
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input id="id" name="id" type="text" class="form-control required " value="1312" disabled>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="botonera">
                         <input type="submit" name="guardar" id="save" value="guardar">
-                        <button type="button" name="cancelar" id="cancel" value="">Cancelar</button>
+                        <button type="button" name="cancelar" id="cancel" value="" data-dismiss="modal" aria-label="Close">Cancelar</button>
                     </div>
                 </form>
             </div>

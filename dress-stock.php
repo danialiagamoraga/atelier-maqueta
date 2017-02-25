@@ -12,29 +12,25 @@
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th></th>
                 </tr>
                 <tr class="filtro">
                     <th>Modelo</th>
+                    <th>Origen</th>
                     <th>Valor</th>
-                    <th>5%</th>
-                    <th>10%</th>
-                    <th>15%</th>
+                    <th>ID</th>
                 </tr>
                 </thead>
                 <tr class="dato-table" onClick="location.href='dress.php'">
                     <td>Abelia</td>
+                    <td>Nacional</td>
                     <td>$720.000</td>
-                    <td>$684.000</td>
-                    <td>$648.000</td>
-                    <td>$612.000</td>
+                    <td>1324</td>
                 </tr>
                 <tr class="dato-table" onClick="">
                     <td>Afrodita</td>
+                    <td>Nacional</td>
                     <td>$680.000</td>
-                    <td>$646.000</td>
-                    <td>$612.000</td>
-                    <td>$578.000</td>
+                    <td>1325</td>
                 </tr>
             </table>
         </div>

@@ -126,7 +126,7 @@
         </article>
         <!-- /info-novia -->
         <article class="info-novia">
-            <h1>Telas <a id="info-citas" href="#" data-target="#citas" data-toggle="modal"><span
+            <h1>Telas <a id="cloth-info" href="#" data-target="#cloth" data-toggle="modal"><span
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
