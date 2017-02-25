@@ -4,7 +4,7 @@
     <section id="index-nav" class="col-9">
         <?php require_once('breadcrumbs.php'); ?>
         <form id="form" action="#" class="wizard">
-           -<h1>Info Novia</h1>
+           <h1>Info Novia</h1>
             <fieldset>
                 <div class="col-6">
                     <div class="form-group">

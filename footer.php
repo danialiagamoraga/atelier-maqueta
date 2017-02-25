@@ -234,7 +234,7 @@
         $('#info-novia').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-info.php',
+                url: 'infobride-info.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -259,7 +259,7 @@
         $('#info-compra').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-compra.php',
+                url: 'infobride-compra.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -284,7 +284,7 @@
         $('#info-abono').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-pago.php',
+                url: 'infobride-pago.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -308,7 +308,7 @@
         $('#info-medidas').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-medidas.php',
+                url: 'infobride-medidas.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -332,7 +332,7 @@
         $('#info-citas').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-citas.php',
+                url: 'infobride-citas.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -355,7 +355,7 @@
         $('#info-entrega').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/infobride-entrega.php',
+                url: 'infobride-entrega.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',
@@ -378,7 +378,7 @@
         $('#info-dress').click(function () {
             $.ajax({
                 // la URL para la petición
-                url: 'http://localhost:8888/Users/danialiaga/documents/proyectos/atelier/dress-info.php',
+                url: 'dress-info.php',
 
                 // especifica si será una petición POST o GET
                 type: 'POST',

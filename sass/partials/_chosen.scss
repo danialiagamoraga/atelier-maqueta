@@ -207,8 +207,10 @@
   cursor: text;
   margin: 0;
   overflow: hidden;
-  padding: 0.4em;
+  padding: 0.8em;
   position: relative;
+  box-sizing: border-box;
+  height: 45px;
 }
 
 .chosen-container-multi .chosen-choices li {

@@ -968,24 +968,26 @@ th {
   cursor: text;
   margin: 0;
   overflow: hidden;
-  padding: 0.4em;
+  padding: 0.8em;
   position: relative;
+  box-sizing: border-box;
+  height: 45px;
 }
 
-/* line 214, ../sass/partials/_chosen.scss */
+/* line 216, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li {
   float: left;
   list-style: none;
 }
 
-/* line 219, ../sass/partials/_chosen.scss */
+/* line 221, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field {
   margin: 0;
   padding: 0;
   white-space: nowrap;
 }
 
-/* line 225, ../sass/partials/_chosen.scss */
+/* line 227, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
   margin: 1px 0;
   padding: 5px;
@@ -1001,12 +1003,12 @@ th {
   border-radius: 0;
 }
 
-/* line 240, ../sass/partials/_chosen.scss */
+/* line 242, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-field .default {
   color: #999;
 }
 
-/* line 244, ../sass/partials/_chosen.scss */
+/* line 246, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px 0 3px 5px;
@@ -1020,7 +1022,7 @@ th {
   letter-spacing: 1px;
 }
 
-/* line 257, ../sass/partials/_chosen.scss */
+/* line 259, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
   font-family: FontAwesome;
   content: "\f00d";
@@ -1031,12 +1033,12 @@ th {
   right: -15px;
 }
 
-/* line 267, ../sass/partials/_chosen.scss */
+/* line 269, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
   color: #ec6b6a;
 }
 
-/* line 271, ../sass/partials/_chosen.scss */
+/* line 273, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-disabled {
   padding-right: 5px;
   border: 1px solid #ccc;
@@ -1049,23 +1051,23 @@ th {
   color: #666;
 }
 
-/* line 283, ../sass/partials/_chosen.scss */
+/* line 285, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-focus {
   background: #d4d4d4;
 }
 
-/* line 287, ../sass/partials/_chosen.scss */
+/* line 289, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
   background-position: -42px -10px;
 }
 
-/* line 291, ../sass/partials/_chosen.scss */
+/* line 293, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-results {
   margin: 0;
   padding: 0;
 }
 
-/* line 296, ../sass/partials/_chosen.scss */
+/* line 298, ../sass/partials/_chosen.scss */
 .chosen-container-multi .chosen-drop .result-selected {
   display: list-item;
   color: #ccc;
@@ -1074,14 +1076,14 @@ th {
 
 /* @end */
 /* @group Active  */
-/* line 304, ../sass/partials/_chosen.scss */
+/* line 306, ../sass/partials/_chosen.scss */
 .chosen-container-active .chosen-single {
   border: 1px solid #ec6b6a;
   color: #ec6b6a;
   font-weight: 700;
 }
 
-/* line 310, ../sass/partials/_chosen.scss */
+/* line 312, ../sass/partials/_chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single {
   border: 1px solid #aaa;
   -moz-border-radius-bottomright: 0;
@@ -1090,127 +1092,127 @@ th {
   border-bottom-left-radius: 0;
 }
 
-/* line 318, ../sass/partials/_chosen.scss */
+/* line 320, ../sass/partials/_chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div {
   border-left: none;
   background: transparent;
 }
 
-/* line 323, ../sass/partials/_chosen.scss */
+/* line 325, ../sass/partials/_chosen.scss */
 .chosen-container-active.chosen-with-drop .chosen-single div b {
   background-position: -16px 9px;
 }
 
-/* line 327, ../sass/partials/_chosen.scss */
+/* line 329, ../sass/partials/_chosen.scss */
 .chosen-container-active .chosen-choices {
   border: 1px solid #ec6b6a;
 }
 
-/* line 331, ../sass/partials/_chosen.scss */
+/* line 333, ../sass/partials/_chosen.scss */
 .chosen-container-active .chosen-choices li.search-field input[type="text"] {
   color: #ec6b6a !important;
 }
 
 /* @end */
 /* @group Disabled Support */
-/* line 337, ../sass/partials/_chosen.scss */
+/* line 339, ../sass/partials/_chosen.scss */
 .chosen-disabled {
   opacity: 0.5 !important;
   cursor: default;
 }
 
-/* line 342, ../sass/partials/_chosen.scss */
+/* line 344, ../sass/partials/_chosen.scss */
 .chosen-disabled .chosen-single {
   cursor: default;
 }
 
-/* line 346, ../sass/partials/_chosen.scss */
+/* line 348, ../sass/partials/_chosen.scss */
 .chosen-disabled .chosen-choices .search-choice .search-choice-close {
   cursor: default;
 }
 
 /* @end */
 /* @group Right to Left */
-/* line 352, ../sass/partials/_chosen.scss */
+/* line 354, ../sass/partials/_chosen.scss */
 .chosen-rtl {
   text-align: right;
 }
 
-/* line 356, ../sass/partials/_chosen.scss */
+/* line 358, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-single {
   overflow: visible;
   padding: 0 8px 0 0;
 }
 
-/* line 361, ../sass/partials/_chosen.scss */
+/* line 363, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-single span {
   margin-right: 0;
   margin-left: 26px;
   direction: rtl;
 }
 
-/* line 367, ../sass/partials/_chosen.scss */
+/* line 369, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-single-with-deselect span {
   margin-left: 38px;
 }
 
-/* line 371, ../sass/partials/_chosen.scss */
+/* line 373, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-single div {
   right: auto;
   left: 3px;
 }
 
-/* line 376, ../sass/partials/_chosen.scss */
+/* line 378, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-single abbr {
   right: auto;
   left: 26px;
 }
 
-/* line 381, ../sass/partials/_chosen.scss */
+/* line 383, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-choices li {
   float: right;
 }
 
-/* line 385, ../sass/partials/_chosen.scss */
+/* line 387, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-choices li.search-field input[type="text"] {
   direction: rtl;
 }
 
-/* line 389, ../sass/partials/_chosen.scss */
+/* line 391, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-choices li.search-choice {
   margin: 3px 5px 3px 0;
   padding: 3px 5px 3px 19px;
 }
 
-/* line 394, ../sass/partials/_chosen.scss */
+/* line 396, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-choices li.search-choice .search-choice-close {
   right: auto;
   left: 4px;
 }
 
-/* line 399, ../sass/partials/_chosen.scss */
+/* line 401, ../sass/partials/_chosen.scss */
 .chosen-rtl.chosen-container-single-nosearch .chosen-search, .chosen-rtl .chosen-drop {
   left: 9999px;
 }
 
-/* line 403, ../sass/partials/_chosen.scss */
+/* line 405, ../sass/partials/_chosen.scss */
 .chosen-rtl.chosen-container-single .chosen-results {
   margin: 0 0 4px 4px;
   padding: 0 4px 0 0;
 }
 
-/* line 408, ../sass/partials/_chosen.scss */
+/* line 410, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-results li.group-option {
   padding-right: 15px;
   padding-left: 0;
 }
 
-/* line 413, ../sass/partials/_chosen.scss */
+/* line 415, ../sass/partials/_chosen.scss */
 .chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
   border-right: none;
 }
 
-/* line 417, ../sass/partials/_chosen.scss */
+/* line 419, ../sass/partials/_chosen.scss */
 .chosen-rtl .chosen-search input[type="text"] {
   padding: 4px 5px 4px 20px;
   background: white url("chosen-sprite.png") no-repeat -30px -20px;
@@ -1218,12 +1220,12 @@ th {
   direction: rtl;
 }
 
-/* line 424, ../sass/partials/_chosen.scss */
+/* line 426, ../sass/partials/_chosen.scss */
 .chosen-rtl.chosen-container-single .chosen-single div b {
   background-position: 6px 2px;
 }
 
-/* line 428, ../sass/partials/_chosen.scss */
+/* line 430, ../sass/partials/_chosen.scss */
 .chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
   background-position: -12px 2px;
 }
@@ -1921,7 +1923,7 @@ table.pagos td {
   width: 800px;
   margin: 40px auto;
   max-height: 650px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 /* line 619, ../sass/style.scss */
 .modal .modal-dialog .modal-content {
