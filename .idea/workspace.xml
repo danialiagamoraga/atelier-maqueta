@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9544f313-f7b9-495a-8cd8-8752ef055a03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4663acaf2864cd09ac29a850995826ef0290499b/style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4663acaf2864cd09ac29a850995826ef0290499b/style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/e5632a76972485d735c399568c93c193034154ac/_chosen.scssc" afterPath="$PROJECT_DIR$/.sass-cache/e5632a76972485d735c399568c93c193034154ac/_chosen.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-bride.php" afterPath="$PROJECT_DIR$/add-bride.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/partials/_chosen.scss" afterPath="$PROJECT_DIR$/sass/partials/_chosen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/style.css" afterPath="$PROJECT_DIR$/stylesheets/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +17,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
@@ -34,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_chosen.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_chosen.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/partials/_chosen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="206" column="6" lean-forward="true" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
+            <state relative-caret-position="161">
+              <caret line="247" column="12" lean-forward="false" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -144,8 +137,8 @@
       <find>total</find>
       <find>display: none</find>
       <find>modal</find>
-      <find>footer</find>
       <find>.chosen-container-multi .chosen-choices</find>
+      <find>footer</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;section id=&quot;index-nav&quot; class=&quot;col-8&quot;&gt;</replace>
@@ -217,9 +210,9 @@
         <option value="$PROJECT_DIR$/dress-info.php" />
         <option value="$PROJECT_DIR$/dress.php" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/sass/partials/_chosen.scss" />
         <option value="$PROJECT_DIR$/add-bride.php" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
+        <option value="$PROJECT_DIR$/sass/partials/_chosen.scss" />
       </list>
     </option>
   </component>
@@ -430,12 +423,12 @@
       <workItem from="1487703658311" duration="2299000" />
       <workItem from="1487774173345" duration="16301000" />
       <workItem from="1487862717929" duration="8011000" />
-      <workItem from="1487947048093" duration="11054000" />
+      <workItem from="1487947048093" duration="11168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164461000" />
+    <option name="totallyTimeSpent" value="164575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -794,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_chosen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="206" column="6" lean-forward="true" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/add-bride.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -814,6 +799,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/partials/_chosen.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="247" column="12" lean-forward="false" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="12" />
           <folding />
         </state>
       </provider>
