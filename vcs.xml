@@ -10,8 +10,12 @@
           <option name="url" value="https://danielaaliaga@bitbucket.org/danielaaliaga/atelier.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://danielaaliaga@bitbucket.org/Guti_ColectivoVisual/atelier-latavel.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/proyectos" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/proyectos/atelier-laravel" />
   </component>
 </application>
