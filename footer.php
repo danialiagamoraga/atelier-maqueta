@@ -180,7 +180,7 @@
                 $('#annual ,#total, #others, #month, #rango').hide();
             }
         });
-
+        //nuevo!
         $('#item').bind('change', function (e) {
             var url = "";
             if ($('#item').val() == 'dress') {
@@ -467,6 +467,7 @@
         });
 
         // Asociar un evento al botón que muestra la ventana modal
+        //Nuevo
         $('#tela').click(function () {
             $.ajax({
                 // la URL para la petición
@@ -492,6 +493,7 @@
         });
 
         // Asociar un evento al botón que muestra la ventana modal
+        //Nuevo
         $('#user-edit').click(function () {
             $.ajax({
                 // la URL para la petición
@@ -516,6 +518,7 @@
             });
         });
 
+        //Nuevo
         $('#user-contact').click(function () {
             $.ajax({
                 // la URL para la petición
@@ -540,6 +543,7 @@
             });
         });
 
+        //Nuevo
         $('#user-profile').click(function () {
             $.ajax({
                 // la URL para la petición
