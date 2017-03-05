@@ -11,18 +11,13 @@
             </ul>
         </div>
         <article class="info-novia">
-            <h1>Modelo Abelia <a id="info-dress" href="#" data-target="#info" data-toggle="modal"><span
+            <h1>Tela 1 <a id="tela" href="#" data-target="#tela" data-toggle="modal"><span
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
-                <p>Modelo: <span>Abelia</span></p>
-                <p>Valor: <span>$720.000</span></p>
-                <p>Origen: Nacional</p>
-                <br>
-                <p>Descuento</p>
-                <p>$684.000 (5%)</p>
-                <p>$648.000 (10%)</p>
-                <p>$612.000 (15%)</p>
+                <p>Nombre: <span>Tela 1</span></p>
+                <p>Cantidad: <span>300 mt</span></p>
+                <p>Color: Marfil</p>
             </div>
             <!-- /col-6 -->
             <div class="col-6">

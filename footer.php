@@ -181,6 +181,48 @@
             }
         });
 
+        $('#item').bind('change', function (e) {
+            var url = "";
+            if ($('#item').val() == 'dress') {
+                $('.add-dress').show();
+                $('.add-cloths, .def-info').hide();
+                url = "item-dress.php";
+            }
+            else if ($('#item').val() == 'cloth') {
+                $('.add-cloths').show();
+                $('.add-dress, .def-info').hide();
+                url = "item-cloth.php";
+            }
+            else {
+                $('.def-info').show();
+                $('.add-dress, .add-cloths').hide();
+            }
+
+            if(url != "") {
+                $('#wizard-select').empty();
+                $.ajax({
+                    // la URL para la petición
+                    url: url,
+
+                    // especifica si será una petición POST o GET
+                    type: 'POST',
+
+                    // el tipo de información que se espera de respuesta
+                    dataType: 'html',
+
+                    // código a ejecutar si la petición es satisfactoria;
+                    success: function (respuesta) {
+                        $('#wizard-select').html(respuesta);
+                    },
+
+                    // código a ejecutar si la petición falla;
+                    error: function (xhr, status) {
+                        alert('Disculpe, existió un problema');
+                    },
+                });
+            }
+        });
+
         $(document).on('change', '#estado', function (d) {
             if ($(this).val() == 'end') {
                 $('#who').show();
@@ -423,6 +465,32 @@
                 },
             });
         });
+
+        // Asociar un evento al botón que muestra la ventana modal
+        $('#tela').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'cloths-info.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $("#telas").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
         //Hamburger script
         togglescroll()
         $(".icon").click(function () {

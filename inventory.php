@@ -11,14 +11,14 @@
             </a>
         </div>
         <!-- /col-4 index dress-->
-        <div href="#" class="col-4">
-            <a href="#" class="cloth">
+        <div class="col-4">
+            <a href="cloth-stock.php" class="cloth">
                 <h3 class="index-title">Telas</h3>
                 <p>Stock de telas</p>
             </a>
         </div>
-        <div href="#" class="col-4">
-            <a href="#" class="add-item">
+        <div class="col-4">
+            <a href="add-item.php" class="add-item">
                 <h3 class="index-title">ingresar item</h3>
                 <p>Añadir vestido o tela</p>
             </a>
