@@ -491,6 +491,79 @@
             });
         });
 
+        // Asociar un evento al botón que muestra la ventana modal
+        $('#user-edit').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'user-in-edit.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $("#user-in").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
+        $('#user-contact').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'user-in-edit-contacto.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $("#user-in-contact").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
+        $('#user-profile').click(function () {
+            $.ajax({
+                // la URL para la petición
+                url: 'user-in-edit-profile.php',
+
+                // especifica si será una petición POST o GET
+                type: 'POST',
+
+                // el tipo de información que se espera de respuesta
+                dataType: 'html',
+
+                // código a ejecutar si la petición es satisfactoria;
+                success: function (respuesta) {
+                    $('#modal-novias').html(respuesta);
+                    $("#user-in-profile").modal('show');
+                },
+
+                // código a ejecutar si la petición falla;
+                error: function (xhr, status) {
+                    alert('Disculpe, existió un problema');
+                },
+            });
+        });
+
         //Hamburger script
         togglescroll()
         $(".icon").click(function () {

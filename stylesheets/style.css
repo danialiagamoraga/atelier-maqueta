@@ -2606,7 +2606,14 @@ table.pagos td {
   border-color: #b7b7b7;
 }
 
-/* line 1238, ../sass/style.scss */
+/* line 1236, ../sass/style.scss */
+.title-description {
+  padding: 0;
+  margin: 0 0 13px 0;
+  color: #6e6e6e;
+}
+
+/* line 1243, ../sass/style.scss */
 .top-animate {
   background: #5d5b5b !important;
   top: 13px !important;
@@ -2614,12 +2621,12 @@ table.pagos td {
   transform: rotate(45deg);
 }
 
-/* line 1245, ../sass/style.scss */
+/* line 1250, ../sass/style.scss */
 .mid-animate {
   opacity: 0;
 }
 
-/* line 1249, ../sass/style.scss */
+/* line 1254, ../sass/style.scss */
 .bottom-animate {
   background: #5d5b5b !important;
   top: 13px !important;
@@ -2627,7 +2634,7 @@ table.pagos td {
   transform: rotate(-225deg);
 }
 
-/* line 1256, ../sass/style.scss */
+/* line 1261, ../sass/style.scss */
 .top-menu {
   top: 4px;
   width: 25px;
@@ -2636,7 +2643,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1264, ../sass/style.scss */
+/* line 1269, ../sass/style.scss */
 .mid-menu {
   top: 13px;
   width: 25px;
@@ -2645,7 +2652,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1272, ../sass/style.scss */
+/* line 1277, ../sass/style.scss */
 .bottom-menu {
   top: 22px;
   width: 25px;
@@ -2654,7 +2661,7 @@ table.pagos td {
   background-color: #b7b7b7;
 }
 
-/* line 1280, ../sass/style.scss */
+/* line 1285, ../sass/style.scss */
 .menui {
   background: #b7b7b7;
   transition: 0.6s ease;
@@ -2663,7 +2670,7 @@ table.pagos td {
   position: absolute;
 }
 
-/* line 1288, ../sass/style.scss */
+/* line 1293, ../sass/style.scss */
 .icon {
   z-index: 999;
   position: absolute;
@@ -2677,7 +2684,7 @@ table.pagos td {
   color: #b7b7b7;
 }
 
-/* line 1301, ../sass/style.scss */
+/* line 1306, ../sass/style.scss */
 .mobilenav {
   font-family: inherit;
   top: 0;
@@ -2689,22 +2696,22 @@ table.pagos td {
   height: 100%;
   background: white;
 }
-/* line 1311, ../sass/style.scss */
+/* line 1316, ../sass/style.scss */
 .mobilenav ul {
   margin: 0;
   padding: 0;
 }
-/* line 1314, ../sass/style.scss */
+/* line 1319, ../sass/style.scss */
 .mobilenav ul li {
   list-style-type: none;
   text-align: center;
   padding: 10px;
 }
-/* line 1318, ../sass/style.scss */
+/* line 1323, ../sass/style.scss */
 .mobilenav ul li:first-child {
   margin-top: 60px;
 }
-/* line 1321, ../sass/style.scss */
+/* line 1326, ../sass/style.scss */
 .mobilenav ul li a {
   font-size: 120%;
   color: #6e6e6e;
@@ -2714,7 +2721,7 @@ table.pagos td {
   text-transform: capitalize;
 }
 
-/* line 1335, ../sass/style.scss */
+/* line 1340, ../sass/style.scss */
 .nofound h1 {
   font-size: 200px;
   margin-top: 0.3em;
@@ -2723,12 +2730,12 @@ table.pagos td {
   line-height: 160px;
   color: #ec6c6b;
 }
-/* line 1343, ../sass/style.scss */
+/* line 1348, ../sass/style.scss */
 .nofound h2 {
   text-align: center;
   color: #ec6c6b;
 }
-/* line 1347, ../sass/style.scss */
+/* line 1352, ../sass/style.scss */
 .nofound a {
   display: block;
   width: 200px;
@@ -2737,7 +2744,7 @@ table.pagos td {
 }
 
 @media (max-width: 767px) {
-  /* line 1357, ../sass/style.scss */
+  /* line 1362, ../sass/style.scss */
   .col-3 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2748,7 +2755,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1360, ../sass/style.scss */
+  /* line 1365, ../sass/style.scss */
   .col-4, .col-6, .col-9 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2759,7 +2766,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1365, ../sass/style.scss */
+  /* line 1370, ../sass/style.scss */
   header .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2769,15 +2776,15 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1368, ../sass/style.scss */
+  /* line 1373, ../sass/style.scss */
   header .col-4 .logo .company {
     display: none;
   }
-  /* line 1371, ../sass/style.scss */
+  /* line 1376, ../sass/style.scss */
   header .col-4 .logo .user {
     display: inline-block;
   }
-  /* line 1376, ../sass/style.scss */
+  /* line 1381, ../sass/style.scss */
   header .col-8 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2787,45 +2794,45 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1380, ../sass/style.scss */
+  /* line 1385, ../sass/style.scss */
   header .list-ppal li:last-child {
     display: none;
   }
-  /* line 1383, ../sass/style.scss */
+  /* line 1388, ../sass/style.scss */
   header .list-ppal .search {
     margin-right: 60px;
   }
 
-  /* line 1388, ../sass/style.scss */
+  /* line 1393, ../sass/style.scss */
   .icon {
     display: block;
   }
 
-  /* line 1392, ../sass/style.scss */
+  /* line 1397, ../sass/style.scss */
   #nav-ppal {
     display: none;
   }
 
-  /* line 1397, ../sass/style.scss */
+  /* line 1402, ../sass/style.scss */
   .paginacion p {
     display: none;
   }
-  /* line 1400, ../sass/style.scss */
+  /* line 1405, ../sass/style.scss */
   .paginacion ul {
     width: 100%;
     padding: 0;
   }
 
-  /* line 1406, ../sass/style.scss */
+  /* line 1411, ../sass/style.scss */
   .sub-nav .col-4 {
     margin-bottom: 10px;
   }
 
-  /* line 1413, ../sass/style.scss */
+  /* line 1418, ../sass/style.scss */
   #form fieldset .col-6 {
     padding: 0 !important;
   }
-  /* line 1416, ../sass/style.scss */
+  /* line 1421, ../sass/style.scss */
   #form fieldset .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2836,37 +2843,37 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1423, ../sass/style.scss */
+  /* line 1428, ../sass/style.scss */
   .wizard .actions ul {
     padding: 0;
     margin: 0;
   }
 
-  /* line 1431, ../sass/style.scss */
+  /* line 1436, ../sass/style.scss */
   #balance h3 {
     padding-top: 25px;
   }
-  /* line 1435, ../sass/style.scss */
+  /* line 1440, ../sass/style.scss */
   #balance .col-6 div {
     padding-bottom: 20px;
   }
 
-  /* line 1442, ../sass/style.scss */
+  /* line 1447, ../sass/style.scss */
   .nav-print li:last-child {
     display: none;
   }
 
-  /* line 1446, ../sass/style.scss */
+  /* line 1451, ../sass/style.scss */
   .info-novia {
     padding-bottom: 20px;
   }
-  /* line 1448, ../sass/style.scss */
+  /* line 1453, ../sass/style.scss */
   .info-novia .edit {
     display: none !important;
   }
 }
 @media (max-width: 1024px) {
-  /* line 1455, ../sass/style.scss */
+  /* line 1460, ../sass/style.scss */
   .col-3 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2877,7 +2884,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1459, ../sass/style.scss */
+  /* line 1464, ../sass/style.scss */
   .col-6, .col-9 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2888,7 +2895,7 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1464, ../sass/style.scss */
+  /* line 1469, ../sass/style.scss */
   header .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2898,15 +2905,15 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1467, ../sass/style.scss */
+  /* line 1472, ../sass/style.scss */
   header .col-4 .logo .company {
     display: none;
   }
-  /* line 1470, ../sass/style.scss */
+  /* line 1475, ../sass/style.scss */
   header .col-4 .logo .user {
     display: inline-block;
   }
-  /* line 1475, ../sass/style.scss */
+  /* line 1480, ../sass/style.scss */
   header .col-8 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2916,26 +2923,26 @@ table.pagos td {
     padding-left: 0.69444%;
     padding-right: 0.69444%;
   }
-  /* line 1479, ../sass/style.scss */
+  /* line 1484, ../sass/style.scss */
   header .list-ppal li:last-child {
     display: none;
   }
-  /* line 1482, ../sass/style.scss */
+  /* line 1487, ../sass/style.scss */
   header .list-ppal .search {
     margin-right: 60px;
   }
 
-  /* line 1487, ../sass/style.scss */
+  /* line 1492, ../sass/style.scss */
   .icon {
     display: block;
   }
 
-  /* line 1491, ../sass/style.scss */
+  /* line 1496, ../sass/style.scss */
   #nav-ppal {
     display: none;
   }
 
-  /* line 1496, ../sass/style.scss */
+  /* line 1501, ../sass/style.scss */
   .m-search .col-4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2946,17 +2953,17 @@ table.pagos td {
     padding-right: 0.69444%;
   }
 
-  /* line 1503, ../sass/style.scss */
+  /* line 1508, ../sass/style.scss */
   .info-novia .edit {
     display: none !important;
   }
 
-  /* line 1508, ../sass/style.scss */
+  /* line 1513, ../sass/style.scss */
   .nav-print li:last-child {
     display: none;
   }
 
-  /* line 1513, ../sass/style.scss */
+  /* line 1518, ../sass/style.scss */
   select {
     background-size: 4% !important;
   }

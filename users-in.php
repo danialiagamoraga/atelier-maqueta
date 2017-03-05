@@ -11,7 +11,7 @@
             </ul>
         </div>
         <article class="info-novia">
-            <h1>información Usuario <a id="info-novia" href="#" data-target="#info" data-toggle="modal"><span
+            <h1>información Usuario <a id="user-edit" href="#" data-target="#info" data-toggle="modal"><span
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
@@ -25,7 +25,7 @@
         </article>
         <!-- /info-novia -->
         <article class="info-novia">
-            <h1>Información de contacto <a id="info-compra" href="#" data-target="#compra" data-toggle="modal"><span
+            <h1>Información de contacto <a id="user-contact" href="#" data-target="#compra" data-toggle="modal"><span
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
@@ -40,7 +40,7 @@
         </article>
         <!-- /info-novia -->
         <article class="info-novia">
-            <h1>Perfil <a id="info-compra" href="#" data-target="#compra" data-toggle="modal"><span
+            <h1>Perfil <a id="user-profile" href="#" data-target="#compra" data-toggle="modal"><span
                             class="edit">editar</span></a></h1>
             <hr>
             <div class="col-6">
