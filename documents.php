@@ -5,16 +5,16 @@
     <section id="index-nav" class="col-9 sub-nav">
         <?php require_once('breadcrumbs.php'); ?>
         <div class="col-4">
-            <a href="add-bride.php" class="dress">
-                <h3 class="index-title">añadir novia</h3>
-                <p>ingresar nueva novia</p>
+            <a href="balance.php" class="finance">
+                <h3 class="index-title">Finanzas</h3>
+                <p>Generar balance</p>
             </a>
         </div>
         <!-- /col-4 index dress-->
         <div href="#" class="col-4">
-            <a href="#" class="size">
-                <h3 class="index-title">fichas pendientes</h3>
-                <p>fichas sin asignar</p>
+            <a href="#" class="inventory">
+                <h3 class="index-title">Inventario</h3>
+                <p>Descargar historial</p>
             </a>
         </div>
     </section>

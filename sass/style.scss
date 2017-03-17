@@ -441,6 +441,26 @@ footer {
     background-image: url(../img/item-pink.png);
   }
 }
+.finance {
+  @extend %index;
+  background-image: url(../img/finance.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/finance-pink.png);
+  }
+}
+.inventory {
+  @extend %index;
+  background-image: url(../img/inventory.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/inventory-pink.png);
+  }
+}
 
 //--tabla de contenidos
 %encabezado {

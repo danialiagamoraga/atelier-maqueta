@@ -9,8 +9,8 @@
             <li><a href="workshop.php">confecciones</a></li>
             <li><a href="file.php">archivador</a></li>
             <li><a href="inventory.php">inventario</a></li>
-            <li><a href="balance.php">balances</a></li>
-            <!--<li><a href="#">descuentos</a></li>-->
+            <li><a href="documents.php">Documentos</a></li>
+            <!--<li><a href="#">Citas</a></li>-->
             <li><a href="users.php">usuarios</a></li>
             <!--<li><a href="#">Contactos</a></li>-->
             <li><a href="#">cerrar sesión</a></li>
