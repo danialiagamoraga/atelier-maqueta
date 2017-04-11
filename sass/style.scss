@@ -8,7 +8,7 @@
 //--General
 body {
   font-family: latoregular;
-  font-size: 14px;
+  font-size: 13px;
   color: $default;
   margin: 0;
 }
@@ -147,12 +147,14 @@ header {
   letter-spacing: 0.1em;
   font-size: 25px;
   font-weight: normal;
+  margin: 5px 0px;
+  line-height: 0;
   span {
     font-size: 0.5em;
     text-transform: capitalize;
-  }
-  .user {
-    display: none;
+    position: relative;
+    top: -17px;
+
   }
 }
 
@@ -462,6 +464,17 @@ footer {
   }
 }
 
+.hito {
+  @extend %index;
+  background-image: url(../img/hito.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/hito-pink.png);
+  }
+}
+
 //--tabla de contenidos
 %encabezado {
   color: $white;
@@ -703,7 +716,7 @@ table.pagos {
   opacity: 1;
 }
 
-#medidas div.add-symbol span, .cloth-info div.add-symbol span {
+#medidas div.add-symbol span, .cloth-info div.add-symbol span,  #entry div.add-symbol span{
   border: 1px solid rgba(110, 110, 110, 0.4) !important;
   border-left: 1px !important;
 }

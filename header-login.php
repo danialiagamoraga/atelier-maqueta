@@ -11,7 +11,7 @@
 <header>
     <div class="contenedor">
         <div class="col-4">
-            <h1 class="logo"><a href="#">santo encanto <span>#IniciarSesión</span></a></h1>
+            <h1 class="logo"><a href="#"><img src="img/logotype.png" alt="Logotipo atelier" title="Atelier - Software de administración de Talleres"><span>#IniciarSesión</span></a></h1>
         </div>
         <!--/col-4-->
         <nav class="col-8">

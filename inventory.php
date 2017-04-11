@@ -23,6 +23,12 @@
                 <p>Añadir vestido o tela</p>
             </a>
         </div>
+        <div class="col-4">
+            <a href="hito.php" class="hito">
+                <h3 class="index-title">Historial</h3>
+                <p>Últimos movimientos</p>
+            </a>
+        </div>
     </section>
     <!--/#index .col-8 -->
 </section>

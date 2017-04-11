@@ -11,7 +11,7 @@
 <header>
     <div class="contenedor">
         <div class="col-4">
-            <h1 class="logo"><a href="index.php">atelier <span class="company">#SantoEncanto</span><span class="user">Bienvenida Jeannette!</span></a></h1>
+            <h1 class="logo"><a href="index.php"><img src="img/logotype.png" alt="Logotipo atelier" title="Atelier - Software de administración de Talleres"><span class="company">#SantoEncanto</span></h1>
         </div>
         <!--/col-4-->
         <nav class="col-8">
