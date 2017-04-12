@@ -8,7 +8,7 @@
 //--General
 body {
   font-family: latoregular;
-  font-size: 13px;
+  font-size: 12.5px;
   color: $default;
   margin: 0;
 }
@@ -252,8 +252,11 @@ footer {
     font-style: normal;
   }
   small {
-    padding-top: 2em;
-    display: block
+    padding: 2em 0 0 0;
+    display: block;
+    &:last-child{
+      padding-top: 0;
+    }
   }
 
   .redes {
@@ -314,12 +317,12 @@ footer {
   }
   .metrics {
     padding: 10px 20px;
-    font-family: latolight;
     overflow: auto;
     span {
       display: block;
       font-size: 15px;
       line-height: 10px;
+      font-family: latolight;
     }
   }
 }

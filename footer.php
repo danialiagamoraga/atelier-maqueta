@@ -9,6 +9,7 @@
                 Santiago, Chile.
             </address>
             <small>Desarrollado por <a href="http://www.somosbrutos.cl" target="_blank">Brutos</a>.</small>
+            <small>Acerca de <a href="about-atelier.php" target="_self">Atelier</a>.</small>
         </div>
         <!-- /col-6 -->
         <div class="redes col-6">
