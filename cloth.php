@@ -7,7 +7,7 @@
         <div class="nav-print">
             <ul>
                 <li class=""><a href="users-table.php">volver atrás</a></li>
-                <li class=""><a href="#" class=""><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                <li class=""><a id="confirmation" href="#" data-target="#" data-toggle="modal"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <article class="info-novia">
