@@ -12,6 +12,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="53c217fb-0d0e-4438-aca6-c6e45b95fb3d" name="tqb.cl" url="http://tequierobonitapelu.cl">
+        <fileTransfer host="tequierobonitapelu.cl" port="22" privateKey="$USER_HOME$/Desktop/dani.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
