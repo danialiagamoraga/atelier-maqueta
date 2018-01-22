@@ -20,8 +20,8 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="f1c49d2e-7ffd-4fb2-89f8-886e3b700871" name="Telas Flora" url="http://ftp.telasflora.cl">
-        <fileTransfer host="ftp.telasflora.cl" port="21">
+      <webServer id="81e739f4-669a-45f2-8fb9-f1054dd601fd" name="telasflora" url="http://www.telasflora.cl">
+        <fileTransfer host="www.telasflora.cl" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
