@@ -5,6 +5,7 @@
     <hr class="line-pink">
     <nav>
         <ul>
+            <li><a href="budget.php">Cotizaciones</a></li>
             <li><a href="bride.php">novias</a></li>
             <li><a href="workshop.php">confecciones</a></li>
             <li><a href="file.php">archivador</a></li>

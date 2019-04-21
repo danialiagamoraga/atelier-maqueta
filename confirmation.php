@@ -10,7 +10,7 @@
                     <h1>Confirmación</h1>
                     <hr>
                     <fieldset>
-                        <div class="col-6">
+                        <div class="col-12">
                             <p>Esta acción es irreversible ¿Estás seguro de realizar esta acción?</p>
                         </div>
                     </fieldset>

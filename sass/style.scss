@@ -478,6 +478,29 @@ footer {
   }
 }
 
+.budget {
+  @extend %index;
+  background-image: url(../img/budget.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/budget-pink.png);
+  }
+}
+
+.record {
+  @extend %index;
+  background-image: url(../img/record.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-left: 0;
+  &:hover {
+    background-image: url(../img/record-pink.png);
+  }
+}
+
+
 //--tabla de contenidos
 %encabezado {
   color: $white;
